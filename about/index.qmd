@@ -92,9 +92,11 @@ resources:
 ::: {#hero-heading}
 <div class="h1">Welcome</div>
 
-I am a bioinformatics scientist with 25+ years of experience building computational infrastructure for genomics and biomedical research. My expertise spans Bayesian statistics, machine learning, variant calling, and epigenomics. Beyond individual research, I'm committed to mentoring collaborators, developing open-source tools, and modernizing scientific computing through reproducible workflows. I believe accessible, well-designed computational systems amplify the impact of collaborative research.
+Thanks for stopping by!
 
-I'm a Bioinformatics Scientist at the [University of Vermont](https://www.uvm.edu/), Department of Microbiology and Molecular Genetics. Learn more about my work in [publications](/publication).
+I am a Bioinformatics Scientist at the [University of Vermont](https://www.uvm.edu/), Department of Microbiology and Molecular Genetics. My research focuses on collaborative bioinformatics and computational biology, spanning variant analysis, epigenomics, virus typing, transcriptomics, and structural biology. I work extensively with workflow management systems, containerized environments, and high-performance computing to enforce reproducibility and scalability.
+
+I have been integrating quantitative sciences and computational methods with biomedical research since 2001, with a focus on Bayesian statistical methods, machine learning, and data science. Learn more about my work in [publications](/publication).
 
 Get in touch by [sending me a note](/contact.qmd)! {{< fa feather-pointed >}}
 
