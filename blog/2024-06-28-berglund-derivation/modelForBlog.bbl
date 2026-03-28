@@ -1,0 +1,27 @@
+\begin{thebibliography}{2}
+\newcommand{\enquote}[1]{``#1''}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\ifx\endbibitem\undefined \let\endbibitem\relax\fi
+
+\bibitem[{Berglund(2010)}]{RN44}
+Berglund, A.~J. (2010).
+\newblock \enquote{Statistics of camera-based single-particle tracking.}
+\newblock {\em Phys Rev E Stat Nonlin Soft Matter Phys\/}, 82(1 Pt 1): 011917.
+\newblock Berglund, Andrew J eng 2010/09/28 Phys Rev E Stat Nonlin Soft Matter
+  Phys. 2010 Jul;82(1 Pt 1):011917. doi: 10.1103/PhysRevE.82.011917. Epub 2010
+  Jul 22.
+\newline\urlprefix\url{https://www.ncbi.nlm.nih.gov/pubmed/20866658}
+\endbibitem
+
+\bibitem[{Michalet and Berglund(2012)}]{BerglundMichalet2012}
+Michalet, X. and Berglund, A.~J. (2012).
+\newblock \enquote{Optimal diffusion coefficient estimation in single-particle
+  tracking.}
+\newblock {\em Phys. Rev. E\/}, 85: 061916.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.85.061916}
+\endbibitem
+
+\end{thebibliography}

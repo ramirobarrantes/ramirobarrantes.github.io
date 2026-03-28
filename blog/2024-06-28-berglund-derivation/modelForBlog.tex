@@ -1,0 +1,384 @@
+\documentclass[ba]{imsart}\usepackage[]{graphicx}\usepackage[]{xcolor}
+% maxwidth is the original width if it is less than linewidth
+% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+
+\firstpage{1}
+\lastpage{1}
+
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{natbib}
+\usepackage[colorlinks,citecolor=blue,urlcolor=blue,filecolor=blue,backref=page]{hyperref}
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{bbm}
+
+\startlocaldefs
+\numberwithin{equation}{section}
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\endlocaldefs
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+
+\begin{frontmatter}
+\title{Berglund's Diffusion Constant Model}
+
+\begin{aug}
+\author{\fnms{Ramiro} \snm{Barrantes Reynolds}\thanksref{University of Vermont}\ead[label=e1]{ramiro.barrantes@med.uvm.edu}}
+\runauthor{}
+\end{aug}
+
+\end{frontmatter}
+
+
+
+
+
+\section{Introduction}
+
+I worked for a long time in a variation of this model, for various reasons it did not get published but I wanted to share part of the derivation with the community - as it is not obvious in the paper - especially if you don't do calculus every day!!. I hope this will be useful for someone else.
+
+\section{Model}
+
+
+A particle moves on one dimension with time intervals of size $\tau$ on positions
+$\{x_1, x_2,\dotsc,x_N\}$.
+
+The Brownian motion model is governed by the following equation
+
+$$
+  x_n = x_{n-1}+\epsilon_n
+$$
+  with $\epsilon_n \sim \mathcal{N}(0,\sigma^2_\Delta)$
+
+  Where $\sigma^2_\Delta = 2D\tau$ with $D$ the diffusion constant.
+
+We also have measurement noise $\sigma_c$ (also called localization noise) which is usually modeled as having observations
+$\{y_1, y_2,\dotsc,y_N\}$ consisting of the true position and some measurement error:
+
+  $$
+  y_n = x_n + \phi_n
+$$
+  where $\phi_n \sim \mathcal{N}(0,\sigma_c^2)$.
+
+However, the method suggested by Berglund (\cite{RN44}, see also \cite{BerglundMichalet2012}) adds the fact that the particle is being imaged by a camera and subject to the shutter being opened in a given interval of time, giving rise to motion blur. Therefore he defines a shutter function \emph{s(t)} that integrates to unity over the time interval $\tau$ and defines the observed position on frame $k$, $Y_k$, as the true position $X$ averaged by the shutter function plus the measurement noise $\phi_k$,
+
+$$
+y_k = \int_{(k-1)\tau}^{k\tau} s(t-(k-1)\tau)X(t)dt + \phi_k
+$$
+
+Where $\phi_k \sim \mathcal{N}(0,\sigma^2_c)$.
+
+This leads to the following multivariate normal distribution for the displacements $\Delta_k=y_{k+1}-y_k$:
+
+$$\langle \Delta_i \Delta_j \rangle =
+\begin{cases}
+  2D\tau - 2(2DR\tau - \sigma_{c}^2)=\sigma - 2R\sigma -2\sigma_{c}^2 \text{ if } i=j\\
+  2DR\tau - \sigma_c^2=\sigma R - \sigma_{c}^2  \text{ if } |i-j|=1\\
+  0 \text{ otherwise}
+\end{cases}$$
+
+where, if $S(t) = \int_0^t s(u)du$,
+
+$$
+R= \frac{1}{\tau} \left( \int_{0}^{\tau} s(t') t' dt' - \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') min(t,t') dt dt' \right)=\int_{0}^{\tau} S(t)(1-S(t)dt
+$$
+
+$R$ would be a \emph{motion blur coefficient} with $0 \leq R \leq 1/4$.
+
+(see \cite{RN44} and the supplement for the derivation)
+
+Therefore we have the likelihood as
+
+$$
+p(y_1,\ldots,y_p|\sigma,\sigma_c,R)=p(\Delta_1,\ldots,\Delta_{p-1})
+   =\mathcal{N}_p(0,\sum)
+$$
+
+Where $\sum$ is as defined above.
+
+Finally, we want to study the case where we know the sequence of hidden states $S=\{s_1, s_2,\dotsc,s_N\}$, where
+$s_i \in \{1,\dotsc,K\}$ with $N$ the number of diffusion states and, instead of a single $\sigma_\Delta$, we have
+$\{\sigma_1,\sigma_2,\dotsc,\sigma_K\}$ as the actual diffusion states. Then we will
+  set the joint distribution including the hidden states to be the product of
+  the separate joint distributions for each state:
+
+$$
+\begin{aligned}
+  p(Y,\sigma_1,\dotsc,\sigma_K,\sigma_c) &= p(y_1,\dotsc,y_N,s_1,\dotsc,s_N,\sigma_1,\dotsc,\sigma_K,\sigma_c) \\
+  = &\left[\prod^{K}_{k=1} p(y_{k,1},\dotsc,y_{k,n_k}|\sigma_k, \sigma_c)\right] p(\sigma_1,\dotsc,\sigma_k)
+  \end{aligned}
+$$
+
+
+\begin{supplement}
+\stitle{Derivation of Berglund's Estimator}
+\sdescription{Derivation of Berglund's Estimator}
+
+The method suggested by Berglund and Michalet (\cite{RN44, BerglundMichalet2012}) add the fact that the particle is being imaged by a camera and subject to the shutter being opened in a given interval of time, giving rise to motion blur. Therefore we define a shutter function \emph{s(t)} that integrates to unity over the time interval $\tau$ and define the observed position on frame $k$, $Y_k$, as the true position $X$ averaged by the shutter function plus the localization noise $\phi_k$,
+
+$$
+Y_k = \int_{(k-1)\tau}^{k\tau} s(t-(k-1)\tau)X(t)dt + \phi_k
+$$
+
+Where $\phi_k \sim \mathcal{N}(0,\sigma^2_c)$.
+
+We also assume that the particle follows Brownian motion so,
+
+$$
+  \langle \epsilon_k^2 \rangle = \langle (X((k+1)\tau)-X(k\tau))^2 \rangle = 2D\tau
+$$
+
+For the derivation below we will use the following result:
+
+\begin{equation} \label{eq:auxResult}
+\scriptsize
+\begin{aligned}
+\langle X_{true}(t')X_{true}(t'')\rangle &= \langle [X_{true}(t'-1)+\epsilon_{t'}][X_{true}(t''-1)+\epsilon_{t''}]\rangle \\
+&= \langle [X_{true}(t'-2)+\epsilon_{t'-1}+\epsilon_{t'}][X_{true}(t''-2)+\epsilon_{t''-1}+\epsilon_{t''}]\rangle \\
+&=\ldots \\
+&= \langle [X_{true}(0)+\sum_{i=1}^{t'} \epsilon_{i}][X_{true}(0)+\sum_{j=1}^{t''} \epsilon_{j}]\rangle \\
+&= \langle X_{true}^2(0)+X_{true}(0) \sum_{j=1}^{t'} \epsilon_{j}+X_{true}(0)\sum_{i=1}^{t''} \epsilon_{i} +\sum_{i=1}^{t''} \epsilon_{i}\sum_{j=1}^{t''} \epsilon_{j} \rangle\\
+&= \langle X_{true}^2(0)\rangle+\langle X_{true}(0) \sum_{j=1}^{t'} \epsilon_{j}\rangle+\langle X_{true}(0)\sum_{i=1}^{t''} \epsilon_{i} \rangle+\langle \sum_{i=1}^{t''} \epsilon_{i}\sum_{j=1}^{t''} \epsilon_{j} \rangle\\
+&= X_{true}^2(0)+\langle \sum_{i=1}^{t''} \epsilon_{i}\sum_{j=1}^{t''} \epsilon_{j} \rangle\\
+&= X_{true}^2(0)+\langle \sum_{i=1}^{min(t',t'')} \epsilon_{i}^2+\sum_{j=min(t',t'')+1}^{max(t',t'')} \epsilon_{j} \rangle\\
+&= X_{true}^2(0)+\sum_{i=1}^{min(t',t'')} \langle \epsilon_{i}^2 \rangle+\sum_{j=min(t',t'')+1}^{max(t',t'')} \langle \epsilon_{j} \rangle\\
+&= X_{true}^2(0)+min(t',t'') 2 D\\
+\end{aligned}
+\end{equation}
+
+
+We now want to find the distribution for the measured displacements $\Delta_k=Y_{k+1}-Y_k$.
+First we see that, using the substitution $u=t-(k-1)\tau$:
+
+$$
+\begin{aligned}
+Y_k &= \int_{(k-1)\tau}^{k\tau} s(t-(k-1)\tau)X(t)dt + \phi_k
+    &= \int_{0}^{\tau} s(u+(k-1)\tau)X(u)du
+\end{aligned}
+$$
+
+And we have:
+
+$$
+\begin{aligned}
+\langle \Delta_{k} \Delta_{k-1} \rangle &= \langle (Y_{k+1}-Y_{k})(Y_{k}-Y_{k-1}) \rangle \\
+      &= \langle (Y_{k+1}Y_{k})-(Y_{k+1}Y_{k-1})-(Y_{k}Y_{k})+(Y_{k}Y_{k-1}) \rangle \\
+      &= \langle Y_{k+1}Y_{k} \rangle - \langle Y_{k+1}Y_{k-1} \rangle - \langle Y_{k}Y_{k} \rangle + \langle Y_{k}Y_{k-1} \rangle
+\end{aligned}
+$$
+
+Using (\ref{eq:auxResult}) we can determine $\langle Y_{k+1}Y_{k} \rangle$,
+$\langle Y_{k}Y_{k} \rangle$ and $\langle Y_{k+1}Y_{k-1} \rangle$ as follows
+
+\begin{equation} \label{eq:expectation1}
+\scriptsize
+\begin{aligned}
+\langle Y_{k+1}Y_{k} \rangle &= \langle (\int_{0}^{\tau} s(t)X(t+k\tau)dt + \phi_{k+1}) (\int_{0}^{\tau} s(t')X(t'+(k-1)\tau)dt' + \phi_k) \rangle \\
+ &= \langle \int_{0}^{\tau} s(t)X(t+k\tau)dt \int_{0}^{\tau} s(t')X(t'+(k-1)\tau)dt' \rangle + \langle \phi_k \int_{0}^{\tau} s(t)X(t+k\tau)dt  \rangle + \langle \phi_{k+1} \int_{0}^{\tau} s(t')X(t'+(k-1)\tau)dt' \rangle + \langle  \phi_{k+1}\phi_{k} \rangle \\
+ &= \langle \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') X(t+k\tau) X(t'+(k-1)\tau) dt dt' \rangle \\
+ &= \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') \langle X(t+k\tau) X(t'+(k-1)\tau) \rangle dt dt'  \\
+ &= \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t')[ X(0)^2+2D (t'+(k-1))\tau )] dt dt' \\
+ &=  X(0)^2 \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') dt dt'+2D \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') t dt dt'+ 2D (k-1)\tau \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') dt dt' \\
+ &=  X(0)^2 +2D\int_{0}^{\tau} s(t) t dt+ 2D (k-1)\tau
+\end{aligned}
+\end{equation}
+
+and,
+
+\begin{equation} \label{eq:expectation2}
+\scriptsize
+\begin{aligned}
+\langle Y_{k}Y_{k} \rangle &= \langle (\int_{0}^{\tau} s(t)X(t+(k-1)\tau)dt + \phi_{k}) (\int_{0}^{\tau} s(t')X(t'+(k-1)\tau)dt' + \phi_k) \rangle \\
+ &= \langle \int_{0}^{\tau} s(t)X(t+(k-1)\tau)dt \int_{0}^{\tau} s(t')X(t'+(k-1)\tau)dt' \rangle +  \langle 2 \phi_{k} \int_{0}^{\tau} s(t')X(t'+(k-1)\tau)dt' \rangle + \langle  \phi_{k}\phi_{k} \rangle \\
+ &= \langle \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') X(t+(k-1)\tau) X(t'+(k-1)\tau) dt dt' \rangle + \sigma^2\\
+ &= \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') \langle X(t+(k-1)\tau) X(t'+(k-1)\tau) \rangle dt dt'  + \sigma^2 \\
+ &= \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t')[ X(0)^2+2D (min(t,t')+(k-1)\tau )] dt dt' + \sigma^2 \\
+ &=  X(0)^2 +2D \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') min(t,t') dt dt'+ 2D (k-1)\tau \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') dt dt'  + \sigma^2 \\
+ &=  X(0)^2  + 2D \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') min(t,t') dt dt'+ 2D (k-1)\tau  + \sigma^2
+\end{aligned}
+\end{equation}
+
+And
+
+\begin{equation} \label{eq:expectation3}
+\scriptsize
+\begin{aligned}
+\langle Y_{k+1}Y_{k-1} \rangle &= \langle (\int_{0}^{\tau} s(t)X(t+k\tau)dt + \phi_{k+1}) (\int_{0}^{\tau} s(t')X(t'+(k-2)\tau)dt' + \phi_{k-1}) \rangle \\
+ &= \langle \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') X(t+k\tau) X(t'+(k-2)\tau) dt dt' \rangle \\
+ &= \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') \langle X(t+k\tau) X(t'+(k-2)\tau) \rangle dt dt'  \\
+ &= \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t')[ X(0)^2+2D (t'+(k-2)\tau )] dt dt' \\
+ &=  X(0)^2 +2D \int_{0}^{\tau} s(t') t' dt'+ 2D (k-2)\tau
+\end{aligned}
+\end{equation}
+
+Using (\ref{eq:expectation1}), (\ref{eq:expectation2}) and (\ref{eq:expectation3}) together:
+
+$$
+\begin{aligned}
+\langle \Delta_{k} \Delta_{k-1} \rangle &= \langle Y_{k+1}Y_{k} \rangle - \langle Y_{k+1}Y_{k-1} \rangle - \langle Y_{k}Y_{k} \rangle + \langle Y_{k}Y_{k-1} \rangle \\
+ &=  X(0)^2 +2D\int_{0}^{\tau} s(t') t' dt'+ 2D (k-1)\tau  \\
+     &\quad - (X(0)^2 +2D \int_{0}^{\tau} s(t') t' dt'+ 2D (k-2)\tau)  \\
+     &\quad - (X(0)^2  + 2D \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') min(t,t') dt dt'+ 2D (k-1)\tau)  + \sigma^2 ) \\
+     &\quad + X(0)^2 +2D\int_{0}^{\tau} s(t') t' dt'+ 2D (k-2)\tau \\
+ &= 2D\int_{0}^{\tau} s(t') t' dt - 2D \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') min(t,t') dt dt' -   \sigma^2 \\
+ &= 2D \left( \int_{0}^{\tau} s(t') t' dt - \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') min(t,t') dt dt' \right)  -   \sigma^2
+\end{aligned}
+$$
+
+Analogously,
+
+$$
+\begin{aligned}
+\langle \Delta_{k} \Delta_{k} \rangle &= \langle (Y_{k+1}-Y_{k})(Y_{k+1}-Y_{k} \rangle \\
+ &= \langle Y_{k+1}Y_{k+1} \rangle - 2 \langle Y_{k+1}Y_{k} \rangle - \langle Y_{k}Y_{k} \rangle \\
+ &=  (X(0)^2  + 2D \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') min(t,t') dt dt'+ 2Dk \tau)  + \sigma^2 )  \\
+     &\quad - 2 \left( X(0)^2 +2D\int_{0}^{\tau} s(t') t' dt'+ 2D (k-1)\tau \right)  \\
+     &\quad (X(0)^2  + 2D \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') min(t,t') dt dt'+ 2D(k-1) \tau)  + \sigma^2 ) \\
+  &= 4D \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') min(t,t') dt dt' - 4D\int_{0}^{\tau} s(t') t' dt' + 2D\tau + 2\sigma^2 \\
+  &= 2D\tau - 2 \left[ 2D \left( \int_{0}^{\tau} s(t') t' dt' - \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') min(t,t') dt dt' \right) - \sigma^2 \right]
+\end{aligned}
+$$
+
+We also have that for the case $|k-j|>1$, assuming without loss of generality
+ that k>j,
+
+$$
+\begin{aligned}
+\langle \Delta_{k} \Delta_{j} \rangle &= \langle (Y_{k+1}-Y_{k})(Y_{j+1}-Y_{j} \rangle \\
+ &= \langle Y_{k+1}Y_{j+1} \rangle - \langle Y_{k+1}Y_{j} \rangle - \langle Y_{k}Y_{j+1} \rangle + \langle Y_{k}Y_{j} \rangle \\
+ &= 2Dj \tau  - 2D (j-1)\tau - 2Dj \tau  + 2D (j-1) \tau  \\
+  &= 0
+\end{aligned}
+$$
+
+Hence if we define $R= \frac{1}{\tau} \left( \int_{0}^{\tau} s(t') t' dt' - \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') min(t,t') dt dt' \right)$ we see that the displacements have a multivariate normal distribution centered at zero and with a co-variance
+matrix as follows:
+
+$$
+\begin{aligned}
+\langle \Delta_{k} \Delta_{k-1} \rangle &= 2D\tau R - \sigma^2 \\
+\langle \Delta_{k} \Delta_{k} \rangle &= 2D\tau - 2 \left( 2D\tau R - \sigma^2 \right)\\
+\langle \Delta_{i} \Delta_{j} \rangle &= 0 \text{ if |i-j|>1 }
+\end{aligned}
+$$
+
+This implies correlation between consecutive displacements.
+
+In addition, if we define $S(t) = \int_0^t s(u)du$ we have:
+
+$$
+R= \frac{1}{\tau} \left( \int_{0}^{\tau} s(t') t' dt' - \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') min(t,t') dt dt' \right)=\int_{0}^{\tau} S(t)(1-S(t)dt
+$$
+
+This can be seen by the following:
+
+First, using integration by parts:
+
+\begin{equation} \label{eq:S1}
+\begin{aligned}
+  \int_{0}^{\tau} t' s(t')  dt' &= t'(S(t)-1) |_{0}^{\tau} - \int_{0}^{\tau} (S(t)-1) dt  \\
+  &= 0 - \int_{0}^{\tau} (S(t)-1) dt \\
+  &= \int_{0}^{\tau} (1-S(t)) dt
+\end{aligned}
+\end{equation}
+
+Then we also have, using an index function where
+
+$$
+\mathbbm{1}_{\{\ldots \}} = \begin{cases}
+1, & \text{if \ldots is true,} \\
+0, & \text{otherwise}
+\end{cases}
+$$
+
+
+So for $t, t' \in [0,\tau]$
+
+$$
+\begin{aligned}
+min{\{t,t' \}} &= \int_{0}^{\tau} \mathbbm{1}_{\{u \leq t, u \leq t' \}} du
+    &= \int_{0}^{\tau} \mathbbm{1}_{\{u \leq t \}} \mathbbm{1}_{\{u \leq t' \}} du
+\end{aligned}
+$$
+
+And
+
+\begin{equation} \label{eq:S2}
+\begin{aligned}
+\int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') min(t,t') dt dt' &= \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') \int_{0}^{\tau} \mathbbm{1}_{\{u \leq t \}} \mathbbm{1}_{\{u \leq t' \}} du dt dt' \\
+&= \int_{0}^{\tau} \int_{0}^{\tau} s(t) \mathbbm{1}_{\{u \leq t \}}  dt  \int_{0}^{\tau}  s(t') \mathbbm{1}_{\{u \leq t' \}} dt' du \\
+&= \int_{0}^{\tau} \int_{u}^{t} s(t) dt  \int_{u}^{t'} s(t') dt' du \\
+&= \int_{0}^{\tau} \left( 1-S(u) \right)^2 du
+\end{aligned}
+\end{equation}
+
+Now, combining (\ref{eq:S1}) and (\ref{eq:S2})
+
+$$
+\begin{aligned}
+R= \frac{1}{\tau} \left( \int_{0}^{\tau} s(t') t' dt' - \int_{0}^{\tau} \int_{0}^{\tau} s(t) s(t') min(t,t') dt dt' \right)
+&=\frac{1}{\tau} \int_{0}^{\tau} (1-S(u)) du -\int_{0}^{\tau} \left( 1-S(u) \right)^2 du \\
+&=\frac{1}{\tau} \int_{0}^{\tau} (1-S(u)) \left( 1-(1-S(u)) \right) du \\
+&=\frac{1}{\tau} \int_{0}^{\tau} (1-S(u)) S(u) du \\
+\end{aligned}
+$$
+
+\end{supplement}
+
+
+\bibliographystyle{ba}
+\bibliography{bibliography}
+
+\end{document}

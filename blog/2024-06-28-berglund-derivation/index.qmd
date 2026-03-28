@@ -1,0 +1,17 @@
+---
+title: "The Derivation of the Berglund Estimator for the Diffusion Constant"
+author: "Ramiro"
+date: "2024-06-28"
+categories: [statistics, modeling]
+bibliography: bibliography.bib
+biblio-style: apalike
+link-citations: true
+reference-location: margin
+citation-location: margin
+---
+
+## Introduction
+
+I spent a lot of time working on modeling the movement of repair enzymes in DNA. For various reasons, publication of the results was delayed, but I wanted to share this derivation of the Berglund estimator of the diffusion constant [@RN44] and [@BerglundMichalet2012] as it took me so long to work out!.
+
+[PDF with the derivation](modelForBlog.pdf)

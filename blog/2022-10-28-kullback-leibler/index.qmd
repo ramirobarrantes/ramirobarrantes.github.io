@@ -1,0 +1,58 @@
+---
+title: "The Kullback-Leibler Divergence and Variational Bayes"
+author: "Ramiro"
+date: "2022-10-28"
+categories: [statistics, machine learning]
+bibliography: bibliography.bib
+biblio-style: apalike
+link-citations: true
+reference-location: margin
+citation-location: margin
+---
+
+## The Kullback-Leibler Divergence and Variational Bayes
+
+The Kullback-Leibler divergence is used to measure the difference between two probability distributions. We came across its use when using software based on the Variational Bayes approximation algorithm (more on that later). It was developed by two cryptologists/mathematicians, Solomon Kullback and Richard Leibler [@mcintire2021].
+
+If you have two probability distributions P(x) and Q(x) then the Kullback-Leibler divergence, also called relative entropy, is defined as
+
+$$D_{KL}(P|Q)= \sum_x{P(X)log\frac{P(X)}{Q(X)}}$$
+
+This comes from the background of information theory [@mackay2003information], and it is a weighted average across $P(X)$ of the log difference between $P(X)$ and $Q(X)$ (remember that $log \frac{P(X)}{Q(X)}=log(P(X))-log(Q(X))$). One way of interpreting is how far Q(X) is from P(X).
+
+### Variational Bayes
+
+Variational Bayes is a technique for approximating the posterior. The Kullback-Leibler divergence is used in the derivation as follows [@rogers2016]. Given data Y and parameters $\theta$ the marginal likelihood, the average over all possible values of the parameter space would be defined as follows:
+
+$$
+P(Y)=\int P(Y,\theta)d\theta
+$$
+
+The log marginal likelihood would be then given by:
+
+$$
+\log P(Y)=\log \int P(Y,\theta)d\theta
+$$
+
+We will now use an arbitrary distribution which we will take advantage of shortly:
+
+$$
+\log P(Y)=\log \int Q(Y) \frac{P(Y,\theta)}{Q(Y)}d\theta \leq \int Q(Y) \log  \frac{P(Y,\theta)}{Q(Y)}d\theta
+$$
+
+The last term, a lower bound, is a result of Jensen's inequality, where the log of an expectation is less than the expectation of the log. Let's study the difference between the lower bound and the log marginal likelihood, the idea would then to find a function Q(Y) that minimizes this difference:
+
+$$
+\begin{aligned}
+\log P(Y)-\int Q(\theta) \log \frac{P(Y,\theta)}{Q(\theta)}d\theta &= \log P(Y)-\int Q(\theta) \log \frac{P(\theta|Y)P(Y)}{Q(\theta)}d\theta\\
+&= \log P(Y)-\int Q(\theta) \left( \log \frac{P(\theta|Y)}{Q(\theta)} + \log P(Y) \right) d\theta\\
+&= \log P(Y)- \int Q(\theta) \log \frac{P(\theta|Y)}{Q(\theta)}d\theta -\int Q(\theta) \log P(Y)d\theta \\
+&= \log P(Y)- \int Q(\theta) \log \frac{P(\theta|Y)}{Q(\theta)}d\theta - \log P(Y) \int Q(\theta) d\theta  \\
+&= \log P(Y)- \int Q(\theta) \log \frac{P(\theta|Y)}{Q(\theta)}d\theta - \log P(Y) \\
+&= - \int Q(\theta) \log \frac{P(\theta|Y)}{Q(\theta)}d\theta  \\
+&= \int Q(\theta) \log \frac{Q(\theta)}{P(\theta|Y)}d\theta \\
+&= D_{KL}(Q(\theta)|P(\theta|Y))
+\end{aligned}
+$$
+
+Where the last term is the Kullback-Leibler divergence shown earlier. Therefore, by choosing $Q$ appropriately, one can approximate the posterior. $Q$ is usually determined by an iterative procedure.
