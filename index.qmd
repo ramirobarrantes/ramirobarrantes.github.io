@@ -49,7 +49,7 @@ resources:
 
 ::: {#hero-heading}
 
-I am a bioinformatics scientist and data scientist with expertise in genomics, epigenomics, and Bayesian statistics. My **research** focuses on collaborative bioinformatics and computational biology, working at the intersection of quantitative methods and biomedical research. My **work** emphasizes reproducibility, scalability, and effective communication with collaborators through modern computational infrastructure and open-source tools.
+I am a bioinformatics scientist with 25+ years of experience building computational infrastructure for genomics and biomedical research. My expertise spans Bayesian statistics, machine learning, variant calling, and epigenomics. Beyond individual research, I'm committed to mentoring collaborators, developing open-source tools, and modernizing scientific computing through reproducible workflows. I believe accessible, well-designed computational systems amplify the impact of collaborative research.
 
 [Learn more about me &rarr;](/about){.about-links .subtitle}
 
