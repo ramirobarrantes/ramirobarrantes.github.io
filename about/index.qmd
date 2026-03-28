@@ -1,0 +1,172 @@
+---
+title: "Ramiro Barrantes-Reynolds"
+subtitle: Bioinformatics Scientist & Data Scientist
+image: sidebar/avatar.png
+image-alt: "Portrait of Ramiro Barrantes-Reynolds"
+about:
+  template: trestles
+  image-width: 14em
+  image-shape: rounded
+  id: hero-heading
+  links:
+    - text: "{{< fa universal-access >}}"
+      aria-label: "Accessibility statement"
+      href: accessibility.qmd
+    - icon: linkedin
+      aria-label: "LinkedIn"
+      href: https://linkedin.com/in/ramirobarrantes
+    - icon: github
+      aria-label: GitHub
+      href: https://github.com/ramirobarrantes
+    - text: "{{< ai orcid >}}"
+      aria-label: "ORCID"
+      href: https://orcid.org/
+    - text: "{{< ai google-scholar >}}"
+      aria-label: "Google Scholar"
+      href: https://scholar.google.com/
+listing:
+- id: project
+  contents: 
+    - "../project/*/index.qmd"
+    - "../project/*/index.markdown"
+    - "../project/external-items/metadata.yml"
+  sort: date desc
+  type: grid
+  grid-columns: 1
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, image]
+  max-items: 1
+  image-height: "200"
+- id: talk
+  contents: 
+    - "../talk/*/index.qmd"
+    - "../talk/*/index.markdown"
+  sort: date desc
+  type: grid
+  grid-columns: 1
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, image]
+  max-items: 1
+  image-height: "200"
+- id: blog
+  contents: 
+    - "../blog/*/index.qmd"
+    - "../blog/*/index.markdown"
+  sort: date desc
+  type: grid
+  grid-columns: 1
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, image]
+  max-items: 1
+  image-height: "200"
+- id: publication
+  contents: 
+    - "../publication/*/index.qmd"
+    - "../publication/*/index.markdown"
+  sort: date desc
+  type: grid
+  grid-columns: 1
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, image]
+  max-items: 1
+  image-height: "200"
+  image-placeholder: ../publication/featured.jpg
+format: 
+  html: 
+    page-layout: full
+
+header-includes: >
+  <link rel="stylesheet" href="../assets/about.css">
+resources:
+  - ../assets/about.css
+---
+
+::: {#hero-heading}
+<div class="h1">Welcome</div>
+
+Thanks for stopping by!
+
+I am a Bioinformatics Scientist at the [University of Vermont](https://www.uvm.edu/), Department of Microbiology and Molecular Genetics. My research focuses on collaborative bioinformatics and computational biology, spanning variant analysis, epigenomics, virus typing, transcriptomics, and structural biology. I work extensively with workflow management systems, containerized environments, and high-performance computing to enforce reproducibility and scalability.
+
+I have been integrating quantitative sciences and computational methods with biomedical research since 2001, with a focus on Bayesian statistical methods, machine learning, and data science. Learn more about my work in [publications](/publication).
+
+Get in touch by [sending me a note](/contact.qmd)! {{< fa feather-pointed >}}
+
+:::
+
+## About me
+
+::: {.grid}
+
+::: {.g-col-6 #about-me-1}
+
+**Bioinformatician and data scientist with deep expertise in computational genomics and Bayesian methods.**
+
+I work with R, Python, and workflow management systems like Nextflow to build scalable, reproducible computational pipelines. I'm passionate about effective communication with collaborators and mentor students in bioinformatics methods. My work spans sequence analysis, phylogenetics, epigenomics, and applied machine learning for biomedical research.
+
+<ul class="fa-ul">
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. in Cell and Molecular Biology (Bioinformatics/Statistics) ∙ University of Vermont ∙ 2011</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. in Pure Mathematics ∙ University of Costa Rica ∙ 1999</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. in Computer Science ∙ University of Costa Rica ∙ 1999</li>
+</ul>
+
+:::
+
+::: {.g-col-6 #about-me-2}
+
+Since 2001, I've worked at the intersection of bioinformatics and collaborative science. I spent ten years in industry as a statistician at a consulting firm while contributing part-time to UVM, gaining expertise in experimental design and rigorous client-facing work. More recently, I lead bioinformatics infrastructure projects, including the development and deployment of Nextflow pipelines through the Seqera platform, and have built web platforms for computational analysis.
+
+I'm deeply interested in artificial intelligence and eager to learn and apply these methods in research. Beyond work, I'm committed to service through meditation and non-violent communication practices.
+
+<ul class="fa-ul">
+   <li><span class="fa-li"><i class="fa-solid fa-briefcase"></i></span>Bioinformatics Scientist ∙ Vermont Integrative Genomics Resource ∙ UVM ∙ 2022-present</li>
+   <li><span class="fa-li"><i class="fa-solid fa-briefcase"></i></span>Bioinformatics Scientist ∙ Translational Global Infectious Disease Research ∙ UVM ∙ 2022-present</li>
+   <li><span class="fa-li"><i class="fa-solid fa-briefcase"></i></span>Bioinformatics Programmer ∙ University of Vermont ∙ 2001-2006</li>
+</ul>
+
+:::
+
+:::
+<!-- end grid -->
+
+## Lately ...
+
+:::: {.grid}
+
+::: {.g-col-3}
+#### Projects
+::: {#project}
+:::
+[See all &rarr;](../project){.about-links .subtitle}
+:::
+
+::: {.g-col-3}
+#### Talks
+::: {#talk}
+:::
+[See all &rarr;](../talk){.about-links .subtitle}
+:::
+
+::: {.g-col-3}
+#### Blog
+::: {#blog}
+:::
+[See all &rarr;](../blog){.about-links .subtitle}
+:::
+
+::: {.g-col-3}
+#### Publications
+::: {#publication}
+:::
+[See all &rarr;](../publication){.about-links .subtitle}
+:::
+
+::::
