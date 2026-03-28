@@ -1,0 +1,35 @@
+---
+title: "Potential Regulatory Relationship Between the Nested Gene DDC8 and Its Host Gene Tissue Inhibitor of Metalloproteinase-2"
+author: "Ramiro Barrantes-Reynolds"
+date: "2008-07-01"
+categories: [genomics, gene regulation, structural biology]
+---
+
+## Citation
+
+Jaworski, D.M., Beem-Miller, M., Lluri, G., & Barrantes-Reynolds, R. (2007). Potential Regulatory Relationship Between the Nested Gene DDC8 and Its Host Gene Tissue Inhibitor of Metalloproteinase-2. *Physiological Genomics*, 28(2), 168-178.
+
+## Abstract
+
+Gene nesting, where one gene is located within the intron of another, represents an interesting regulatory relationship. This study investigates the potential co-regulation of the nested gene DDC8 and its host gene TIMP-2, which encodes a tissue inhibitor of metalloproteinases.
+
+## Key Findings
+
+- DDC8 is nested within an intron of the TIMP-2 gene
+- Analysis suggests potential co-regulation mechanisms
+- Examination of promoter and regulatory elements
+- Discussion of functional implications for nested gene regulation
+- Insights into evolutionary conservation of this genetic arrangement
+
+## Role
+
+As a co-author, I contributed to bioinformatics analysis and genomic sequence examination.
+
+## Publication Details
+
+- **Journal:** Physiological Genomics
+- **Year:** 2007
+- **Volume/Issue:** 28(2)
+- **Pages:** 168-178
+- **DOI:** [10.1152/physiolgenomics.00285.2006](https://doi.org/10.1152/physiolgenomics.00285.2006)
+- **PMID:** 17327495

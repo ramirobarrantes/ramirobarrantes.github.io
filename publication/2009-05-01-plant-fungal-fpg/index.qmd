@@ -1,0 +1,34 @@
+---
+title: "Plant and Fungal Fpg Homologs are Formamidopyrimidine DNA Glycosylases but not 8-Oxoguanine DNA Glycosylases"
+author: "Ramiro Barrantes-Reynolds"
+date: "2009-05-01"
+categories: [DNA repair, glycosylases, evolution]
+---
+
+## Citation
+
+Kathe, S.D., Barrantes-Reynolds, R., Jaruga, P., Newton, M.R., Burrows, C.J., Bandaru, V., Dizdaroglu, M., Bond, J.P., & Wallace, S.S. (2009). Plant and Fungal Fpg Homologs are Formamidopyrimidine DNA Glycosylases but not 8-Oxoguanine DNA Glycosylases. *DNA Repair*, 8(5), 643-653.
+
+## Abstract
+
+The formamidopyrimidine DNA glycosylase (Fpg) family removes oxidized purines from damaged DNA. This study characterizes plant and fungal Fpg homologs to determine substrate specificity and functional conservation across eukaryotic organisms.
+
+## Key Findings
+
+- Plant and fungal Fpg homologs efficiently remove formamidopyrimidines (FaPy lesions)
+- These enzymes show reduced activity toward 8-oxoguanine, unlike bacterial Fpg
+- Substrate preference differences reflect evolutionary adaptation to cellular environments
+- Results clarify the functional evolution of BER enzymes across domains of life
+
+## Role
+
+As a co-author, I contributed bioinformatics analysis and evolutionary comparisons of Fpg protein sequences.
+
+## Publication Details
+
+- **Journal:** DNA Repair
+- **Year:** 2009
+- **Volume/Issue:** 8(5)
+- **Pages:** 643-653
+- **DOI:** [10.1016/j.dnarep.2009.02.007](https://doi.org/10.1016/j.dnarep.2009.02.007)
+- **PMID:** 19285004

@@ -1,0 +1,43 @@
+---
+title: "Using Shifts in Amino Acid Frequency and Substitution Rate to Identify Latent Structural Characters in Base-Excision Repair Enzymes"
+author: "Ramiro Barrantes-Reynolds"
+date: "2011-10-06"
+categories: [bioinformatics, structural biology, evolution, DNA repair]
+---
+
+## Citation
+
+Barrantes-Reynolds, R., Bond, J.P., & Wallace, S.S. (2011). Using Shifts in Amino Acid Frequency and Substitution Rate to Identify Latent Structural Characters in Base-Excision Repair Enzymes. *PLOS ONE*, 6(10), e25246.
+
+## Abstract
+
+Base excision repair (BER) is a critical DNA maintenance pathway. This study develops and applies novel bioinformatics approaches to identify conserved structural and functional features in BER enzyme families by analyzing evolutionary patterns in amino acid composition and substitution rates.
+
+## Key Findings
+
+- Shifts in amino acid frequency patterns reveal evolutionary constraints on enzyme structure
+- Substitution rate analysis identifies functionally important protein regions
+- Method successfully identifies previously unrecognized structural homology among repair enzymes
+- Evolutionary analysis elucidates functional relationships between diverse BER glycosylases
+
+## Methods
+
+- Sequence alignment and comparative genomics
+- Amino acid frequency analysis
+- Substitution rate modeling
+- Phylogenetic inference
+- Structural validation
+
+## Role
+
+As first author, I led the development of the computational methodology, performed all bioinformatics analyses, and contributed to interpretation and manuscript preparation.
+
+## Publication Details
+
+- **Journal:** PLOS ONE
+- **Year:** 2011
+- **Volume/Issue:** 6(10)
+- **Article Number:** e25246
+- **DOI:** [10.1371/journal.pone.0025246](https://doi.org/10.1371/journal.pone.0025246)
+- **PMID:** 21998646
+- **Affiliation:** Department of Microbiology and Molecular Genetics, University of Vermont

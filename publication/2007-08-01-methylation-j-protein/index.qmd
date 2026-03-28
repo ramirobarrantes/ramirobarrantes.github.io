@@ -1,0 +1,35 @@
+---
+title: "Methylation-Controlled J Protein Promotes c-Jun Degradation to Prevent ABCB1 Transporter Expression"
+author: "Ramiro Barrantes-Reynolds"
+date: "2007-08-01"
+categories: [molecular biology, epigenetics, transporter expression]
+---
+
+## Citation
+
+Hatle, K.M., Neveu, W., Dienz, O., Rymarchyk, S., Barrantes, R., Hale, S., Farley, N., Lounsbury, K.M., Bond, J.P., Taatjes, D.J., & Rincon, M. (2007). Methylation-Controlled J Protein Promotes c-Jun Degradation to Prevent ABCB1 Transporter Expression. *Molecular and Cellular Biology*, 27(8), 2952-2966.
+
+## Abstract
+
+The multidrug transporter ABCB1 is a major factor in drug resistance. This study reveals an epigenetic regulatory mechanism in which a methylation-controlled J protein promotes degradation of the c-Jun transcription factor, thereby suppressing ABCB1 expression.
+
+## Key Findings
+
+- Methylation state of a J protein regulates its interaction with proteasomal machinery
+- The protein promotes ubiquitin-dependent degradation of c-Jun
+- c-Jun suppression prevents activation of ABCB1 promoter
+- Mechanism provides insight into epigenetic control of multidrug transporter expression
+
+## Role
+
+As a co-author, I contributed to molecular analysis and data interpretation.
+
+## Publication Details
+
+- **Journal:** Molecular and Cellular Biology
+- **Year:** 2007
+- **Volume/Issue:** 27(8)
+- **Pages:** 2952-2966
+- **DOI:** [10.1128/MCB.01636-06](https://doi.org/10.1128/MCB.01636-06)
+- **PMID:** 17296726
+- **PMCID:** PMC1899924

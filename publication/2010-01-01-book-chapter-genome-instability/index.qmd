@@ -1,0 +1,36 @@
+---
+title: "DNA Repair Mechanisms and Genomic Instability"
+author: "Ramiro Barrantes-Reynolds"
+date: "2010-01-01"
+categories: [DNA repair, genomic instability, book chapter]
+---
+
+## Citation
+
+Pumo, D.E., Barrantes-Reynolds, R., Kathe, S.D., Wallace, S.S., & Bond, J.P. (2010). DNA Repair Mechanisms and Genomic Instability. In *Genome Instability and Transgenerational Effects* (pp. 71-88). Kovalchuk, I. & Kovalchuk, O. (Eds.), Nova Science Publishers, Inc., New York.
+
+## Summary
+
+This book chapter provides a comprehensive review of DNA repair mechanisms and their role in maintaining genome stability. The contribution synthesizes research on base excision repair, focusing on molecular mechanisms and evolutionary conservation of repair enzymes across organisms.
+
+## Topics Covered
+
+- Overview of DNA damage types and sources
+- Base excision repair pathway components
+- Molecular mechanisms of DNA glycosylases
+- Evolutionary conservation of repair enzymes
+- Genome instability consequences of repair deficiencies
+- Links to transgenerational effects
+
+## Role
+
+As a co-author, I contributed to writing sections on base excision repair mechanisms and evolutionary perspectives on DNA repair enzymes.
+
+## Publication Details
+
+- **Book:** Genome Instability and Transgenerational Effects
+- **Editors:** Kovalchuk, I. & Kovalchuk, O.
+- **Publisher:** Nova Science Publishers, Inc.
+- **Year:** 2010
+- **Pages:** 71-88
+- **Location:** New York, NY

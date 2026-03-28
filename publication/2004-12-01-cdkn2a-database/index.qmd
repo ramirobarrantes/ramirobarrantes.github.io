@@ -1,0 +1,34 @@
+---
+title: "The CDKN2A Database: Integrating Allelic Variants with Evolution, Structure, Function, and Disease Association"
+author: "Ramiro Barrantes-Reynolds"
+date: "2004-12-01"
+categories: [bioinformatics, genomics, database, cancer genetics]
+---
+
+## Citation
+
+Murphy, J.A., Barrantes-Reynolds, R., Kocherlakota, R., Bond, J.P., & Greenblatt, M.S. (2004). The CDKN2A Database: Integrating Allelic Variants with Evolution, Structure, Function, and Disease Association. *Human Mutation*, 24(4), 296-304.
+
+## Abstract
+
+CDKN2A (p16) mutations are associated with familial melanoma and other cancers. This work presents a comprehensive database integrating genetic variants with evolutionary, structural, functional, and clinical information to facilitate variant interpretation.
+
+## Key Findings
+
+- Database consolidates CDKN2A mutations from literature and public sources
+- Integrates evolutionary conservation and protein structural information
+- Correlates variants with functional effects and disease phenotypes
+- Provides tools for predicting pathogenicity of novel variants
+
+## Role
+
+As a co-author, I contributed to data curation, bioinformatics analysis, and database development.
+
+## Publication Details
+
+- **Journal:** Human Mutation
+- **Year:** 2004
+- **Volume/Issue:** 24(4)
+- **Pages:** 296-304
+- **DOI:** [10.1002/humu.20085](https://doi.org/10.1002/humu.20085)
+- **PMID:** 15365992

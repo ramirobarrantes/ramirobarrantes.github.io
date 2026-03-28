@@ -1,0 +1,43 @@
+---
+title: "Clostridium Acetobutylicum 8-Oxoguanine DNA Glycosylase (Ogg) Differs from Eukaryotic Oggs with Respect to Opposite Base Discrimination"
+author: "Ramiro Barrantes-Reynolds"
+date: "2008-07-15"
+categories: [DNA repair, glycosylases, microbiology, evolution]
+---
+
+## Citation
+
+Robey-Bond, S.M., Barrantes-Reynolds, R., Bond, J.P., Wallace, S.S., & Bandaru, V. (2008). Clostridium Acetobutylicum 8-Oxoguanine DNA Glycosylase (Ogg) Differs from Eukaryotic Oggs with Respect to Opposite Base Discrimination. *Biochemistry*, 47(29), 7626-7636.
+
+## Abstract
+
+8-Oxoguanine is a common DNA lesion caused by oxidative damage. Ogg enzymes catalyze the removal of 8-oxoguanine paired with cytosine. This study characterizes the bacterial Ogg from *Clostridium acetobutylicum* and reveals important functional differences compared to eukaryotic enzymes.
+
+## Key Findings
+
+- *Clostridium* Ogg shows opposite base discrimination compared to eukaryotic enzymes
+- Bacterial enzyme preferentially excises 8-oxoguanine:adenine pairs
+- Eukaryotic enzymes preferentially remove 8-oxoguanine:cytosine pairs
+- Structural basis for substrate specificity differences
+- Evolutionary significance of base discrimination strategies
+
+## Methods
+
+- Enzyme kinetics and substrate specificity assays
+- DNA substrate synthesis and characterization
+- Biochemical analysis of lesion recognition
+- Structural comparisons with eukaryotic homologs
+
+## Role
+
+As a co-author, I contributed to bioinformatics analysis and evolutionary comparisons of Ogg proteins.
+
+## Publication Details
+
+- **Journal:** Biochemistry
+- **Year:** 2008
+- **Volume/Issue:** 47(29)
+- **Pages:** 7626-7636
+- **DOI:** [10.1021/bi800556y](https://doi.org/10.1021/bi800556y)
+- **PMID:** 18597494
+- **PMCID:** PMC2527661

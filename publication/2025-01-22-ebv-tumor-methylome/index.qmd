@@ -1,0 +1,33 @@
+---
+title: "The EBV-Positive Tumor Methylome Is Distinct from EBV-Negative in Diffuse Large B-Cell Lymphoma"
+author: "Ramiro Barrantes-Reynolds"
+date: "2025-01-22"
+categories: [epigenomics, cancer, methylome]
+---
+
+## Citation
+
+Volaric, A.K.; Barrantes-Reynolds, R.; Sahakyan, K.; Fedoriw, Y.; Frietze, S. (2025). The EBV-Positive Tumor Methylome Is Distinct from EBV-Negative in Diffuse Large B-Cell Lymphoma. *Cancers*, 14(2), 299.
+
+## Abstract
+
+This study investigates the epigenetic landscape of EBV-positive diffuse large B-cell lymphoma (DLBCL), comparing methylation patterns between EBV-positive and EBV-negative cases. The analysis reveals distinct methylome signatures that may contribute to disease pathogenesis and suggest therapeutic targets.
+
+## Key Findings
+
+- EBV-positive DLBCLs show a distinct methylation profile compared to EBV-negative cases
+- Specific genomic regions show differential methylation associated with viral status
+- Epigenetic patterns correlate with known oncogenic pathways in lymphoma
+- Results suggest potential biomarkers for patient stratification and treatment selection
+
+## Role
+
+As a co-author on this publication, I contributed bioinformatics analysis of methylation data and interpretation of genomic patterns.
+
+## Publication Details
+
+- **Journal:** Cancers
+- **Year:** 2025
+- **Volume/Issue:** 14(2)
+- **Article Number:** 299
+- **DOI:** [10.3390/cancers14020299](https://doi.org/10.3390/cancers14020299)
