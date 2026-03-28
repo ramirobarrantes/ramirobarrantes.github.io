@@ -25,12 +25,6 @@ I'm aware there is much more to inclusive and accessible design and I'm learning
 
 - [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
 
-In addition, I'll document the failures and any corrective actions as issues in the [GitHub repository](https://github.com/spcanelon/silvia/issues) housing the files used to build this site.
-
-## Work related to accessibility
-
-- Talk: [Revealing Room for Improvement in Accessibility within a Social Media Data Visualization Learning Community](/talk/2021-05-04-data-viz-accessibility/)
-- Blog post: [Resources for Data Viz Accessibility](/blog/2021-09-23-data-viz-a11y/)
-- Blog post: [Auditing for Web Accessibility](/blog/2021-06-02-wave-audit-1/)
+In addition, I'll document the failures and any corrective actions as issues in the [GitHub repository](https://github.com/ramirobarrantes/website/issues) housing the files used to build this site.
 
 [^1]: For more on font accessibility, I recommend the talk [Don't Believe the Type!](https://youtu.be/h8IOqUl1zII?t=1029) by [The Readability Group](https://medium.com/the-readability-group).
