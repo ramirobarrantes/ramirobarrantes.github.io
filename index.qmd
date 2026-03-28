@@ -1,15 +1,15 @@
 ---
-title: "Silvia Canelón, PhD"
-pagetitle: "Silvia Canelón, PhD"
-subtitle: "Data Scientist at the University of Pennsylvania"
-image: assets/silvia/img/skyline-philly-dual.png
-image-alt: "Abstract data visualization depicting tall buildings in Philadelphia as a circle. The text inside the circle reads Philadelphia Skyline"
+title: "Ramiro Barrantes-Reynolds, PhD"
+pagetitle: "Ramiro Barrantes-Reynolds, PhD"
+subtitle: "Bioinformatics Scientist at the University of Vermont"
+image: assets/ramiro/img/hero-image.png
+image-alt: "A colorful abstract representation of genomic data and bioinformatics analysis"
 
 twitter-card:
-    title: Silvia Canelón, PhD
+    title: Ramiro Barrantes-Reynolds, PhD
     description: |
-      Researcher, educator, and journalist with data science expertise.
-    image: assets/silvia/img/silvia-social.png
+      Bioinformatics scientist and data scientist specializing in genomics, epigenomics, and Bayesian statistics.
+    image: assets/ramiro/img/ramiro-social.png
 
 about:
   template: solana
@@ -19,25 +19,18 @@ about:
     - text: "{{< fa universal-access >}}"
       aria-label: "Accessibility statement"
       href: accessibility.qmd
-    - text: "{{< fa brands bluesky >}}"
-      aria-label: "Bluesky"
-      href: https://bsky.app/profile/silviacanelon.com
     - icon: linkedin
       aria-label: "LinkedIn"
-      href: https://linkedin.com/in/spcanelon
+      href: https://linkedin.com/in/ramirobarrantes
     - icon: github
       aria-label: GitHub
-      href: https://github.com/spcanelon
-    # - icon: mastodon
-    #   href: https://hachyderm.io/@spcanelon
+      href: https://github.com/ramirobarrantes
     - text: "{{< ai orcid >}}"
-      href: https://orcid.org/0000-0003-1709-1394
+      aria-label: "ORCID"
+      href: https://orcid.org/
     - text: "{{< ai google-scholar >}}"
       aria-label: "Google Scholar"
-      href: https://scholar.google.com/citations?user=GAzkvpcAAAAJ&hl=en&oi=ao
-    - text: "{{< fa envelope >}}"
-      aria-label: Newsletter
-      href: https://buttondown.com/spcanelon
+      href: https://scholar.google.com/
 page-layout: full
 
 execute: 
@@ -56,7 +49,7 @@ resources:
 
 ::: {#hero-heading}
 
-I am a researcher, R educator, and data journalist with a love for community. My **research** leverages electronic health record and spatial data to study the intersection of health equity and urban nature. My **journalism** and **community** projects value the partnership between open source tools and data literacy as a way to build power and effect change.
+I am a bioinformatics scientist and data scientist with expertise in genomics, epigenomics, and Bayesian statistics. My **research** focuses on collaborative bioinformatics and computational biology, working at the intersection of quantitative methods and biomedical research. My **work** emphasizes reproducibility, scalability, and effective communication with collaborators through modern computational infrastructure and open-source tools.
 
 [Learn more about me &rarr;](/about){.about-links .subtitle}
 
