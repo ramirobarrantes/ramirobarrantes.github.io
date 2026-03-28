@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Silvia Canelón – Silvia Canelón</title>
+<title>Ramiro Barrantes-Reynolds – Ramiro Barrantes-Reynolds</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../assets/silvia/img/logo_rounded.svg" rel="icon" type="image/svg+xml">
+<link href="../assets/ramiro/img/logo_rounded.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -41,8 +41,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-ed04999718f06b735b1f8009dce43b94.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3f60f3cf1f78902df66c190445453e0e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-416e4b80bdba74108e088747af248e83.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ce4388c49f751c25a6f6ac83b50516a4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-c98e5bee35d607cd8a9ba15764acf21b.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
@@ -105,34 +105,6 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-talk .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-talk'] = new List('listing-talk', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-blog .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -170,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -187,6 +159,8 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+
+
 <link rel="stylesheet" href="../assets/about.css">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -219,15 +193,15 @@ window.Quarto = {
 };
 </script>
 
-<meta name="twitter:title" content="Silvia Canelón">
-<meta name="twitter:description" content="Data Scientist &amp; Journalist">
-<meta name="twitter:image" content="https://silviacanelon.com/about/sidebar/avatar.png">
-<meta name="twitter:creator" content="@spcanelon">
-<meta name="twitter:site" content="@spcanelon">
+<meta name="twitter:title" content="Ramiro Barrantes-Reynolds">
+<meta name="twitter:description" content="Bioinformatics Scientist &amp; Data Scientist">
+<meta name="twitter:image" content="https://ramirobarrantes.com/about/sidebar/avatar.png">
+<meta name="twitter:creator" content="@ramirobarrantes">
+<meta name="twitter:site" content="@ramirobarrantes">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="500">
-<meta name="twitter:image-width" content="500">
-<meta name="twitter:image:alt" content="Smiling woman with a tan complexion, dark eyes, and dark long wavy hair styled to one side">
+<meta name="twitter:image-height" content="640">
+<meta name="twitter:image-width" content="552">
+<meta name="twitter:image:alt" content="Portrait of Ramiro Barrantes-Reynolds">
 </head>
 
 <body class="nav-fixed">
@@ -238,10 +212,10 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/silvia/img/logo_rounded.svg" alt="" class="navbar-logo">
+    <img src="../assets/ramiro/img/logo_rounded.svg" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Silvia Canelón</span>
+    <span class="navbar-title">Ramiro Barrantes-Reynolds</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -259,21 +233,17 @@ window.Quarto = {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../talk/index.html"> 
-<span class="menu-text">Talks</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../publication/index.html"> 
+    <a class="nav-link" href="../publication/index.qmd"> 
 <span class="menu-text">Publications</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://www.github.com/spcanelon/silvia" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="https://www.github.com/ramirobarrantes" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -292,12 +262,12 @@ window.Quarto = {
 
 <div class="quarto-about-trestles column-page">
   <div class="about-entity">
-    <img src="sidebar/avatar.png" alt="Smiling woman with a tan complexion, dark eyes, and dark long wavy hair styled to one side" class="about-image
+    <img src="sidebar/avatar.png" alt="Portrait of Ramiro Barrantes-Reynolds" class="about-image
   rounded " style="width: 14em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Silvia Canelón</h1>
-<p class="subtitle lead">Data Scientist &amp; Journalist</p>
+<h1 class="title">Ramiro Barrantes-Reynolds</h1>
+<p class="subtitle lead">Bioinformatics Scientist &amp; Data Scientist</p>
 </div>
 <div class="quarto-title-meta column-page">
   </div>
@@ -306,35 +276,29 @@ window.Quarto = {
   <a href="/accessibility.html" class="about-link" rel="" target="">
      <span class="about-link-text"><i class="fa-solid fa-universal-access" aria-label="universal-access"></i></span>
   </a>
-  <a href="https://bsky.app/profile/silviacanelon.com" class="about-link" rel="" target="">
-     <span class="about-link-text"><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></span>
-  </a>
-  <a href="https://linkedin.com/in/spcanelon" class="about-link" rel="" target="">
+  <a href="https://linkedin.com/in/ramirobarrantes" class="about-link" rel="" target="">
     <i class="bi bi-linkedin"></i>
      <span class="about-link-text"></span>
   </a>
-  <a href="https://github.com/spcanelon" class="about-link" rel="" target="">
+  <a href="https://github.com/ramirobarrantes" class="about-link" rel="" target="">
     <i class="bi bi-github"></i>
      <span class="about-link-text"></span>
   </a>
-  <a href="https://orcid.org/0000-0003-1709-1394" class="about-link" rel="" target="">
+  <a href="https://orcid.org/" class="about-link" rel="" target="">
      <span class="about-link-text"><i class="ai  ai-orcid"></i></span>
   </a>
-  <a href="https://scholar.google.com/citations?user=GAzkvpcAAAAJ&amp;hl=en&amp;oi=ao" class="about-link" rel="" target="">
+  <a href="https://scholar.google.com/" class="about-link" rel="" target="">
      <span class="about-link-text"><i class="ai  ai-google-scholar"></i></span>
-  </a>
-  <a href="https://buttondown.com/spcanelon" class="about-link" rel="" target="">
-     <span class="about-link-text"><i class="fa-solid fa-envelope" aria-label="envelope"></i></span>
   </a>
 </div>
   </div>
   <div class="about-contents"><div id="hero-heading">
 <div class="h1">
-Hey, I’m happy you’re here
+Welcome
 </div>
 <p>Thanks for stopping by!</p>
-<p>I work as a data scientist at the <a href="https://www.urbanhealthlab.org/">Urban Health Lab</a> at the University of Pennsylvania. My research interests include applications of biomedical and spatial data science in the public and population health fields.</p>
-<p>My current projects use electronic health record (EHR) and geospatial data to explore how the neighborhood environment and access to urban nature can impact the health of individuals in Philadelphia. Learn more about my research interests in <a href="../publication">publications</a>.</p>
+<p>I am a Bioinformatics Scientist at the <a href="https://www.uvm.edu/">University of Vermont</a>, Department of Microbiology and Molecular Genetics. My research focuses on collaborative bioinformatics and computational biology, spanning variant analysis, epigenomics, virus typing, transcriptomics, and structural biology. I work extensively with workflow management systems, containerized environments, and high-performance computing to enforce reproducibility and scalability.</p>
+<p>I have been integrating quantitative sciences and computational methods with biomedical research since 2001, with a focus on Bayesian statistical methods, machine learning, and data science. Learn more about my work in <a href="../publication">publications</a>.</p>
 <p>Get in touch by <a href="../contact.html">sending me a note</a>! <i class="fa-solid fa-feather-pointed" aria-label="feather-pointed"></i></p>
 </div></div>
 </div>
@@ -343,25 +307,32 @@ Hey, I’m happy you’re here
 <h2 data-anchor-id="about-me">About me</h2>
 <div class="grid">
 <div id="about-me-1" class="g-col-6">
-<p><strong>Biomedical engineer turned informaticist, curious about all intersections of data and society.</strong></p>
-<p>I enjoy using <a href="https://www.r-project.org/about.html">R</a> to optimize my data science workflow and have noticed it making guest appearances elsewhere in my life. I’m certified as an <a href="https://education.rstudio.com/trainers/people/canelon+silvia/">RStudio Tidyverse Instructor</a> and am passionate about R education and data literacy as ways to build power in communities. Keep up with my R tinkering in my <a href="../blog">blog</a> and presentations in <a href="../talk">talks</a>.</p>
+<p><strong>Bioinformatician and data scientist with deep expertise in computational genomics and Bayesian methods.</strong></p>
+<p>I work with R, Python, and workflow management systems like Nextflow to build scalable, reproducible computational pipelines. I’m passionate about effective communication with collaborators and mentor students in bioinformatics methods. My work spans sequence analysis, phylogenetics, epigenomics, and applied machine learning for biomedical research.</p>
 <ul class="fa-ul">
 <li>
-<span class="fa-li"><i class="fa-solid fa-certificate"></i></span><a href="https://education.rstudio.com/trainers/people/canelon+silvia/">Tidyverse Instructor Certification</a> ∙ RStudio, PBC ∙ 2020
+<span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D.&nbsp;in Cell and Molecular Biology (Bioinformatics/Statistics) ∙ University of Vermont ∙ 2011
+</li>
+<li>
+<span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. in Pure Mathematics ∙ University of Costa Rica ∙ 1999
+</li>
+<li>
+<span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. in Computer Science ∙ University of Costa Rica ∙ 1999
 </li>
 </ul>
 </div>
 <div id="about-me-2" class="g-col-6">
-<p>Prior to joining the Urban Health Lab, I developed novel data mining methods to extract meaningful information from the EHR and study health outcomes and disparities in pregnant populations. I’m particularly interested in research that combines biomedical data science with open data sources in ways that prioritize health equity in communities.</p>
+<p>Since 2001, I’ve worked at the intersection of bioinformatics and collaborative science. I spent ten years in industry as a statistician at a consulting firm while contributing part-time to UVM, gaining expertise in experimental design and rigorous client-facing work. More recently, I lead bioinformatics infrastructure projects, including the development and deployment of Nextflow pipelines through the Seqera platform, and have built web platforms for computational analysis.</p>
+<p>I’m deeply interested in artificial intelligence and eager to learn and apply these methods in research. Beyond work, I’m committed to service through meditation and non-violent communication practices.</p>
 <ul class="fa-ul">
 <li>
-<span class="fa-li"><i class="fa-solid fa-certificate"></i></span><a href="https://www.med.upenn.edu/mbmi/certificate.html">Certificate in Biomedical Informatics</a> ∙ University of Pennsylvania ∙ 2019
+<span class="fa-li"><i class="fa-solid fa-briefcase"></i></span>Bioinformatics Scientist ∙ Vermont Integrative Genomics Resource ∙ UVM ∙ 2022-present
 </li>
 <li>
-<span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D.&nbsp;in Biomedical Engineering ∙ Purdue University ∙ 2018
+<span class="fa-li"><i class="fa-solid fa-briefcase"></i></span>Bioinformatics Scientist ∙ Translational Global Infectious Disease Research ∙ UVM ∙ 2022-present
 </li>
 <li>
-<span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. in Biomedical Engineering ∙ University of Minnesota ∙ 2012
+<span class="fa-li"><i class="fa-solid fa-briefcase"></i></span>Bioinformatics Programmer ∙ University of Vermont ∙ 2001-2006
 </li>
 </ul>
 </div>
@@ -375,18 +346,16 @@ Hey, I’m happy you’re here
 <h4 data-anchor-id="projects">Projects</h4>
 <div id="listing-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="am91cm5hbGlzbSUyQ1IlMkNkYXRhJTIwdml6" data-listing-date-sort="1761019200000">
-<a href="https://www.kensingtonvoice.com/new-fast-track-court-for-kensington-lands-most-with-warrants-back-into-the-cycle-of-addiction-and-homelessness/" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="YmlvaW5mb3JtYXRpY3MlMkNuZXh0ZmxvdyUyQ25mLWNvcmUlMkNnZW5vbWljcw==" data-listing-date-sort="1774670400000" data-listing-file-modified-sort="1774716869182" data-listing-date-modified-sort="1774670400000" data-listing-reading-time-sort="2" data-listing-word-count-sort="229">
+<a href="../project/2026-03-28-nf-core-coptr-modules/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../project/external-items/2025-10-21-kv-wellness-court/featured.png" class="thumbnail-image card-img" style="height: 200;">
-</p>
+<div class="listing-item-img-placeholder card-img-top" style="height: 200;">&nbsp;</div>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-New Kensington ‘fast-track court’ lands most with warrants, back into the cycle of addiction and homelessness<br><em>Photo by Solmaira Valerio</em>
+nf-core Modules for Copy Number Trajectory Analysis (coptr)
 </h5>
 <div class="card-subtitle listing-subtitle">
-Kensington Voice
+Five Nextflow modules for analyzing copy number variation trajectories from sequencing data
 </div>
 </div>
 </div>
@@ -399,51 +368,18 @@ No matching items
 </div>
 <p><a href="../project" class="about-links subtitle">See all →</a></p>
 </section>
-<section id="talks" class="level4 g-col-3">
-<h4 data-anchor-id="talks">Talks</h4>
-<div id="listing-talk" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="ZGF0YSUyMHZpeiUyQ2FjY2Vzc2liaWxpdHklMkNlZHVjYXRpb24lMkNS" data-listing-date-sort="1757419200000" data-listing-file-modified-sort="1773088790223" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="95">
-<a href="../talk/2025-09-09-ropensci-a11y/index.html" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="../talk/2025-09-09-ropensci-a11y/index.html" class="quarto-grid-link">
-<p class="card-img-top">
-<img loading="lazy" src="../talk/2025-09-09-ropensci-a11y/featured.jpg" class="thumbnail-image card-img" style="height: 200;">
-</p>
-</a><div class="card-body post-contents"><a href="../talk/2025-09-09-ropensci-a11y/index.html" class="quarto-grid-link">
-<h5 class="no-anchor card-title listing-title">
-Improving Accessibility In Your Work
-</h5>
-</a><div class="card-subtitle listing-subtitle"><a href="../talk/2025-09-09-ropensci-a11y/index.html" class="quarto-grid-link">
-</a><a href="https://ropensci.org/events/coworking-2025-09/">rOpenSci</a> social coworking and office hours about accessibility
-</div>
-</div>
-</div>
-
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-<p><a href="../talk" class="about-links subtitle">See all →</a></p>
-</section>
 <section id="blog" class="level4 g-col-3">
 <h4 data-anchor-id="blog">Blog</h4>
 <div id="listing-blog" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="UiUyQ3F1YXJ0byUyQ3dlYnNpdGU=" data-listing-date-sort="1695960000000" data-listing-file-modified-sort="1773088789397" data-listing-date-modified-sort="1697083200000" data-listing-reading-time-sort="19" data-listing-word-count-sort="3731">
-<a href="../blog/2023-09-29-hello-quarto/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="c3RhdGlzdGljcyUyQ21vZGVsaW5n" data-listing-date-sort="1719547200000" data-listing-file-modified-sort="1774716242103" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="55">
+<a href="../blog/2024-06-28-berglund-derivation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../blog/2023-09-29-hello-quarto/featured.jpg" class="thumbnail-image card-img" style="height: 200;">
-</p>
+<div class="listing-item-img-placeholder card-img-top" style="height: 200;">&nbsp;</div>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Hello Quarto: Porting my Website from Hugo Apéro
+The Derivation of the Berglund Estimator for the Diffusion Constant
 </h5>
-<div class="card-subtitle listing-subtitle">
-Notes from porting my personal Blogdown website to Quarto
-</div>
 </div>
 </div>
 </a>
@@ -459,20 +395,7 @@ No matching items
 <h4 data-anchor-id="publications">Publications</h4>
 <div id="listing-publication" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="cmVzZWFyY2glMkNFSFIlMkNUQkk=" data-listing-date-sort="1754020800000" data-listing-file-modified-sort="1773088789867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="256">
-<a href="../publication/2025-08-01-tbi-survival/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../publication/2025-08-01-tbi-survival/featured.png" class="thumbnail-image card-img" style="height: 200;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Risk of Mortality Among Adult Females Diagnosed with Traumatic Brain Injury in an Academic Medical System
-</h5>
-</div>
-</div>
-</a>
-</div>
+
 </div>
 <div class="listing-no-matching d-none">
 No matching items
@@ -715,7 +638,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/silviacanelon\.com");
+      var filterRegex = new RegExp("https:\/\/ramirobarrantes\.com");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -1042,16 +965,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<script src="https://utteranc.es/client.js" repo="spcanelon/silvia" issue-term="title" theme="body-light" crossorigin="anonymous" async="">
+<script src="https://utteranc.es/client.js" repo="ramirobarrantes/website" issue-term="title" theme="body-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2024 Silvia Canelón ∙ Made with <a href="https://quarto.org">Quarto</a></p>
+<p>© 2026 Ramiro Barrantes-Reynolds ∙ Made with <a href="https://quarto.org">Quarto</a></p>
 </div>   
     <div class="nav-footer-center">
-<p><a class="link-dark me-1" href="../accessibility.html" title="Accessibility commitment" target="_blank" rel="noopener"><i class="fa-solid fa-universal-access" aria-label="universal-access"></i></a> <a class="link-dark me-1" href="https://bsky.app/profile/silviacanelon.com" title="Bluesky" target="_blank" rel="noopener"><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></a> <a class="link-dark me-1" href="https://linkedin.com/in/spcanelon" title="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-label="linkedin"></i></a> <a class="link-dark me-1" href="https://github.com/spcanelon" title="github" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-label="github"></i></a> <a class="link-dark me-1" href="https://orcid.org/0000-0003-1709-1394" title="orcid" target="_blank" rel="noopener"><i class="ai  ai-orcid"></i></a> <a class="link-dark me-1" href="https://scholar.google.com/citations?user=GAzkvpcAAAAJ&amp;hl=en&amp;oi=ao" title="Google Scholar" target="_blank" rel="noopener"><i class="ai  ai-google-scholar"></i></a> <a class="link-dark me-1" href="https://buttondown.com/spcanelon" title="Newsletter" target="_blank" rel="noopener"><i class="fa-solid fa-envelope" aria-label="envelope"></i></a></p>
+<p><a class="link-dark me-1" href="../accessibility.html" title="Accessibility commitment" target="_blank" rel="noopener"><i class="fa-solid fa-universal-access" aria-label="universal-access"></i></a> <a class="link-dark me-1" href="https://linkedin.com/in/ramirobarrantes" title="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-label="linkedin"></i></a> <a class="link-dark me-1" href="https://github.com/ramirobarrantes" title="github" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-label="github"></i></a> <a class="link-dark me-1" href="https://orcid.org/" title="ORCID" target="_blank" rel="noopener"><i class="ai  ai-orcid"></i></a> <a class="link-dark me-1" href="https://scholar.google.com/" title="Google Scholar" target="_blank" rel="noopener"><i class="ai  ai-google-scholar"></i></a></p>
 </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">

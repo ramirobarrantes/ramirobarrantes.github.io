@@ -81,10 +81,10 @@ format:
     theme:
       light:
         - cosmo
-        - ramiro-theme-light.scss
+        - assets/ramiro-theme-light.scss
       dark:
         - cosmo
-        - ramiro-theme-dark.scss
+        - assets/ramiro-theme-dark.scss
     highlight-style: a11y
     code-link: true
     pagetitle: "{{< meta title >}}"
