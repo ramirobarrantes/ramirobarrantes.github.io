@@ -2,14 +2,11 @@
 title: "Ramiro Barrantes-Reynolds, PhD"
 pagetitle: "Ramiro Barrantes-Reynolds, PhD"
 subtitle: "Bioinformatics Scientist at the University of Vermont"
-image: assets/ramiro/img/hero-image.png
-image-alt: "A colorful abstract representation of genomic data and bioinformatics analysis"
 
 twitter-card:
     title: Ramiro Barrantes-Reynolds, PhD
     description: |
       Bioinformatics scientist and data scientist specializing in genomics, epigenomics, and Bayesian statistics.
-    image: assets/ramiro/img/ramiro-social.png
 
 about:
   template: solana
