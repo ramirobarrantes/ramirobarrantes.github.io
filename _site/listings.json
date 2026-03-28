@@ -1,18 +1,8 @@
 [
   {
-    "listing": "/project/index-CONFLICT-1.html",
+    "listing": "/project/index.html",
     "items": [
-      "/project/2026-03-28-nf-core-coptr-modules/index.html"
-    ]
-  },
-  {
-    "listing": "/about/index.html",
-    "items": [
-      "/project/2026-03-28-nf-core-coptr-modules/index.html",
-      "/blog/2024-06-28-berglund-derivation/index.html",
-      "/blog/2023-10-27-miseq/index.html",
-      "/blog/2023-10-20-mageck-mle/index.html",
-      "/blog/2022-10-28-kullback-leibler/index.html"
+      "/project/2024-12-15-nf-core-coptr-modules/index.html"
     ]
   },
   {
@@ -25,9 +15,13 @@
     ]
   },
   {
-    "listing": "/project/index.html",
+    "listing": "/about/index.html",
     "items": [
-      "/project/2026-03-28-nf-core-coptr-modules/index.html"
+      "/project/2024-12-15-nf-core-coptr-modules/index.html",
+      "/blog/2024-06-28-berglund-derivation/index.html",
+      "/blog/2023-10-27-miseq/index.html",
+      "/blog/2023-10-20-mageck-mle/index.html",
+      "/blog/2022-10-28-kullback-leibler/index.html"
     ]
   }
 ]
