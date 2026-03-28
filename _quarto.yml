@@ -45,9 +45,6 @@ website:
       - text: Projects
         aria-label: "Project Portfolio"
         href: project/index.qmd
-      - text: Talks
-        aria-label: "Invited Talks"
-        href: talk/index.qmd  
       - text: Blog
         aria-label: "Meeting People Where They R"
         href: blog/index.qmd
