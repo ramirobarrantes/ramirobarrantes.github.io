@@ -1,10 +1,13 @@
 /*-- scss:defaults --*/
 
-// Colors
-$primary:       #2c5aa0;
-$secondary:     #6c757d;
-$accent:        #4c7a8e;
-$body-color:    #212529;
+// Colors - Warm, happy palette inspired by Claude
+// Primary: Warm violet/purple
+// Secondary: Warm orange
+// Accent: Warm pink/magenta
+$primary:       #7c3aed;
+$secondary:     #f97316;
+$accent:        #ec4899;
+$body-color:    #1f2937;
 $body-bg:       #ffffff;
 
 // Fonts
@@ -16,26 +19,26 @@ $font-family-monospace:   SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 // Links
 $link-color:              $secondary;
 $link-decoration:         underline;
-$link-hover-color:        darken($secondary, 10%);
+$link-hover-color:        darken($secondary, 15%);
 $link-hover-decoration:   none;
 
 // Code
 $code-color:              $primary;
-$code-bg:                 #f8f9fa;
+$code-bg:                 #f3f4f6;
 
 // Tables
-$table-border-color:      lighten($primary, 40%);
+$table-border-color:      #ddd5f7;
 
 /*-- scss:rules --*/
 
 // Code blocks
 div.sourceCode {
   background-color: #ffffff;
-  border: 1px solid #ebebeb;
+  border: 1px solid #e5e7eb;
   padding: 0.5em;
 }
 
 pre {
   background-color: #ffffff;
-  border: 1px solid #ebebeb;
+  border: 1px solid #e5e7eb;
 }

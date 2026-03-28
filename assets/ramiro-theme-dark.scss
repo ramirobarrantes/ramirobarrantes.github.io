@@ -1,11 +1,12 @@
 /*-- scss:defaults --*/
 
-// Colors (dark mode)
-$primary:       #6ba3d6;
-$secondary:     #a0a8b3;
-$accent:        #7a9bbb;
-$body-color:    #e4e4e4;
-$body-bg:       #202020;
+// Colors (dark mode) - Warm, happy palette
+// Lighter versions of the light mode colors for dark background
+$primary:       #a78bfa;
+$secondary:     #fb923c;
+$accent:        #f472b6;
+$body-color:    #f3f4f6;
+$body-bg:       #111827;
 
 // Fonts
 $font-family-sans-serif:  "Red Hat Text", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -21,21 +22,21 @@ $link-hover-decoration:   none;
 
 // Code
 $code-color:              $primary;
-$code-bg:                 #2d2d2d;
+$code-bg:                 #1f2937;
 
 // Tables
-$table-border-color:      lighten($primary, 20%);
+$table-border-color:      #374151;
 
 /*-- scss:rules --*/
 
 // Code blocks
 div.sourceCode {
-  background-color: #2d2d2d;
-  border: 1px solid #444444;
+  background-color: #1f2937;
+  border: 1px solid #374151;
   padding: 0.5em;
 }
 
 pre {
-  background-color: #2d2d2d;
-  border: 1px solid #444444;
+  background-color: #1f2937;
+  border: 1px solid #374151;
 }
