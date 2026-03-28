@@ -11,7 +11,7 @@ $accent-dark:                #be185d;
 
 // Body
 $body-color:                 #1f2937;
-$body-bg:                    #ffffff;
+$body-bg:                    #f9fafb;
 $body-secondary:             #6C757D;
 
 // Fonts
@@ -32,12 +32,12 @@ $table-group-separator-color: lighten($primary, 40%);
 $table-caption-color:        $body-secondary;
 
 // Code blocks
-$code-block-bg:              white;
-$code-block-border:          #ebebeb;
+$code-block-bg:              #ffffff;
+$code-block-border:          #e5e7eb;
 
 // Inline code
 $code-color:                 $primary-dark;
-$code-bg:                    #fef3c7;
+$code-bg:                    #fef08a;
 
 // Table of contents
 $toc-color:                  $link-color;
@@ -61,6 +61,7 @@ $gray-200:                   lighten($primary, 60%);
 div.sourceCode {
   background-color: $code-block-bg;
   border: 1px solid $code-block-border;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 // inline code
