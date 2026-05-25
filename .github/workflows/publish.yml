@@ -42,11 +42,16 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
+          mkdir -p deployment
+          cp -r _site/* deployment/
+          cd deployment
+          git init
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout --orphan gh-pages
-          git rm -rf .
-          cp -r _site/* .
           git add .
-          git commit -m "Deploy site from main branch"
+          git commit -m "Deploy site"
+          git branch -M gh-pages
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
           git push -f origin gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
