@@ -24,3 +24,10 @@ Thumbs.db
 
 # Generated files from pre-render scripts
 gitlab-heatmap.html
+
+# Quarto build outputs
+_site/
+_freeze/
+
+# Claude session files
+.claude/

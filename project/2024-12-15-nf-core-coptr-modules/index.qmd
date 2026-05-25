@@ -5,7 +5,6 @@ date: "2024-12-15"
 date-modified: "2024-12-15"
 categories: [bioinformatics, nextflow, nf-core, genomics]
 subtitle: "Five Nextflow modules for analyzing copy number variation trajectories from sequencing data"
-description: "Contributed modules to nf-core for copy number trajectory (coptr) analysis"
 links:
   - icon: github
     name: nf-core modules
@@ -17,9 +16,7 @@ links:
 
 ## Overview
 
-I have contributed five Nextflow modules to the [nf-core](https://nf-co.re/) community collection for analyzing copy number trajectories from genomic sequencing data. These modules implement the core steps of the coptr workflow, enabling reproducible, containerized analysis of copy number variation dynamics.
-
-## Contributed Modules
+I have contributed five Nextflow modules to the [nf-core](https://nf-co.re/) community collection for analyzing copy number trajectories from genomic sequencing data. These modules implement the core steps of the coptr workflow:
 
 ### 1. [coptr_index](https://nf-co.re/modules/coptr_index/)
 Prepares reference genome index files for coptr analysis.
@@ -35,28 +32,3 @@ Estimates copy number trajectories using statistical methods to infer temporal d
 
 ### 5. [coptr_merge](https://nf-co.re/modules/coptr_merge/)
 Merges and consolidates results from multiple samples for comparative analysis.
-
-## About coptr
-
-Copy number trajectory (coptr) analysis is a computational approach for studying copy number variation dynamics in genomic samples. This is particularly useful in cancer genomics, microbial evolution, and other contexts where understanding temporal or population-level changes in copy number is important.
-
-## Key Features
-
-- **nf-core Standard**: All modules follow [nf-core best practices](https://nf-co.re/developers/module_guidelines) for consistency and reproducibility
-- **Containerized**: Each module includes Docker and Singularity container definitions
-- **Tested**: Modules include comprehensive test data and assertions
-- **Documented**: Full documentation and parameter descriptions in each module
-
-## Integration
-
-These modules are designed to be used individually or as part of a larger Nextflow pipeline. They can be included in any DSL2 workflow using:
-
-```groovy
-include { COPTR_INDEX; COPTR_MAP; COPTR_EXTRACT; COPTR_ESTIMATE; COPTR_MERGE } from 'modules/nf-core/coptr'
-```
-
-## Links
-
-- [Browse all nf-core coptr modules](https://nf-co.re/modules/coptr)
-- [nf-core Modules Hub](https://nf-co.re/modules)
-- [Nextflow Documentation](https://nextflow.io/)

@@ -1,0 +1,54 @@
+/* Projects listing page: visual separation of active vs. retired projects */
+
+.quarto-grid-item:nth-child(1) {
+  position: relative;
+  border-top: 4px solid #7c3aed;
+  padding-top: 12px;
+}
+
+.quarto-grid-item:nth-child(1)::before {
+  content: "ACTIVE";
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7c3aed;
+  background: #f9fafb;
+  padding: 0 6px;
+}
+
+/* Add a visual gap and "RETIRED" label before the second card */
+.quarto-grid-item:nth-child(2) {
+  position: relative;
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.quarto-grid-item:nth-child(2)::before {
+  content: "RETIRED PROJECTS";
+  position: absolute;
+  top: -14px;
+  left: 12px;
+  font-size: 0.60rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  background: #f9fafb;
+  padding: 0 6px;
+}
+
+@media (max-width: 768px) {
+  .quarto-grid-item:nth-child(2) {
+    margin-top: 24px;
+  }
+
+  .quarto-grid-item:nth-child(2)::before {
+    font-size: 0.55rem;
+    top: -12px;
+  }
+}

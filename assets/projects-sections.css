@@ -1,0 +1,56 @@
+/* Projects listing page: visual separation of active vs. retired projects */
+
+/* Target the quarto grid container and use nth-child selectors to style sections */
+.quarto-grid-item:nth-child(1)::before {
+  content: "ACTIVE PROJECTS";
+  display: block;
+  position: relative;
+  top: -80px;
+  margin-bottom: -60px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #7c3aed;
+  padding: 20px 0 10px 0;
+  border-top: 3px solid #ddd0f5;
+}
+
+/* Divider after the first card (nf-core coptr, the active project) */
+.quarto-grid-item:nth-child(1)::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd0f5;
+  padding-bottom: 30px;
+}
+
+.quarto-grid-item:nth-child(2)::before {
+  content: "RETIRED PROJECTS";
+  display: block;
+  position: relative;
+  top: -80px;
+  margin-bottom: -60px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  padding: 20px 0 10px 0;
+}
+
+@media (max-width: 768px) {
+  .quarto-grid-item:nth-child(1)::before,
+  .quarto-grid-item:nth-child(2)::before {
+    top: -60px;
+    margin-bottom: -40px;
+    font-size: 0.60rem;
+  }
+
+  .quarto-grid-item:nth-child(1)::after {
+    top: 30px;
+    margin-bottom: 15px;
+  }
+}
