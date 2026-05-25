@@ -20,7 +20,7 @@ about:
       href: https://github.com/ramirobarrantes
     - text: "{{< ai orcid >}}"
       aria-label: "ORCID"
-      href: https://orcid.org/
+      href: https://orcid.org/0000-0002-3653-0922
     - text: "{{< ai google-scholar >}}"
       aria-label: "Google Scholar"
       href: https://scholar.google.com/

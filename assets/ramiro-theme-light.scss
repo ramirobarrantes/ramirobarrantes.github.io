@@ -1,24 +1,24 @@
 /*-- scss:defaults --*/
 
-// Colors - Warm, happy palette inspired by Claude
-$primary:                    #7c3aed;
-$secondary:                  #f97316;
-$primary-dark:               #6d28d9;
-$secondary-light:            #fb923c;
-$accent:                     #ec4899;
-$accent-light:               #f472b6;
-$accent-dark:                #be185d;
+// Colors - Peach theme (Hugo Apéro inspired)
+$primary:                    #D97706;
+$secondary:                  #EA580C;
+$primary-dark:               #B45309;
+$secondary-light:            #F59E0B;
+$accent:                     #D97706;
+$accent-light:               #F59E0B;
+$accent-dark:                #B45309;
 
 // Body
-$body-color:                 #1f2937;
-$body-bg:                    #f9fafb;
-$body-secondary:             #6C757D;
+$body-color:                 #374151;
+$body-bg:                    #FEF9F3;
+$body-secondary:             #6B7280;
 
-// Fonts
-$font-family-sans-serif:     "Red Hat Text", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$headings-font-weight:       400;
+// Fonts - Hugo Apéro style (Fraunces for headings, Commissioner for body)
+$font-family-sans-serif:     "Commissioner", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$headings-font-weight:       600;
 $font-family-monospace:      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$headings-font-family:       "Petrona";
+$headings-font-family:       "Fraunces";
 
 // Links
 $link-color:                 $secondary;

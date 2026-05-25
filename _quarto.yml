@@ -62,7 +62,7 @@ website:
       <a class="link-dark me-1" href="/accessibility.html" title="Accessibility commitment" target="_blank" rel="noopener">{{< fa universal-access >}}</a>
       <a class="link-dark me-1" href="https://linkedin.com/in/ramirobarrantes" title="LinkedIn" target="_blank" rel="noopener">{{< fa brands linkedin >}}</a>
       <a class="link-dark me-1" href="https://github.com/ramirobarrantes" title="github" target="_blank" rel="noopener">{{< fa brands github >}}</a>
-      <a class="link-dark me-1" href="https://orcid.org/" title="ORCID" target="_blank" rel="noopener">{{< ai orcid >}}</a>
+      <a class="link-dark me-1" href="https://orcid.org/0000-0002-3653-0922" title="ORCID" target="_blank" rel="noopener">{{< ai orcid >}}</a>
       <a class="link-dark me-1" href="https://scholar.google.com/" title="Google Scholar" target="_blank"rel="noopener">{{< ai google-scholar >}}</a>
 
     right: 
@@ -96,5 +96,6 @@ execute:
   freeze: auto
 
 include-in-header:
+  - assets/ramiro/fonts.html
   - assets/ramiro/umami.html
   - assets/ramiro/google-search-console.html
