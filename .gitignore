@@ -31,3 +31,4 @@ _freeze/
 
 # Claude session files
 .claude/
+silvia-content-archive.tar.gz
