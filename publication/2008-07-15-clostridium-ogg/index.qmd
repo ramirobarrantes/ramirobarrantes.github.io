@@ -1,43 +1,17 @@
 ---
 title: "Clostridium Acetobutylicum 8-Oxoguanine DNA Glycosylase (Ogg) Differs from Eukaryotic Oggs with Respect to Opposite Base Discrimination"
-author: "Ramiro Barrantes-Reynolds"
+author: "Robey-Bond, S.M., Barrantes-Reynolds, R., Bond, J.P., Wallace, S.S., & Bandaru, V."
 date: "2008-07-15"
-categories: [DNA repair, glycosylases, microbiology, evolution]
+categories: [DNA repair, glycosylases, evolution, phylogenetics, bioinformatics]
+image: images/phylogeny.png
 ---
 
 ## Citation
 
-Robey-Bond, S.M., Barrantes-Reynolds, R., Bond, J.P., Wallace, S.S., & Bandaru, V. (2008). Clostridium Acetobutylicum 8-Oxoguanine DNA Glycosylase (Ogg) Differs from Eukaryotic Oggs with Respect to Opposite Base Discrimination. *Biochemistry*, 47(29), 7626-7636.
+Robey-Bond, S.M., Barrantes-Reynolds, R., Bond, J.P., Wallace, S.S., & Bandaru, V. (2008). [Clostridium Acetobutylicum 8-Oxoguanine DNA Glycosylase (Ogg) Differs from Eukaryotic Oggs with Respect to Opposite Base Discrimination.](https://pmc.ncbi.nlm.nih.gov/articles/PMC2574669/) *Biochemistry*, 47(29), 7626-7636.
 
-## Abstract
+## Summary
 
-8-Oxoguanine is a common DNA lesion caused by oxidative damage. Ogg enzymes catalyze the removal of 8-oxoguanine paired with cytosine. This study characterizes the bacterial Ogg from *Clostridium acetobutylicum* and reveals important functional differences compared to eukaryotic enzymes.
+This was my entry into the fascinating world of DNA repair, an ancient system seemingly as old as life which keeps our DNA whole. Over time enzymes have specialized, and the Ogg enzymes repair the 8-Oxoguanine damage, a common DNA lesion caused by oxidative damage. This study characterizes the bacterial Ogg from *Clostridium acetobutylicum*. For this analysis I identified homologues using conserved domain profiles, performed sequence alignment, and phylogenetic trees.
 
-## Key Findings
-
-- *Clostridium* Ogg shows opposite base discrimination compared to eukaryotic enzymes
-- Bacterial enzyme preferentially excises 8-oxoguanine:adenine pairs
-- Eukaryotic enzymes preferentially remove 8-oxoguanine:cytosine pairs
-- Structural basis for substrate specificity differences
-- Evolutionary significance of base discrimination strategies
-
-## Methods
-
-- Enzyme kinetics and substrate specificity assays
-- DNA substrate synthesis and characterization
-- Biochemical analysis of lesion recognition
-- Structural comparisons with eukaryotic homologs
-
-## Role
-
-As a co-author, I contributed to bioinformatics analysis and evolutionary comparisons of Ogg proteins.
-
-## Publication Details
-
-- **Journal:** Biochemistry
-- **Year:** 2008
-- **Volume/Issue:** 47(29)
-- **Pages:** 7626-7636
-- **DOI:** [10.1021/bi800556y](https://doi.org/10.1021/bi800556y)
-- **PMID:** 18597494
-- **PMCID:** PMC2527661
+[![](images/phylogeny.png){fig-align="center"}](https://pmc.ncbi.nlm.nih.gov/articles/PMC2574669/)

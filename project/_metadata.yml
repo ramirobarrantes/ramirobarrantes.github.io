@@ -2,32 +2,35 @@
 execute: 
   freeze: true
 
-# Enable banner style title blocks
-title-block-banner: true
+# Disable default banner — projects use a custom hero (see template-partials below)
+title-block-banner: false
 
-# Default fields for citation
-citation: true
-appendix-cite-as: display
+# Project pages are kept simple — no citation block
+citation: false
 
 # Default for table of contents
 toc: true
 toc-title: Table of contents
 toc-location: right
 
-# Wrap overflow code
-format: 
-  html: 
+# Default hero image (overridden by per-project image:)
+image: /assets/ramiro/img/project-placeholder.svg
+
+# Wrap overflow code; use project-hero title block; include hero stylesheet
+format:
+  html:
     code-overflow: wrap
-    template-partials: 
-      - ../_partials/title-block-link-buttons/title-block.html
+    template-partials:
+      - ../_partials/project-hero/title-block.html
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="../../assets/project.css">
+
+resources:
+  - "../../assets/project.css"
 
 # Post info
 author: Ramiro Barrantes-Reynolds
 
-# Enable comments
-comments:
-  utterances:
-    repo: ramirobarrantes/website
-    issue-term: title
-    theme: boxy-light
-    label: "comments"
+# Project pages are kept simple — no comments section
+comments: false

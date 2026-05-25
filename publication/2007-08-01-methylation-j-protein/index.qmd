@@ -1,35 +1,21 @@
 ---
 title: "Methylation-Controlled J Protein Promotes c-Jun Degradation to Prevent ABCB1 Transporter Expression"
-author: "Ramiro Barrantes-Reynolds"
-date: "2007-08-01"
-categories: [molecular biology, epigenetics, transporter expression]
+author: "Hatle, K.M., Neveu, W., Dienz, O., Rymarchyk, S., Barrantes, R., Hale, S., Farley, N., Lounsbury, K.M., Bond, J.P., Taatjes, D.J., & Rincon, M."
+date: "2007-08"
+categories: [molecular biology, phylogenetics, bioinformatics]
+image: images/phylogeny.png
 ---
 
 ## Citation
 
-Hatle, K.M., Neveu, W., Dienz, O., Rymarchyk, S., Barrantes, R., Hale, S., Farley, N., Lounsbury, K.M., Bond, J.P., Taatjes, D.J., & Rincon, M. (2007). Methylation-Controlled J Protein Promotes c-Jun Degradation to Prevent ABCB1 Transporter Expression. *Molecular and Cellular Biology*, 27(8), 2952-2966.
+Hatle, K.M., Neveu, W., Dienz, O., Rymarchyk, S., Barrantes, R., Hale, S., Farley, N., Lounsbury, K.M., Bond, J.P., Taatjes, D.J., & Rincon, M. (2007). [Methylation-Controlled J Protein Promotes c-Jun Degradation to Prevent ABCB1 Transporter Expression](https://pubmed.ncbi.nlm.nih.gov/17283040/). *Molecular and Cellular Biology*, 27(8), 2952-2966.
 
-## Abstract
+## Summary
 
-The multidrug transporter ABCB1 is a major factor in drug resistance. This study reveals an epigenetic regulatory mechanism in which a methylation-controlled J protein promotes degradation of the c-Jun transcription factor, thereby suppressing ABCB1 expression.
+This work with MCJ has a very interesting story behind it, but I need to ask for Dr. Mercedes for permission to share it here. But in this work, experimentally Ketki showed that 1) MCJ is required in order to prevent c-Jun mediated ABCB1 expression: if MCJ is absent, c-Jun increases and ABCB1 gets expressed more and 2) inhibition of MCJ expression increases resistance to certain drugs. Finally, we also showed that MCJ only exists in vertebrates and found that gene duplication was part of its history.
 
-## Key Findings
+## My Role
 
-- Methylation state of a J protein regulates its interaction with proteasomal machinery
-- The protein promotes ubiquitin-dependent degradation of c-Jun
-- c-Jun suppression prevents activation of ABCB1 promoter
-- Mechanism provides insight into epigenetic control of multidrug transporter expression
+For this work I collaborated with Ketki Hatle in the lab of Dr. Mercedes Rincón, and I did phylogenetic analysis of MCJ, we used a classical approach of sequence similarity search, alignment and a phylogeny, as well as establishing confidence using bootstrapping and also posterior probability.
 
-## Role
-
-As a co-author, I contributed to molecular analysis and data interpretation.
-
-## Publication Details
-
-- **Journal:** Molecular and Cellular Biology
-- **Year:** 2007
-- **Volume/Issue:** 27(8)
-- **Pages:** 2952-2966
-- **DOI:** [10.1128/MCB.01636-06](https://doi.org/10.1128/MCB.01636-06)
-- **PMID:** 17296726
-- **PMCID:** PMC1899924
+![Figure 1: Phylogenetic analysis and sequence alignment of MCJ.](images/phylogeny.png){alt="Figure 1: Phylogenetic analysis and sequence alignment of MCJ." fig-align="center"}

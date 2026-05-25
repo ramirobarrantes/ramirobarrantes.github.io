@@ -1,0 +1,41 @@
+---
+title: "UVM BioDesktop"
+author: Ramiro Barrantes-Reynolds
+date: "2004-01-01"
+date-modified: "2004-01-01"
+categories: [bioinformatics, database, web-application, data-management]
+subtitle: "Open-source web-based data management system built on MySQL and Apache"
+links:
+  - icon: link
+    name: BioDesktop (archived)
+    url: http://biodesktop.uvm.edu/
+  - icon: file-pdf
+    name: Publication
+    url: https://pubmed.ncbi.nlm.nih.gov/
+---
+
+## Overview
+
+Built back in the early 2000s, right after I started working at UVM, a  fellow programmer/mathematician came into the team called Rama Kocherlakota. After some time, we started to work on the UVM BioDesktop. The was designed as was web-based data management and bioinformatics system designed to empower researchers to manage, analyze, and share biological data. The idea was to combine a user-friendly web interface with a powerful object-relational database layer and a flexible Perl-based coding engine, which one could build solutions on top of. Here I worked with various scientists and core facility directors to design applications.
+
+One of the most successful BioDesktop applications was **DNA Depot**, a web-based order and data delivery system for the UVM DNA Facility. I gathered requirements from facility staff, designed the user interface, and implemented the system as a family of BioDesktop modules. DNA Depot replaced a paper-based order entry system, dramatically improving staff productivity and enabling automated utilization tracking. For several years, DNA Depot processed more than 18,000 orders and delivered over 130,000 data files to users.
+
+BioDesktop's modular architecture supported the development of other domain-specific applications:
+
+- **Microarray Depot** — Microarray experiment tracking and data access
+- **Microscopy & Imaging Center Depot** — Image acquisition and analysis workflow
+- **Animal Care Depot** — Research animal management and protocols
+- **X-Ray Depot** — Radiography and imaging data management
+- **Proteomics Depot** — Mass spectrometry data and analysis results
+- **CDKN2a Mutation Database** — Specialized variant and mutation tracking
+
+Each depot was tailored to its research community's unique requirements while leveraging shared BioDesktop infrastructure.
+
+## Technology Stack
+
+- **Database**: MySQL with object-relational design patterns
+- **Web Server**: Apache
+- **Application Layer**: Perl modules and objects
+- **External Integrations**: NCBI C++ Toolkit for sequence database access and sequence analysis
+- **User Interface**: HTML-based forms and web interface
+

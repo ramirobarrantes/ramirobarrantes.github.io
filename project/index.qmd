@@ -4,28 +4,31 @@ author: ""
 comments: false
 citation: false
 description: |
-  This porfolio includes works, software, and tools I have contributed to or designed,<br>along with openly available educational material I have created. 
-listing: 
-  contents:
-    - "/*/index.qmd"
-    - "/*/index.markdown"
-    - "/*/index.md"
-    - "external-items/metadata.yml"
-  type: grid
-  fields: [title, subtitle, categories, date, image]
-  sort: "date-modified desc"
-  filter-ui: false
-  image-align: left
-  image-height: 100%
-format: 
-  html: 
-    page-layout: full
-title-block-banner: false
-
-header-includes: >
-  <link rel="stylesheet" href="../assets/listing-default.css">
-#  <link rel="" href="../assets/custom-css.js">
-resources:
-  - ../assets/listing-default.css
-#  - ../assets/custom-css.js
+  This portfolio includes works, software, and tools I have contributed to or designed.
+page-layout: full
+title-block-banner: true
+# Override the cascaded project-hero partial from _metadata.yml — use standard banner for listing
+format:
+  html:
+    template-partials:
+      - ../_partials/title-block-link-buttons/title-block.html
 ---
+
+## GitLab Contribution Activity
+
+```{r, results='asis', echo=FALSE}
+if (file.exists("../gitlab-heatmap.html")) {
+  htmltools::includeHTML("../gitlab-heatmap.html")
+}
+```
+
+## Projects
+
+- [nf-core Modules for Copy Number Trajectory Analysis (coptr)](2024-12-15-nf-core-coptr-modules/index.qmd) — Five Nextflow modules for analyzing copy number variation trajectories from sequencing data
+- [NCBI FPG/NEI Conserved Domain Profile](https://www.ncbi.nlm.nih.gov/Structure/cdd/cddsrv.cgi?uid=176798)
+
+## Retired Projects
+
+- [Dance Your PhD](2011-01-01-dance-your-phd/index.qmd) — Choreographed interpretation of my PhD thesis, submitted to a Science Magazine's international competition
+- [Xymp™ Bioassay System](2010-01-01-xymp/index.qmd) — Statistical software for designing, analyzing, and validating potency assays
+- [UVM BioDesktop](2004-01-01-biodesktop/index.qmd) — Open-source web-based data management system built on MySQL and Apache

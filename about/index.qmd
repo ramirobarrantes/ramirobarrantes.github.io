@@ -76,77 +76,93 @@ resources:
   - ../assets/about.css
 ---
 
-::: {#hero-heading}
-<div class="h1">Welcome</div>
+:::: {#hero-heading}
+::: h1
+Welcome
+:::
 
-Thanks for stopping by!
+I am glad you are here!
 
 I am a Bioinformatics Scientist at the [University of Vermont](https://www.uvm.edu/), Department of Microbiology and Molecular Genetics. My research focuses on collaborative bioinformatics and computational biology, spanning variant analysis, epigenomics, virus typing, transcriptomics, and structural biology. I work extensively with workflow management systems, containerized environments, and high-performance computing to enforce reproducibility and scalability.
 
-I have been integrating quantitative sciences and computational methods with biomedical research since 2001, with a focus on Bayesian statistical methods, machine learning, and data science. Learn more about my work in [publications](/publication).
+I have been integrating quantitative sciences and computational methods with biomedical research since 2001, with a focus on Bayesian statistical methods, machine learning, data science and now, increasingly, AI-augmented methods". Learn more about my work in [projects](/projects) and  [publications](/publication).
 
 Get in touch by [sending me a note](/contact.qmd)! {{< fa feather-pointed >}}
 
-:::
+**A bit longer...**
+
+I grew up in Costa Rica in a family of life scientists, and by the way, when I was a teenager I swore never to have anything to do with biology or get a Ph.D -- my aspirations leaned more towards becoming a ninja...but alas...decades later with a PhD in bioinformatics!
+
+During my first semester of [Computer Science](https://www.ecci.ucr.ac.cr/) at the University of Costa Rica I had a classmate/friend that was studying pure mathematics. Something about the way he thought and his approach to solving problems really intrigued me. I took a class and the fascinating world of math proved to be a welcome challenge so I decided to also [study math](https://emate.ucr.ac.cr/) (my family was also much more supportive of that than of me becoming a ninja!). I had no idea that studying math would later open a world of possibilities.
+
+After graduating I took a break from school and came to Vermont to live at a [Zen Buddhist Center](https://vermontzen.org/), where I also had my very first and very cold Vermont winter! Eventually I met Dr. Jeff Bond, a University of Vermont researcher and professor, whom I worked with for 5 years as a bioinformatics programmer and afterwards he was my advisor for the Ph.D. program in [Cell and Molecular Biology](https://www.uvm.edu/graduate/cmb) doing Computational Biology/Bioinformatics.
+
+During my second year of the Ph.D program, something unexpected happen: another graduate student and myself took a visiting professor (Terry Speed, a world-renowned bioinformatics statistician) to Vermont's famous ice cream factory: Ben and Jerry's. During the trip, something about the conversation, and also listening to his talks, really aroused my interest in statistics, subsequently I took a Bayesian statistics course and I was hooked! Been a statistician/bioinformatician/data scientist ever since working for both academia and industry. 
+
+I also have a life outside of work, mainly about finding the [meaning of life and becoming a better person](https://vermontzen.org), and also as a hobby singing and playing percussion in a [band](https://songoros.com/), but that's a story for another time!!
+::::
 
 ## About me
 
-::: {.grid}
-
-::: {.g-col-6 #about-me-1}
-
-**Bioinformatician and data scientist with deep expertise in computational genomics and Bayesian methods.**
-
-I work with R, Python, and workflow management systems like Nextflow to build scalable, reproducible computational pipelines. I'm passionate about effective communication with collaborators and mentor students in bioinformatics methods. My work spans sequence analysis, phylogenetics, epigenomics, and applied machine learning for biomedical research.
+::::: grid
+::: {#about-me-1 .g-col-6}
 
 <ul class="fa-ul">
-   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. in Cell and Molecular Biology (Bioinformatics/Statistics) ∙ University of Vermont ∙ 2011</li>
-   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. in Pure Mathematics ∙ University of Costa Rica ∙ 1999</li>
-   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. in Computer Science ∙ University of Costa Rica ∙ 1999</li>
-</ul>
 
+<li><i class="fa-solid fa-graduation-cap"></i>Ph.D. in Cell and Molecular Biology (Bioinformatics/Statistics) ∙ University of Vermont ∙ 2011</li>
+
+<li><i class="fa-solid fa-graduation-cap"></i>B.S. in Pure Mathematics ∙ University of Costa Rica ∙ 1999</li>
+
+<li><i class="fa-solid fa-graduation-cap"></i>B.S. in Computer Science ∙ University of Costa Rica ∙ 1999</li>
+
+</ul>
 :::
 
-::: {.g-col-6 #about-me-2}
-
-Since 2001, I've worked at the intersection of bioinformatics and collaborative science. I spent ten years in industry as a statistician at a consulting firm while contributing part-time to UVM, gaining expertise in experimental design and rigorous client-facing work. More recently, I lead bioinformatics infrastructure projects, including the development and deployment of Nextflow pipelines through the Seqera platform, and have built web platforms for computational analysis.
-
-I'm deeply interested in artificial intelligence and eager to learn and apply these methods in research. Beyond work, I'm committed to service through meditation and non-violent communication practices.
+::: {#about-me-2 .g-col-6}
 
 <ul class="fa-ul">
-   <li><span class="fa-li"><i class="fa-solid fa-briefcase"></i></span>Bioinformatics Scientist ∙ Vermont Integrative Genomics Resource ∙ UVM ∙ 2022-present</li>
-   <li><span class="fa-li"><i class="fa-solid fa-briefcase"></i></span>Bioinformatics Scientist ∙ Translational Global Infectious Disease Research ∙ UVM ∙ 2022-present</li>
-   <li><span class="fa-li"><i class="fa-solid fa-briefcase"></i></span>Bioinformatics Programmer ∙ University of Vermont ∙ 2001-2006</li>
+
+<li><i class="fa-solid fa-briefcase"></i>Bioinformatics Data Scientist ∙ Vermont Integrative Genomics Resource ∙ UVM ∙ 2022-present</li>
+
+<li><i class="fa-solid fa-briefcase"></i>Bioinformatics Data Scientist ∙ Translational Global Infectious Disease Research ∙ UVM ∙ 2022-present</li>
+
+<li><i class="fa-solid fa-briefcase"></i>Statistician ∙ Precision Bioassay ∙ 2011-2021</li>
+
+<li><i class="fa-solid fa-briefcase"></i>Bioinformatics Programmer ∙ University of Vermont ∙ 2001-2006</li>
+
 </ul>
-
 :::
+:::::
 
-:::
 <!-- end grid -->
 
 ## Lately ...
 
-:::: {.grid}
-
-::: {.g-col-3}
+::::::::: grid
+:::: g-col-3
 #### Projects
+
 ::: {#project}
 :::
-[See all &rarr;](../project){.about-links .subtitle}
-:::
 
-::: {.g-col-3}
+[See all →](../project){.about-links .subtitle}
+::::
+
+:::: g-col-3
 #### Blog
+
 ::: {#blog}
 :::
-[See all &rarr;](../blog){.about-links .subtitle}
-:::
 
-::: {.g-col-3}
+[See all →](../blog){.about-links .subtitle}
+::::
+
+:::: g-col-3
 #### Publications
+
 ::: {#publication}
 :::
-[See all &rarr;](../publication){.about-links .subtitle}
-:::
 
+[See all →](../publication){.about-links .subtitle}
 ::::
+:::::::::

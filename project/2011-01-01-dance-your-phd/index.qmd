@@ -1,0 +1,29 @@
+---
+title: "Dance Your PhD"
+author: Ramiro Barrantes-Reynolds
+date: "2011-01-01"
+date-modified: "2011-01-01"
+categories: [science-communication, creative-expression, bioinformatics, outreach]
+subtitle: "Choreographed interpretation of bioinformatics research for Science Magazine's international competition"
+links:
+  - icon: play-circle
+    name: Our Dance (Vimeo)
+    url: https://vimeo.com/14608975
+  - icon: link
+    name: Interactive Interpretation Site
+    url: https://www.uvm.edu/~rbarrant/danceyourphd/
+  - icon: info-circle
+    name: Dance Your PhD (Wikipedia)
+    url: https://en.wikipedia.org/wiki/Dance_Your_Ph.D.
+---
+
+## Overview
+
+This was a very fun project! "Dance Your PhD" is an international competition hosted by *Science Magazine* that challenges researchers to convey the essence of their doctoral research through choreographed dance and movement. In 2011, as I was close to finishing my PhD I created and performed a dance interpretation of my research: doing Bayesian statistics on alignment, structures and trees to determine structural characters that were important for function of DNA repair enzymes. 
+
+I had a great dance crew: two fellow PhD students (Minmin Liu and Shruthi Krishnamurti) as DNA, and the daughters of two UVM faculty (Gabby Boyson and Elaine Dragon), using music (with permission) Eres Eso by Jimmy Martínez, from Cuban group El Équipo. You can see the dance here:
+
+[Watch the dance here](https://vimeo.com/14608975)
+
+Following the competition, we also did a competition where people did the opposite, based on a choreography, try to [guess the PhD topic that it was representing](https://uvm.edu/~rbarrant/danceyourphd/)
+

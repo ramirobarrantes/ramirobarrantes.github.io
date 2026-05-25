@@ -3,31 +3,15 @@ title: "The EBV-Positive Tumor Methylome Is Distinct from EBV-Negative in Diffus
 author: "Ramiro Barrantes-Reynolds"
 date: "2025-01-22"
 categories: [epigenomics, cancer, methylome]
+image: images/epi.png
 ---
 
 ## Citation
 
-Volaric, A.K.; Barrantes-Reynolds, R.; Sahakyan, K.; Fedoriw, Y.; Frietze, S. (2025). The EBV-Positive Tumor Methylome Is Distinct from EBV-Negative in Diffuse Large B-Cell Lymphoma. *Cancers*, 14(2), 299.
+Volaric, A.K.; Barrantes-Reynolds, R.; Sahakyan, K.; Fedoriw, Y.; Frietze, S. (2025). [The EBV-Positive Tumor Methylome Is Distinct from EBV-Negative in Diffuse Large B-Cell Lymphoma.](https://pubmed.ncbi.nlm.nih.gov/41008837/) *Cancers*, 14(2), 299.
 
-## Abstract
+## Summary
 
-This study investigates the epigenetic landscape of EBV-positive diffuse large B-cell lymphoma (DLBCL), comparing methylation patterns between EBV-positive and EBV-negative cases. The analysis reveals distinct methylome signatures that may contribute to disease pathogenesis and suggest therapeutic targets.
+This was my first published paper after returning to work full time to the University of Vermont as part of the Translational Global Infectious Disease Research (TGIR).This study investigates the epigenetic landscape of EBV-positive diffuse large B-cell lymphoma (DLBCL), comparing methylation patterns between EBV-positive and EBV-negative cases. Here I had the pleasure of working closely with Doctor Ashley Volaric, we had a set of tumor samples and controls - unfortunately, due to the type of cancer - it is not feasible to obtain tumor/normal pairs from the same patient. I performed an extensive epigenetic analysis from on illumina Epic V2 data and indeed, we identified a distinct and extensive hypermethylation signature in EBV-positive tumors.
 
-## Key Findings
-
-- EBV-positive DLBCLs show a distinct methylation profile compared to EBV-negative cases
-- Specific genomic regions show differential methylation associated with viral status
-- Epigenetic patterns correlate with known oncogenic pathways in lymphoma
-- Results suggest potential biomarkers for patient stratification and treatment selection
-
-## Role
-
-As a co-author on this publication, I contributed bioinformatics analysis of methylation data and interpretation of genomic patterns.
-
-## Publication Details
-
-- **Journal:** Cancers
-- **Year:** 2025
-- **Volume/Issue:** 14(2)
-- **Article Number:** 299
-- **DOI:** [10.3390/cancers14020299](https://doi.org/10.3390/cancers14020299)
+![](images/epi.png)

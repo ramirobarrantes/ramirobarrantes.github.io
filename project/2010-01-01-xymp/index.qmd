@@ -1,0 +1,25 @@
+---
+title: "Xymp™ Bioassay System"
+author: Ramiro Barrantes-Reynolds
+date: "2010-01-01"
+date-modified: "2010-01-01"
+categories: [bioinformatics, statistics, bioassay, software]
+subtitle: "Statistical software for designing, analyzing, and validating potency assays"
+links:
+  - icon: link
+    name: Precision Bioassay
+    url: https://www.precisionbioassay.com/
+  - icon: file-pdf
+    name: Learn More
+    url: https://www.precisionbioassay.com/xymp
+---
+
+## Overview
+
+Xymp™ was a software platform developed while I was working at Precision Bioassay with David Lansky. Biological therapeutics require rigorous potency assays to ensure product safety, efficacy, and regulatory acceptance. 
+
+At the same time, bioassay development is fraught with subtle statistical challenges, among those: **pseudoreplication**—when sample generation or experimental design introduces replicate measurements that are not truly independent; **Plate-level effects**: The 96-well plate itself introduces systematic sources of variance that must be treated as a statistical block or a more sophisticated design; **Poor randomization**: Ad-hoc sample placement misses opportunities to use structured designs that reduce confounding; **Naive outlier detection**: Removing outliers before re-scaling data is ineffective and masks the true sources of variance
+
+We created software that addressed all of that in one package. We used it in-house for many projects, and also created a web-interface that could be used with clients. 
+
+The software was developed in R, and the web interface in PHP with a MYSQL backend.

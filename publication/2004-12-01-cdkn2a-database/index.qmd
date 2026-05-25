@@ -1,34 +1,17 @@
 ---
 title: "The CDKN2A Database: Integrating Allelic Variants with Evolution, Structure, Function, and Disease Association"
-author: "Ramiro Barrantes-Reynolds"
-date: "2004-12-01"
+author: Murphy, J.A., Barrantes-Reynolds, R., Kocherlakota, R., Bond, J.P., & Greenblatt, M.S.
+date: 2004-12
 categories: [bioinformatics, genomics, database, cancer genetics]
+image: images/paper.png
 ---
 
 ## Citation
 
-Murphy, J.A., Barrantes-Reynolds, R., Kocherlakota, R., Bond, J.P., & Greenblatt, M.S. (2004). The CDKN2A Database: Integrating Allelic Variants with Evolution, Structure, Function, and Disease Association. *Human Mutation*, 24(4), 296-304.
+Murphy, J.A., Barrantes-Reynolds, R., Kocherlakota, R., Bond, J.P., & Greenblatt, M.S. (2004). [The CDKN2A Database: Integrating Allelic Variants with Evolution, Structure, Function, and Disease Association.](https://pubmed.ncbi.nlm.nih.gov/15365986/) *Human Mutation*, 24(4), 296-304.
 
-## Abstract
+## Summary
 
-CDKN2A (p16) mutations are associated with familial melanoma and other cancers. This work presents a comprehensive database integrating genetic variants with evolutionary, structural, functional, and clinical information to facilitate variant interpretation.
+This was one of my very first papers. Working alongside Joan Murphy (now an MD) and Dr. Marc Greenblatt, we built a database integrating genetic variants with evolutionary, structural, functional, and clinical data for CDKN2A (p16) — a key tumor suppressor gene. The actual online database is no longer available unfortunately.
 
-## Key Findings
-
-- Database consolidates CDKN2A mutations from literature and public sources
-- Integrates evolutionary conservation and protein structural information
-- Correlates variants with functional effects and disease phenotypes
-- Provides tools for predicting pathogenicity of novel variants
-
-## Role
-
-As a co-author, I contributed to data curation, bioinformatics analysis, and database development.
-
-## Publication Details
-
-- **Journal:** Human Mutation
-- **Year:** 2004
-- **Volume/Issue:** 24(4)
-- **Pages:** 296-304
-- **DOI:** [10.1002/humu.20085](https://doi.org/10.1002/humu.20085)
-- **PMID:** 15365992
+In this work I contributed with all the programming (at that time it was in Perl, Php and maybe some C++), database development, and bioinformatic analysis, and also continually collaborated with Joan and Marc, it was a pleasure to work with them and a great introduction to multidisciplinary scientific collaboration.

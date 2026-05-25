@@ -1,42 +1,17 @@
 ---
 title: "Molecular Heterogeneity of EmaA, an Oligomeric Autotransporter Adhesin of Aggregatibacter Actinomycetemcomitans"
-author: "Ramiro Barrantes-Reynolds"
-date: "2007-08-20"
-categories: [microbiology, adhesins, protein structure, pathogenesis]
+author: Tang, G., Ruiz, T., Barrantes-Reynolds, R., & Mintz, K.P.
+date: 2007-08
+categories: [microbiology, adhesins, protein structure, pathogenesis, phylogenetics]
+image: images/phylogeny.png
 ---
 
 ## Citation
 
-Tang, G., Ruiz, T., Barrantes-Reynolds, R., & Mintz, K.P. (2007). Molecular Heterogeneity of EmaA, an Oligomeric Autotransporter Adhesin of *Aggregatibacter Actinomycetemcomitans*. *Microbiology*, 153(Pt 8), 2447-2457.
+Tang, G., Ruiz, T., Barrantes-Reynolds, R., & Mintz, K.P. (2007). [Molecular Heterogeneity of EmaA, an Oligomeric Autotransporter Adhesin of *Aggregatibacter Actinomycetemcomitans*](https://pubmed.ncbi.nlm.nih.gov/17660409/). *Microbiology*, 153(Pt 8), 2447-2457.
 
-## Abstract
+## Summary
 
-*Aggregatibacter actinomycetemcomitans* (formerly *Actinobacillus actinomycetemcomitans*) is an oral pathogen associated with aggressive periodontitis. EmaA is an outer membrane autotransporter adhesin involved in bacterial adherence. This study characterizes the molecular structure and heterogeneity of the EmaA protein.
+This paper was about EmaA in a gram-negative bacteria strongly liked to disease in the mouth. We worked with 27 strains encompassing the six serotypes and identified three emaA, which were characterized. I did the phylogenetics which lead to further characterize the population structure.
 
-## Key Findings
-
-- EmaA exists as an oligomeric complex on the bacterial surface
-- Structural heterogeneity in protein processing and organization
-- Variable forms of EmaA contribute to adhesion function
-- Implications for bacterial virulence and host-pathogen interactions
-- Insights into autotransporter protein biology
-
-## Methods
-
-- Protein purification and characterization
-- Electron microscopy and structural analysis
-- Biochemical assays of protein-protein interactions
-- Bioinformatics analysis of protein structure
-
-## Role
-
-As a co-author, I contributed bioinformatics analysis of protein sequence and structural predictions.
-
-## Publication Details
-
-- **Journal:** Microbiology
-- **Year:** 2007
-- **Volume/Issue:** 153(Pt 8)
-- **Pages:** 2447-2457
-- **DOI:** [10.1099/mic.0.2007/008268-0](https://doi.org/10.1099/mic.0.2007/008268-0)
-- **PMID:** 17660412
+![Phylogeny of emaA](images/phylogeny.png)

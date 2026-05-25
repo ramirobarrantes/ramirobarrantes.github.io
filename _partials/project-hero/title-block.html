@@ -1,0 +1,57 @@
+<!-- Check for listing pages: either listing key exists OR page has class set -->
+$if(listing)$
+<!-- Listing pages (those that define a listing: block) skip the project hero
+     and get a minimal title block instead. -->
+<header id="title-block-header" class="quarto-title-block default">
+  <h1 class="title">$title$</h1>
+  $if(subtitle)$
+  <p class="subtitle lead">$subtitle$</p>
+  $endif$
+  $if(description)$
+  <div id="title-block-title-desc" class="description pt-2">
+    $description$
+  </div>
+  $endif$
+</header>
+$else$
+<header id="title-block-header" class="quarto-title-block project-hero">
+  <div class="project-hero-image"$if(image)$ style="background-image: url($image$);"$endif$></div>
+  <div class="project-hero-overlay"></div>
+  <div class="project-hero-content">
+    <div class="project-hero-eyebrow">Project</div>
+    $if(categories)$
+      $if(quarto-template-params.title-block-categories)$
+      <div class="quarto-categories project-hero-categories">
+        $for(categories)$
+        <div class="quarto-category">$categories$</div>
+        $endfor$
+      </div>
+      $endif$
+    $endif$
+    <h1 class="title project-hero-title">$title$</h1>
+    $if(subtitle)$
+    <p class="subtitle project-hero-subtitle">$subtitle$</p>
+    $endif$
+    $if(links)$
+    <div class="project-hero-links" role="group" aria-label="Links">
+    $for(links)$
+    <a href="$links.url$" class="project-hero-btn text-capitalize"><i class="bi bi-$links.icon$ me-1"></i> $links.name$</a>
+    $endfor$
+    </div>
+    $endif$
+  </div>
+</header>
+
+$if(hide-description)$
+$elseif(description)$
+<div>
+  <div id="title-block-title-desc" class="description project-description pt-4">
+    $description$
+  </div>
+</div>
+$endif$
+$endif$
+
+$if(listing)$
+$title-metadata.html()$
+$endif$

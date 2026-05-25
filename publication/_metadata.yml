@@ -15,5 +15,5 @@ format:
     template-partials:
       - ../_partials/title-block-link-buttons/title-block.html
 
-# placeholder featured image
-image: featured.jpg
+# placeholder featured image (overridden by per-publication image:)
+image: /assets/ramiro/img/publication-placeholder.svg

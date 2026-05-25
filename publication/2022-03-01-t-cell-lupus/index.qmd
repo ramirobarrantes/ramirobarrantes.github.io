@@ -1,36 +1,17 @@
 ---
 title: "T Cell Homeostatic Proliferation Promotes a Redox State That Drives Metabolic and Epigenetic Upregulation of Inflammatory Pathways in Lupus"
-author: "Ramiro Barrantes-Reynolds"
+author: "Ralph C. Budd, Christopher D. Scharer, Ramiro Barrantes-Reynolds, Scott Legunn, Karen A. Fortner"
 date: "2022-03-01"
-categories: [immunology, metabolism, epigenetics, lupus]
+categories: [immunology, metabolism, epigenetics, lupus, RNAseq]
+image: images/heatmap.png
 ---
 
 ## Citation
 
-Budd, R.C., Scharer, C.D., Barrantes-Reynolds, R., Legunn, S., & Fortner, K.A. (2022). T Cell Homeostatic Proliferation Promotes a Redox State That Drives Metabolic and Epigenetic Upregulation of Inflammatory Pathways in Lupus. *Antioxidants & Redox Signaling*, 36(7-9), 410-422.
+Budd, R.C., Scharer, C.D., Barrantes-Reynolds, R., Legunn, S., & Fortner, K.A. (2022). [T Cell Homeostatic Proliferation Promotes a Redox State That Drives Metabolic and Epigenetic Upregulation of Inflammatory Pathways in Lupus.](https://pubmed.ncbi.nlm.nih.gov/34328790/) *Antioxidants & Redox Signaling*, 36(7-9), 410-422.
 
-## Abstract
+## Summary
 
-Systemic lupus erythematosus (SLE) is characterized by aberrant T cell function and uncontrolled inflammation. This study elucidates how homeostatic T cell proliferation drives metabolic reprogramming and epigenetic changes that promote inflammatory responses in lupus pathogenesis.
+In this work Ralph, an M.D. proposes a hypothesis of the many abnormalities that we see in lupus patients: homeostatic proliferation of T-cells. In our genome we actually have ancient remnants of viruses, which are called endogenous retroviruses (ERVs). Part of my contribution was analyzing RNA expression at genomic sites that were both demethylated and located within ERVs, specifically in CD4⁻CD8⁻TCRαβ⁺ T cells. The figure below shows that these sites are more highly expressed in CD4⁻CD8⁻TCRαβ⁺ T cells compared to conventional T cells — consistent with the hypothesis that homeostatic proliferation drives ERV reactivation through demethylation.
 
-## Key Findings
-
-- Homeostatic proliferation induces a pro-oxidant redox state in T cells
-- Metabolic reprogramming enhances glycolytic and oxidative pathways
-- Epigenetic modifications (histone acetylation, DNA methylation) promote inflammatory gene expression
-- These mechanisms drive lupus-like disease manifestations in experimental models
-
-## Role
-
-As a co-author, I contributed statistical and bioinformatics analysis of omics data, including epigenetic and metabolic profiling.
-
-## Publication Details
-
-- **Journal:** Antioxidants & Redox Signaling
-- **Year:** 2022
-- **Volume/Issue:** 36(7-9)
-- **Pages:** 410-422
-- **DOI:** [10.1089/ars.2021.0078](https://doi.org/10.1089/ars.2021.0078)
-- **PMID:** 34328790
-- **PMCID:** PMC8982120
-- **Epub:** 2021-11-09
+![](images/heatmap.png)
