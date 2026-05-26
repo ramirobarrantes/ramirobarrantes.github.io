@@ -1,0 +1,33 @@
+<svg width="100%" viewBox="0 0 680 320" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Cantor diagonalization badge xl</title>
+  <desc>A minimal typographic badge with extra large fonts rendering the diagonalization formula.</desc>
+
+  <style>
+    .math { font-family: "Georgia", "Times New Roman", serif; }
+    .pri  { fill: #1a1a1a; }
+    .sec  { fill: #555; }
+    .dim  { fill: #888; }
+    .rule { stroke: #ccc; stroke-width: 0.6; fill: none; }
+
+    @media (prefers-color-scheme: dark) {
+      .pri  { fill: #e8e6df; }
+      .sec  { fill: #a0a098; }
+      .dim  { fill: #6e6e68; }
+      .rule { stroke: #3a3a36; }
+    }
+  </style>
+
+  <line class="rule" x1="100" y1="72" x2="580" y2="72"/>
+
+  <text class="math sec" x="340" y="60" text-anchor="middle" font-size="18" letter-spacing="5">CANTOR · 1891</text>
+
+  <text class="math pri" x="340" y="168" text-anchor="middle" font-size="68">
+    &#x2204; f : &#x2115; &#x21A0; (0,1)
+  </text>
+
+  <text class="math dim" x="340" y="240" text-anchor="middle" font-size="38">
+    d&#x2099; &#x2260; [f(n)]&#x2099; &#x27F9; d &#x2209; im(f) &#x21AF;
+  </text>
+
+  <line class="rule" x1="100" y1="272" x2="580" y2="272"/>
+</svg>
