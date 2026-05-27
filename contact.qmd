@@ -29,7 +29,7 @@ I'm always interested in connecting with researchers, students, and colleagues i
 <a class="link-dark me-1" href="https://linkedin.com/in/ramirobarrantes" title="LinkedIn" target="_blank" rel="noopener">{{< fa brands linkedin >}}</a>
 <a class="link-dark me-1" href="https://github.com/ramirobarrantes" title="github" target="_blank" rel="noopener">{{< fa brands github >}}</a>
 <a class="link-dark me-1" href="https://orcid.org/0000-0002-3653-0922" title="ORCID" target="_blank" rel="noopener">{{< ai orcid >}}</a>
-<a class="link-dark me-1" href="https://scholar.google.com/" title="Google Scholar" target="_blank"rel="noopener">{{< ai google-scholar >}}</a>
+<a class="link-dark me-1" href="https://scholar.google.com/citations?user=YJCEEQ4AAAAJ" title="Google Scholar" target="_blank"rel="noopener">{{< ai google-scholar >}}</a>
 
 :::
 <!-- source: https://github.com/mccarthy-m-g/tidytales/blob/main/about/index.qmd#L24-L46 -->
