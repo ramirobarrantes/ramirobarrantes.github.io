@@ -131,7 +131,19 @@ After graduating I took a break from school and came to Vermont to live at a [Ze
 ::::
 ::::::
 
+::::: columns
+
+::: {.column width="40%"}
+::: {style="display: flex; align-items: center; justify-content: center; height: 100%;"}
+![](bayesjerry.png){width="300px"}
+:::
+:::
+
+::: {.column width="60%"}
 During my second year of the Ph.D program, something unexpected happen: another graduate student and myself took a visiting professor (Terry Speed, a world-renowned bioinformatics statistician) to Vermont's famous ice cream factory: Ben and Jerry's. During the trip, something about the conversation, and also listening to his talks, really aroused my interest in statistics, subsequently I took a Bayesian statistics course and I was hooked! Been a statistician/bioinformatician/data scientist ever since working for both academia and industry.
+:::
+
+:::::
 
 I also have a life outside of work, mainly about finding the [meaning of life and becoming a better person](https://vermontzen.org), and also as a hobby singing and playing percussion in a [band](https://songoros.com/), but that's a story for another time!!
 :::::::::::::::
