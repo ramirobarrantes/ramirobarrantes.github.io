@@ -76,7 +76,7 @@ resources:
   - ../assets/about.css
 ---
 
-::::::::::::::: {#hero-heading}
+::::::::::::::::::::: {#hero-heading}
 ::: h1
 Welcome
 :::
@@ -85,27 +85,27 @@ I am glad you are here!
 
 I am a Bioinformatics Scientist at the [University of Vermont](https://www.uvm.edu/), Department of Microbiology and Molecular Genetics. My research focuses on collaborative bioinformatics and computational biology, spanning variant analysis, epigenomics, virus typing, transcriptomics, and structural biology. I work extensively with workflow management systems, containerized environments, and high-performance computing to enforce reproducibility and scalability.
 
-I have been integrating quantitative sciences and computational methods with biomedical research since 2001, with a focus on Bayesian statistical methods, machine learning, data science and now, increasingly, AI-augmented methods". Learn more about my work in [projects](/projects) and [publications](/publication).
+I have been integrating quantitative sciences and computational methods with biomedical research since 2001, with a focus on Bayesian statistical methods, machine learning, data science and now, increasingly, AI methods. Learn more about my work in [projects](/projects) and [publications](/publication).
 
 Get in touch by [sending me a note](/contact.qmd)! {{< fa feather-pointed >}}
 
 **A bit longer...**
 
-::::: columns
+:::::: {style="display: flex; align-items: center;"}
 ::: {.column width="60%"}
 I grew up in Costa Rica in a family of life scientists, and by the way, when I was a teenager I swore never to have anything to do with biology or get a Ph.D -- my aspirations leaned more towards becoming a ninja...but alas...decades later with a PhD in bioinformatics!
 :::
 
-::: {.column width="40%"}
-::: {style="display: flex; align-items: center; justify-content: center; height: 100%;"}
+:::: {.column width="40%"}
+::: {style="display: flex; align-items: center; justify-content: center;"}
 ![](ninja.png){width="300px"}
 :::
-:::
-:::::
+::::
+::::::
 
-:::::: columns
+:::::: {style="display: flex; align-items: center;"}
 :::: {.column width="40%"}
-::: {style="display: flex; align-items: center; justify-content: center; height: 100%;"}
+::: {style="display: flex; align-items: center; justify-content: center;"}
 ![](cantor.svg){width="650px"}
 :::
 ::::
@@ -115,38 +115,36 @@ During my first semester of [Computer Science](https://www.ecci.ucr.ac.cr/) at t
 :::
 ::::::
 
-:::::: columns
+::::::: {style="display: flex; align-items: center;"}
 ::: {.column width="60%"}
 After graduating I took a break from school and came to Vermont to live at a [Zen Buddhist Center](https://vermontzen.org/), where I also had my very first and very cold Vermont winter! Eventually I met Dr. Jeff Bond, a University of Vermont researcher and professor, whom I worked with for 5 years as a bioinformatics programmer and afterwards he was my advisor for the Ph.D. program in [Cell and Molecular Biology](https://www.uvm.edu/graduate/cmb) doing Computational Biology/Bioinformatics.
 :::
 
-:::: {.column width="40%"}
-::: {style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;"}
+::::: {.column width="40%"}
+:::: {style="display: flex; flex-direction: column; align-items: center; justify-content: center;"}
 ![](bondlab.jpg){width="300px"}
 
 ::: text-center
 *Bond Lab 2011*
 :::
-:::
 ::::
-::::::
+:::::
+:::::::
 
-::::: columns
-
-::: {.column width="40%"}
-::: {style="display: flex; align-items: center; justify-content: center; height: 100%;"}
+:::::: {style="display: flex; align-items: center;"}
+:::: {.column width="40%"}
+::: {style="display: flex; align-items: center; justify-content: center;"}
 ![](bayesjerry.png){width="300px"}
 :::
-:::
+::::
 
 ::: {.column width="60%"}
 During my second year of the Ph.D program, something unexpected happen: another graduate student and myself took a visiting professor (Terry Speed, a world-renowned bioinformatics statistician) to Vermont's famous ice cream factory: Ben and Jerry's. During the trip, something about the conversation, and also listening to his talks, really aroused my interest in statistics, subsequently I took a Bayesian statistics course and I was hooked! Been a statistician/bioinformatician/data scientist ever since working for both academia and industry.
 :::
-
-:::::
+::::::
 
 I also have a life outside of work, mainly about finding the [meaning of life and becoming a better person](https://vermontzen.org), and also as a hobby singing and playing percussion in a [band](https://songoros.com/), but that's a story for another time!!
-:::::::::::::::
+:::::::::::::::::::::
 
 ## About me
 
