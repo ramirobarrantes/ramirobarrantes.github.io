@@ -3,8 +3,6 @@ title: "Projects"
 author: ""
 comments: false
 citation: false
-description: |
-  This portfolio includes works, software, and tools I have contributed to or designed.
 page-layout: full
 title-block-banner: true
 # Override the cascaded project-hero partial from _metadata.yml — use standard banner for listing
@@ -15,6 +13,8 @@ format:
 ---
 
 ## GitLab Contribution Activity
+
+Most of my projects are internal and reflect collaborations that have lead or are going to lead to publications.
 
 ```{r, results='asis', echo=FALSE}
 if (file.exists("../gitlab-heatmap.html")) {
