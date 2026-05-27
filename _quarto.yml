@@ -57,7 +57,7 @@ website:
   
   page-footer:
     left: >-
-     &#169; 2026 Ramiro Barrantes-Reynolds &#8729; Made with [Quarto](https://quarto.org)
+     &#169; 2026 Ramiro Barrantes-Reynolds &#8729; Made with [Quarto](https://quarto.org) and [Claude Code](https://claude.com/claude-code)
     center: |
       <a class="link-dark me-1" href="/accessibility.html" title="Accessibility commitment" target="_blank" rel="noopener">{{< fa universal-access >}}</a>
       <a class="link-dark me-1" href="https://linkedin.com/in/ramirobarrantes" title="LinkedIn" target="_blank" rel="noopener">{{< fa brands linkedin >}}</a>
