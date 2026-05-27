@@ -25,7 +25,9 @@ if (file.exists("../gitlab-heatmap.html")) {
 ## Projects
 
 - [nf-core Modules for Copy Number Trajectory Analysis (coptr)](2024-12-15-nf-core-coptr-modules/index.qmd) — Five Nextflow modules for analyzing copy number variation trajectories from sequencing data
+- [Bioconda coptr recipe](https://bioconda.github.io/recipes/coptr/README.html)
 - [NCBI FPG/NEI Conserved Domain Profile](https://www.ncbi.nlm.nih.gov/Structure/cdd/cddsrv.cgi?uid=176798)
+
 
 ## Retired Projects
 
