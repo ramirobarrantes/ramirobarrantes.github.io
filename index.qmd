@@ -49,8 +49,7 @@ resources:
 
 ::: {#hero-heading}
 
-I am a bioinformatics scientist with 25+ years of experience building computational infrastructure for genomics and biomedical research. My expertise spans Bayesian statistics, machine learning, variant calling, and epigenomics. Beyond individual research, I'm committed to mentoring collaborators, developing open-source tools, and modernizing scientific computing through reproducible workflows. I believe accessible, well-designed computational systems amplify the impact of collaborative research.
-
+Bioinformatics scientist and quantitative researcher with 25+ years working at the intersection of machine learning, genomics, and collaborative science. Current work applies Bayesian models, bioinformatics methods, machine learning methods, using workflow management systems and AI tools to problems in epigenomics, variant pathogenicity and infectious disease — always in partnership with biologists, clinicians, and data scientists.
 [Learn more about me &rarr;](/about){.about-links .subtitle}
 
 :::

@@ -31,6 +31,6 @@ if (file.exists("../gitlab-heatmap.html")) {
 
 ## Retired Projects
 
-- [Dance Your PhD](2011-01-01-dance-your-phd/index.qmd) — Choreographed interpretation of my PhD thesis, submitted to a Science Magazine's international competition
-- [Xymp™ Bioassay System](2010-01-01-xymp/index.qmd) — Statistical software for designing, analyzing, and validating potency assays
-- [UVM BioDesktop](2004-01-01-biodesktop/index.qmd) — Open-source web-based data management system built on MySQL and Apache
+- [Dance Your PhD (2011)](2011-01-01-dance-your-phd/index.qmd) — Choreographed interpretation of my PhD thesis, submitted to a Science Magazine's international competition
+- [Xymp™ Bioassay System (2011-2021)](2010-01-01-xymp/index.qmd) — Statistical software for designing, analyzing, and validating potency assays
+- [UVM BioDesktop (approx 2002-2013)](2004-01-01-biodesktop/index.qmd) — Open-source web-based data management system built on MySQL and Apache
