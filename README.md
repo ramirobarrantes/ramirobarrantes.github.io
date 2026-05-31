@@ -4,9 +4,9 @@
 
 This is a professional website built with [Quarto](https://quarto.org/), 
 forked from [Silvia Canelón's excellent template](https://silviacanelon.com/) 
-which in turn was inspired by the [Hugo Apéro theme](https://hugo-apero-docs.netlify.app/)and personalized for a bioinformatics data scientist at the University of Vermont.
+which in turn was inspired by the [Hugo Apéro theme](https://hugo-apero-docs.netlify.app/).
 
-The website showcases research, publications, projects, and more in computational biology and bioinformatics.
+The website showcases my research, publications, projects, and more in computational biology and bioinformatics.
 
 This site was also an experiment: I used Claude Code for the technical 
 heavy lifting while I just directed and supervised the work. Most of my time 
