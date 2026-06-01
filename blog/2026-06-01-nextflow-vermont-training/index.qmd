@@ -1,0 +1,15 @@
+---
+title: "Teaching, Training, and Transforming: Building Capacity with Nextflow in Vermont"
+author: "Ramiro Barrantes-Reynolds"
+date: "2026-06-01"
+categories: [nextflow, bioinformatics, training]
+subtitle: "Seqera blog post on Nextflow capacity building in Vermont"
+---
+
+I'm excited to share a feature on Seqera's blog about our Nextflow training and capacity-building initiatives here at the University of Vermont.
+
+The article discusses how we're using Nextflow and workflow automation to transform computational biology research, enhance reproducibility, and train the next generation of bioinformaticians in Vermont.
+
+**Read the full article here:** [Teaching, Training, and Transforming: Building Capacity with Nextflow in Vermont](https://seqera.io/blog/teaching-training-and-transforming-building-capacity-with-nextflow-in-vermont/)
+
+This work reflects our commitment to democratizing bioinformatics through open-source tools and collaborative education.
