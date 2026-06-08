@@ -1,0 +1,14 @@
+---
+title: "Novel antibody cocktail therapy targeting extracellular tumor-specific mutations to treat EMT6 cell line-derived triple-negative breast cancer"
+author: "Ramiro Barrantes-Reynolds"
+date: "2026-04-06"
+categories: [immunotherapy, cancer, personalized medicine]
+---
+
+## Citation
+
+Pero, S.C., Shukla, G.S., Sun, Y., **Barrantes-Reynolds, R.**, Hartman, C.J., Ackerman, M.E., Mei, L., Zhang, F., Fournier, M.R., & Krag, D.N. (2026). [Novel antibody cocktail therapy targeting extracellular tumor-specific mutations to treat EMT6 cell line-derived triple-negative breast cancer.](https://www.nature.com/articles/s41598-026-46751-z) *Scientific Reports*, 16, 16397.
+
+## Summary
+
+Triple-negative breast cancer (TNBC) remains one of the most challenging cancers to treat due to its high heterogeneity and lack of conventional therapeutic targets. This study demonstrates a promising personalized immunotherapy approach using customized antibody cocktails that target patient-specific tumor mutations. We developed polyclonal antibodies targeting nine distinct mutated cell surface proteins (MSPs) on EMT6 tumor cells and showed that this antibody cocktail, combined with anti-PD-1 checkpoint inhibition, significantly delayed tumor growth and improved survival in preclinical mouse models without toxicity. Notably, our analysis of The Cancer Genome Atlas revealed that 69% of TNBC patients harbor sufficient tumor-specific mutations (>10 MSPs) to be candidates for this personalized antibody therapy, compared to only 42% of other breast cancer patients. These results provide compelling proof-of-concept for a novel individualized treatment strategy for TNBC that leverages the high mutational burden of these tumors as a therapeutic advantage.
