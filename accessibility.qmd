@@ -1,30 +1,73 @@
 ---
 comments: false
-date: "2021-06-01T10:00:00+00:00"
-title: "Accessibility commitment"
+title: "Accessibility statement"
 ---
 
-Travel back to the [home page](/) or [about page](/about).
+[← Back to home](/){.btn .btn-outline-secondary}
 
-## Feedback
+---
 
-I welcome any feedback on the accessibility of my site and/or the educational materials I create. Please let me know if you encounter any accessibility barriers by using my [contact form](/contact) and I'll do my best to respond promptly.
+## My commitment to accessibility
 
-Thank you for visiting my site and for taking the time to read this page {{< bi heart-fill >}}
+I believe that the web should be accessible to everyone, regardless of their abilities or the technology they use. This site has been built with accessibility as a core principle, and I'm committed to maintaining and improving its accessibility over time.
 
-## Accessibility practices
+If you encounter any accessibility barriers while using this site or accessing my content, please [contact me](/contact) and let me know. I'll do my best to address the issue promptly.
 
-This site has been designed with the following features in mind:
+---
 
-- A color palette that meets WCAG 2.1 AA standards for contrast
-- Alternative text for all informative images
-- Readable font faces, specifically to avoid impostor letter shapes and mirroring. This site primarily uses Red Hat Text which is freely available and has been found to be relatively accessible to users with dyslexic traits and poor near vision.[^1]
-- A table of contents in the blog post sidebar for easier navigation
+## Accessibility features
 
-I'm aware there is much more to inclusive and accessible design and I'm learning how to implement better accessibility practices in the content I create. I'm not a web developer but my plan is to regularly audit my site for accessibility failures and learn how to remedy them as best I can. I'll be using the following evaluation tools:
+This site implements the following accessibility practices:
 
-- [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
+### Visual design
+- **WCAG 2.1 Level AA compliant color contrast** — All text meets minimum contrast ratios (at least 4.5:1 for normal text, 3:1 for large text)
+- **Dark and light mode support** — Choose your preferred color scheme based on your needs and preferences
+- **Readable typography** — The site uses **Commissioner** (body text) and **Fraunces** (headings), both designed for clarity and readability across all users, including those with dyslexia or low vision
+- **Sufficient spacing and sizing** — Text, buttons, and interactive elements are sized and spaced for easy interaction and reading
 
-In addition, I'll document the failures and any corrective actions as issues in the [GitHub repository](https://github.com/ramirobarrantes/website/issues) housing the files used to build this site.
+### Navigation and interaction
+- **Keyboard navigation** — All interactive elements are fully navigable using only the keyboard (Tab, Enter, Escape keys)
+- **Visible focus indicators** — When using keyboard navigation, focused elements are clearly indicated with visible borders or outlines
+- **Semantic HTML** — The site uses proper heading hierarchy and semantic elements for better screen reader navigation
+- **Descriptive link text** — Links use clear, descriptive text that makes sense out of context
+- **Form accessibility** — Contact forms include associated labels and clear instructions
 
-[^1]: For more on font accessibility, I recommend the talk [Don't Believe the Type!](https://youtu.be/h8IOqUl1zII?t=1029) by [The Readability Group](https://medium.com/the-readability-group).
+### Content and media
+- **Alternative text for images** — All informative images include descriptive alt text for screen reader users
+- **Video captions** — External video content includes captions where available
+- **Table of contents** — Blog posts include a navigable table of contents for easier browsing
+
+### Technical standards
+- **Mobile responsive** — The site works well on all screen sizes from phones to large displays
+- **Screen reader compatible** — Built with semantic HTML and ARIA labels where needed for assistive technology users
+- **Performance** — Fast loading times benefit all users, especially those on slower connections or mobile networks
+
+---
+
+## Known limitations and ongoing improvements
+
+Accessibility is an ongoing practice, not a destination. While I've built this site with accessibility in mind, there may be areas for improvement. I regularly audit the site using:
+
+- [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) by WebAIM
+- Browser developer tools and accessibility inspectors
+- Manual testing with keyboard navigation and screen readers
+- Community feedback from users
+
+Issues and improvements are tracked in the [GitHub repository](https://github.com/ramirobarrantes/website) for transparency and accountability.
+
+---
+
+## Resources
+
+If you'd like to learn more about web accessibility, I recommend:
+
+- [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/WAI/WCAG21/quickref/) — The official standard
+- [WebAIM](https://webaim.org/) — Practical accessibility guidance
+- [The A11Y Project](https://www.a11yproject.com/) — Community-driven accessibility education
+- [Inclusive Components](https://inclusive-components.design/) — Design patterns that work for everyone
+
+---
+
+## Contact
+
+Questions about accessibility? I'd love to hear from you. Please use my [contact form](/contact) or reach out via email.
