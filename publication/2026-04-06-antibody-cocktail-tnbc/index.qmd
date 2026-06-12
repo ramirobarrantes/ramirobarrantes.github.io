@@ -2,7 +2,7 @@
 title: "Novel antibody cocktail therapy targeting extracellular tumor-specific mutations to treat EMT6 cell line-derived triple-negative breast cancer"
 author: "Ramiro Barrantes-Reynolds"
 date: "2026-04-06"
-categories: [immunotherapy, cancer, personalized medicine]
+categories: [immunotherapy, cancer, personalized medicine, bioinformatics]
 ---
 
 ## Citation
@@ -11,4 +11,6 @@ Pero, S.C., Shukla, G.S., Sun, Y., **Barrantes-Reynolds, R.**, Hartman, C.J., Ac
 
 ## Summary
 
-Triple-negative breast cancer (TNBC) remains one of the most challenging cancers to treat due to its high heterogeneity and lack of conventional therapeutic targets. This study demonstrates a promising personalized immunotherapy approach using customized antibody cocktails that target patient-specific tumor mutations. We developed polyclonal antibodies targeting nine distinct mutated cell surface proteins (MSPs) on EMT6 tumor cells and showed that this antibody cocktail, combined with anti-PD-1 checkpoint inhibition, significantly delayed tumor growth and improved survival in preclinical mouse models without toxicity. Notably, our analysis of The Cancer Genome Atlas revealed that 69% of TNBC patients harbor sufficient tumor-specific mutations (>10 MSPs) to be candidates for this personalized antibody therapy, compared to only 42% of other breast cancer patients. These results provide compelling proof-of-concept for a novel individualized treatment strategy for TNBC that leverages the high mutational burden of these tumors as a therapeutic advantage.
+This is the result of a long-standing collaboration with an excellent cancer research group. This study demonstrates a proof-of-concept towards personalized immunotherapy approach using customized antibody cocktails that target patient-specific tumor mutations. This study focused on mice, and developed a triple negative breast cancer mouse model and showed that a particular antibody cocktail targeting membrane surface proteins (MSPs) delayed tumor growth and improved survival. My role was to examine TCGA cancer tumor/normal pairs, and determine if there were enough tumor-specific mutations to serve as candidates for a potential personalized antibody therapy.
+
+This work involved downloading large amounts of variant information for tumor/normal pairs, while writing programs in R that would interface TCGA and Uniprot data. This work, started several years ago, laid the foundation for the more streamlined multiomics variant filtering, annotation pipelines I've developed since. 
