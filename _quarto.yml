@@ -8,7 +8,7 @@ project:
 website:
   title: "Ramiro Barrantes-Reynolds"
   site-url: https://ramirobarrantes.com
-  description: "Bioinformatics scientist and data scientist specializing in genomics, epigenomics, and Bayesian statistics."
+  description: "Bioinformatician & Data Scientist specializing in genomics, epigenomics, and Bayesian statistics."
   favicon: assets/ramiro/img/logo_rounded.svg
   page-navigation: true
   back-to-top-navigation: true

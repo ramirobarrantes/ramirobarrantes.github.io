@@ -1,6 +1,6 @@
 ---
 title: "Ramiro Barrantes-Reynolds"
-subtitle: Bioinformatics Scientist & Data Scientist
+subtitle: Bioinformatician & Data Scientist
 image: sidebar/avatar.png
 image-alt: "Portrait of Ramiro Barrantes-Reynolds"
 about:
@@ -83,7 +83,7 @@ Welcome
 
 I am glad you are here!
 
-I am a Bioinformatics Scientist at the [University of Vermont](https://www.uvm.edu/), Department of Microbiology and Molecular Genetics. My research focuses on collaborative bioinformatics and computational biology, spanning variant analysis, epigenomics, virus typing, transcriptomics, and structural biology. I work extensively with workflow management systems, containerized environments, and high-performance computing to enforce reproducibility and scalability.
+I am a Bioinformatician & Data Scientist at the [University of Vermont](https://www.uvm.edu/), Department of Microbiology and Molecular Genetics. My research focuses on collaborative bioinformatics and computational biology, spanning variant analysis, epigenomics, virus typing, transcriptomics, and structural biology. I work extensively with workflow management systems, containerized environments, and high-performance computing to enforce reproducibility and scalability.
 
 I have been integrating quantitative sciences and computational methods with biomedical research since 2001, with a focus on Bayesian statistical methods, machine learning, data science and now, increasingly, AI methods. Learn more about my work in [projects](/projects) and [publications](/publication).
 

@@ -1,14 +1,14 @@
 ---
 title: "Ramiro Barrantes-Reynolds, PhD"
 pagetitle: "Ramiro Barrantes-Reynolds, PhD"
-subtitle: "Bioinformatics Scientist at the University of Vermont"
+subtitle: "Bioinformatician & Data Scientist — University of Vermont"
 image: assets/ramiro/img/hero.png
 image-alt: "Ramiro Barrantes-Reynolds homepage hero image"
 
 twitter-card:
     title: Ramiro Barrantes-Reynolds, PhD
     description: |
-      Bioinformatics scientist and data scientist specializing in genomics, epigenomics, and Bayesian statistics.
+      Bioinformatician & Data Scientist — University of Vermont. Specializing in genomics, epigenomics, and Bayesian statistics.
     image: assets/ramiro/img/social-card.jpg
 
 about:
@@ -49,7 +49,7 @@ resources:
 
 ::: {#hero-heading}
 
-Bioinformatics scientist and quantitative researcher with 25+ years working at the intersection of machine learning, genomics, and collaborative science. Current work applies Bayesian models, bioinformatics methods, machine learning methods, using workflow management systems and AI tools to problems in epigenomics, variant pathogenicity and infectious disease — always in partnership with biologists, clinicians, and data scientists.
+Bioinformatician & Data Scientist with 25+ years working at the intersection of machine learning, genomics, and collaborative science. Current work applies Bayesian models, bioinformatics methods, machine learning methods, using workflow management systems and AI tools to problems in epigenomics, variant pathogenicity and infectious disease — always in partnership with biologists, clinicians, and data scientists.
 [Learn more about me &rarr;](/about){.about-links .subtitle}
 
 :::
