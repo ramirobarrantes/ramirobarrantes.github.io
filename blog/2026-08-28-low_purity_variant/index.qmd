@@ -26,6 +26,8 @@ At the same 30x depth, the expected number of error reads at any given position 
 $$E(\text{error reads}) = \text{depth} \times \text{error rate} = 30 \times 0.001 = 0.03 \text{ reads}$$
 That's the sequencing error rate — what to expect even where nothing real is happening. Therefore, at 30X and 5% tumor purity, a real mutation is expected to produce ~0.75 reads, and pure noise is expected to produce ~0.03 reads. Both are small, and telling them apart is very hard.
 
+This 0.1% figure assumes errors are random and uniform, which real Illumina data isn't. Most false positives instead cluster at systematic artifacts: homopolymer/repeat slippage, strand bias and PCR duplicates, oxidative damage (8-oxoguanine causing C→A), and misalignment around indels. The binomial model above is a noise *floor*, not a full error model — real callers add artifact filters on top of it.
+
 To put this in perspective, for any observed number of ALT reads, we can ask how likely that count is under pure sequencing error:
 
 ```{r}
@@ -54,7 +56,7 @@ data.frame(k = 1:4) |>
 
 ## Impact of Depth
 
-We can ask how many reads a real variant, at the same 5% purity, actually produces:
+Following up on this, we can ask how many reads a real variant, at the same 5% purity, actually produces:
 
 ```{r}
 #| label: fig-depth-boxplot
@@ -168,3 +170,7 @@ ggplot(hipurity, aes(x = tumor_depth, y = TUMOR_AD_ALT, color = normal_flag)) +
   labs(x = "Tumor depth (log scale)", y = "ALT reads observed", color = NULL) +
   theme_minimal()
 ```
+
+## Conclusion
+
+So at 5% purity the fix is really deeper sequencing. At shallow depth the expected signal falls in the same regions as artifacts, but it does gain in reads with more coverage. A minimum read count is still worth imposing, but it only clears the very bottom of the noise. And the usual models that we use might not capture other the systematic artifacts — oxidative damage, deamination, mapping errors in repeats — that dominate low-read-count calls. 
