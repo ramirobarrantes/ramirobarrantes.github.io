@@ -15,7 +15,7 @@ A tumor biopsy is never pure tumor, it contains normal cells. Therefore when we 
 
 **Tumor purity** is the fraction of cells in a sample that are actually tumor cells. A purity of 1.0 would mean every sequenced cell is tumor. For somatic variant calling it is important as it sets the ceiling on how much of the DNA we sequence carries the mutation: the lower the purity, the smaller that signal — and, the harder it becomes to tell a real variant from a sequencing error.
 
-Say tumor purity is 5%. If we have a variant for which we have 100 reads, then about 5 come from tumor cells. If the mutation is heterozygous — present on only one of the two copies at that position — only half of the tumor-derived fragments carry it, so roughly 2 to 3 out of the 5. On average then, about 2.5 carry the mutation. This 2.5% fraction is called the variant allele frequency, or VAF. 
+Say tumor purity is 5%. If we have a variant for which we have 100 reads (100X coverage), then about 5 come from tumor cells. If the mutation is heterozygous — present on only one of the two copies at that position — only half of the tumor-derived fragments carry it, so roughly 2 to 3 out of the 5. On average then, about 2.5 carry the mutation. This 2.5% fraction is called the variant allele frequency, or VAF. 
 
 ## Sequencing error
 
@@ -26,13 +26,13 @@ At the same 30x depth, the expected number of error reads at any given position 
 $$E(\text{error reads}) = \text{depth} \times \text{error rate} = 30 \times 0.001 = 0.03 \text{ reads}$$
 That's the sequencing error rate — what to expect even where nothing real is happening. Therefore, at 30X and 5% tumor purity, a real mutation is expected to produce ~0.75 reads, and pure noise is expected to produce ~0.03 reads. Both are small, and telling them apart is very hard.
 
-This 0.1% figure assumes errors are random and uniform, which real Illumina data isn't. Most false positives instead cluster at systematic artifacts: homopolymer/repeat slippage, strand bias and PCR duplicates, oxidative damage (8-oxoguanine causing C→A), and misalignment around indels. The binomial model above is a noise *floor*, not a full error model — real callers add artifact filters on top of it.
+This 0.1% figure assumes errors are random and uniform, which real Illumina data isn't. Most false positives instead cluster at systematic artifacts: homopolymer/repeat slippage, strand bias and PCR duplicates, oxidative damage (8-oxoguanine causing C→A), and misalignment around indels. The binomial model above is a noise *floor*, not a full error model — real callers add artifact filters on top of it. In addition, these expectations assume a diploid locus and a clonal heterozygous mutation; copy-number alterations or subclonality can substantially shift the expected VAF.
 
 To put this in perspective, for any observed number of ALT reads, we can ask how likely that count is under pure sequencing error:
 
 ```{r}
 #| label: tbl-noise
-#| tbl-cap: "Probability that sequencing error alone produces at least k ALT reads at a given position, at 30x, 60x, and 100x depth (per-read error rate 0.001)."
+#| tbl-cap: "Probability that sequencing error alone produces at least k ALT reads at a given position, at 30x, 60x, and 100x depth (per-read error rate 0.001). Notice that even at 100x depth, observing 3 ALT reads from sequencing error alone remains extremely unlikely, which explains why read-count thresholds are effective against random error."
 
 library(gt)
 suppressPackageStartupMessages(library(dplyr))
@@ -173,4 +173,4 @@ ggplot(hipurity, aes(x = tumor_depth, y = TUMOR_AD_ALT, color = normal_flag)) +
 
 ## Conclusion
 
-So at 5% purity the fix is really deeper sequencing. At shallow depth the expected signal falls in the same regions as artifacts, but it does gain in reads with more coverage. A minimum read count is still worth imposing, but it only clears the very bottom of the noise. And the usual models that we use might not capture other the systematic artifacts — oxidative damage, deamination, mapping errors in repeats — that dominate low-read-count calls. 
+So at 5% purity, if we are not able to increase the tumor fraction by sample preparation or enrichment of some type, the most direct fix is really deeper sequencing.  At shallow depth the expected signal falls in the same regions as artifacts, but it does gain in reads with more coverage. A minimum read count is still worth imposing, but it only clears the very bottom of the noise. And the usual models that we use might not capture other the systematic artifacts — oxidative damage, deamination, mapping errors in repeats — that dominate low-read-count calls. 
