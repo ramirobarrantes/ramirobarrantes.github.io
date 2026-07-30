@@ -6,18 +6,16 @@ categories: [bioinformatics, cancer genomics, statistics, variant calling]
 subtitle: "Tumor Purity and Variant Calling"
 execute:
   echo: false
+  message: false
 ---
 
 ## Introduction
 
 A tumor biopsy is never pure tumor, it contains normal cells. Therefore when we sequence a tumor/normal pair to find somatic variants each DNA fragment from the tumor will come from the tumor cell or from a normal cell mixed in with it. 
 
-**Tumor purity** is the fraction of cells in a sample that are actually tumor cells. A purity of 1.0 would mean every sequenced cell is tumor. For somatic variant calling it is important as it sets the ceiling on how much of the DNA we sequence carries the mutation: the lower the purity, the smaller that signal — and, the harder it becomes to tell a real variant from a mistake.
+**Tumor purity** is the fraction of cells in a sample that are actually tumor cells. A purity of 1.0 would mean every sequenced cell is tumor. For somatic variant calling it is important as it sets the ceiling on how much of the DNA we sequence carries the mutation: the lower the purity, the smaller that signal — and, the harder it becomes to tell a real variant from a sequencing error.
 
-Say tumor purity is 5%. If we have a varaint for which we have 100 reads, then about 5 come from tumor cells. If the mutation is heterozygous — present on only one of the two copies at that position — only half of the tumor-derived fragments carry it, so roughly 2 to 3 out of the 5. On average then, about 2.5 carry the mutation. This 2.5% fraction is called the variant allele frequency, or VAF. Informally, and for a diploid organism, we can approximate purity with this:
-
-$$\text{VAF} \approx \frac{\text{purity}}{2}$$
-However, at 30x depth, we would expect to see $30 \times 0.025 \approx 0.75 \text{ reads}$, which means that a real mutation is expected to produce well under one supporting read. Most of the time we'll see zero.
+Say tumor purity is 5%. If we have a variant for which we have 100 reads, then about 5 come from tumor cells. If the mutation is heterozygous — present on only one of the two copies at that position — only half of the tumor-derived fragments carry it, so roughly 2 to 3 out of the 5. On average then, about 2.5 carry the mutation. This 2.5% fraction is called the variant allele frequency, or VAF. 
 
 ## Sequencing error
 
@@ -28,8 +26,6 @@ At the same 30x depth, the expected number of error reads at any given position 
 $$E(\text{error reads}) = \text{depth} \times \text{error rate} = 30 \times 0.001 = 0.03 \text{ reads}$$
 That's the sequencing error rate — what to expect even where nothing real is happening. Therefore, at 30X and 5% tumor purity, a real mutation is expected to produce ~0.75 reads, and pure noise is expected to produce ~0.03 reads. Both are small, and telling them apart is very hard.
 
-## Signal vs Noise
-
 To put this in perspective, for any observed number of ALT reads, we can ask how likely that count is under pure sequencing error:
 
 ```{r}
@@ -37,7 +33,7 @@ To put this in perspective, for any observed number of ALT reads, we can ask how
 #| tbl-cap: "Probability that sequencing error alone produces at least k ALT reads at a given position, at 30x, 60x, and 100x depth (per-read error rate 0.001)."
 
 library(gt)
-library(dplyr)
+suppressPackageStartupMessages(library(dplyr))
 
 err <- 0.001
 ge  <- function(k, n, p) pbinom(k - 1, n, p, lower.tail = FALSE)
@@ -58,7 +54,7 @@ data.frame(k = 1:4) |>
 
 ## Impact of Depth
 
-Now flip the question. Instead of asking how often error alone fakes *k* reads, ask how many reads a real variant, at the same 5% purity, actually produces:
+We can ask how many reads a real variant, at the same 5% purity, actually produces:
 
 ```{r}
 #| label: fig-depth-boxplot
@@ -95,37 +91,36 @@ Compare that against the noise table above. Requiring 3 or more reads (the dashe
 
 ## Real Cases
 
-Real case 1: 257 candidate somatic SNVs from a WGS tumor/normal pair, with an estimated tumor purity of **5.8%**. Tumor depth ranges from 6x to 72x (median 29x) — at this depth and purity, a real variant is expected to produce well under one supporting read.
+Real case 1: 257 candidate somatic SNVs from a WGS tumor/normal pair, with an estimated tumor purity of **5.8%**. Tumor depth ranges from 6x to 72x (median 29x) — at this depth and purity, a real variant is expected to produce under one supporting read.
 
 ```{r}
 #| label: fig-real-wgs
-#| fig-cap: "ALT read count vs. tumor depth, low-purity WGS (5.8% purity). Points jittered vertically to reduce overplotting; x-axis log-scaled. Dashed line: naive expected ALT reads (depth × 0.029)."
+#| fig-cap: "ALT read count vs. tumor depth, low-purity WGS (5.8% purity). Points jittered vertically to reduce overplotting; x-axis log-scaled."
 
 library(ggplot2)
-library(dplyr)
+suppressPackageStartupMessages(library(dplyr))
 
 jit <- position_jitter(width = 0, height = 0.15, seed = 1)
 
 real <- read.csv("tumor_normal_30_60x.csv") %>%
   mutate(
     tumor_depth  = TUMOR_AD_REF + TUMOR_AD_ALT,
-    clean_normal = NORMAL_AD_ALT == 0
+    normal_flag  = NORMAL_AD_ALT >= 3
   )
 
-ggplot(real, aes(x = tumor_depth, y = TUMOR_AD_ALT, color = clean_normal)) +
+ggplot(real, aes(x = tumor_depth, y = TUMOR_AD_ALT, color = normal_flag)) +
   geom_point(alpha = 0.7, position = jit) +
-  geom_abline(slope = 0.029, intercept = 0, linetype = "dashed", color = "gray40") +
   scale_x_log10() +
   scale_y_continuous(breaks = seq(0, max(real$TUMOR_AD_ALT), by = 2)) +
   scale_color_manual(
-    values = c(`TRUE` = "#1f78b4", `FALSE` = "firebrick"),
-    labels = c(`TRUE` = "0 ALT reads in normal", `FALSE` = "≥1 ALT read in normal")
+    values = c(`TRUE` = "firebrick", `FALSE` = "#1f78b4"),
+    labels = c(`TRUE` = "≥3 ALT reads in normal", `FALSE` = "<3 ALT reads in normal")
   ) +
   labs(x = "Tumor depth (log scale)", y = "ALT reads observed", color = NULL) +
   theme_minimal()
 ```
 
-Real case 2, for contrast: a WES tumor/normal pair with a much higher ichorCNA-estimated purity of **28.6%** and far greater depth — 416 candidates, tumor depth from 13x to 3819x (median 366x). Minimum ALT count across all 416 candidates is 5, and 91% have a clean normal.
+Real case 2, for contrast: a WES tumor/normal pair with a much higher ichorCNA-estimated purity of **28.6%** and far greater depth — 416 candidates, tumor depth from 13x to 3819x (3819 is probably an outlier). Minimum ALT count across all 416 candidates is 5, and 91% have a clean normal.
 
 ```{r}
 #| label: fig-real-wes
@@ -134,17 +129,17 @@ Real case 2, for contrast: a WES tumor/normal pair with a much higher ichorCNA-e
 wes <- read.csv("wes_tumor_normal.csv") %>%
   mutate(
     tumor_depth  = TUMOR_AD_REF + TUMOR_AD_ALT,
-    clean_normal = NORMAL_AD_ALT == 0
+    normal_flag  = NORMAL_AD_ALT >= 3
   )
 
-ggplot(wes, aes(x = tumor_depth, y = TUMOR_AD_ALT, color = clean_normal)) +
+ggplot(wes, aes(x = tumor_depth, y = TUMOR_AD_ALT, color = normal_flag)) +
   geom_point(alpha = 0.5, position = jit) +
   geom_abline(slope = 0.143, intercept = 0, linetype = "dashed", color = "gray40") +
   scale_x_log10() +
   coord_cartesian(ylim = c(0, 330)) +
   scale_color_manual(
-    values = c(`TRUE` = "#1f78b4", `FALSE` = "firebrick"),
-    labels = c(`TRUE` = "0 ALT reads in normal", `FALSE` = "≥1 ALT read in normal")
+    values = c(`TRUE` = "firebrick", `FALSE` = "#1f78b4"),
+    labels = c(`TRUE` = "≥3 ALT reads in normal", `FALSE` = "<3 ALT reads in normal")
   ) +
   labs(x = "Tumor depth (log scale)", y = "ALT reads observed", color = NULL) +
   theme_minimal()
@@ -159,16 +154,16 @@ Real case 3, at the opposite extreme: a tumor/normal pair with an estimated puri
 hipurity <- read.csv("high_purity_tumor_normal.csv") %>%
   mutate(
     tumor_depth  = TUMOR_AD_REF + TUMOR_AD_ALT,
-    clean_normal = NORMAL_AD_ALT == 0
+    normal_flag  = NORMAL_AD_ALT >= 3
   )
 
-ggplot(hipurity, aes(x = tumor_depth, y = TUMOR_AD_ALT, color = clean_normal)) +
+ggplot(hipurity, aes(x = tumor_depth, y = TUMOR_AD_ALT, color = normal_flag)) +
   geom_point(alpha = 0.4, position = jit) +
   geom_abline(slope = 0.465, intercept = 0, linetype = "dashed", color = "gray40") +
   scale_x_log10() +
   scale_color_manual(
-    values = c(`TRUE` = "#1f78b4", `FALSE` = "firebrick"),
-    labels = c(`TRUE` = "0 ALT reads in normal", `FALSE` = "≥1 ALT read in normal")
+    values = c(`TRUE` = "firebrick", `FALSE` = "#1f78b4"),
+    labels = c(`TRUE` = "≥3 ALT reads in normal", `FALSE` = "<3 ALT reads in normal")
   ) +
   labs(x = "Tumor depth (log scale)", y = "ALT reads observed", color = NULL) +
   theme_minimal()

@@ -33,7 +33,7 @@ jobs:
 
       - name: Install R dependencies
         run: |
-          install.packages(c("here", "readr", "dplyr", "xml2", "downlit"),
+          install.packages(c("here", "readr", "dplyr", "xml2", "downlit", "gt", "ggplot2"),
                           dependencies = TRUE)
         shell: Rscript {0}
 
