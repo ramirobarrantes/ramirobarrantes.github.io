@@ -1,0 +1,57 @@
+[
+  {
+    "listing": "/publication/index.html",
+    "items": [
+      "/publication/2026-06-02-rab11b-influenza/index.html",
+      "/publication/2026-04-06-antibody-cocktail-tnbc/index.html",
+      "/publication/2025-01-22-ebv-tumor-methylome/index.html",
+      "/publication/2022-03-01-t-cell-lupus/index.html",
+      "/publication/2011-10-06-amino-acid-frequency/index.html",
+      "/publication/2010-01-01-book-chapter-genome-instability/index.html",
+      "/publication/2009-05-01-plant-fungal-fpg/index.html",
+      "/publication/2008-07-15-clostridium-ogg/index.html",
+      "/publication/2008-07-01-ddc8-tissue-inhibitor/index.html",
+      "/publication/2007-08-01-methylation-j-protein/index.html",
+      "/publication/2007-08-20-aggregatibacter-emaa/index.html",
+      "/publication/2004-12-01-cdkn2a-database/index.html"
+    ]
+  },
+  {
+    "listing": "/about/index.html",
+    "items": [
+      "/project/2024-12-15-nf-core-coptr-modules/index.html",
+      "/project/2011-01-01-dance-your-phd/index.html",
+      "/project/2010-01-01-xymp/index.html",
+      "/project/2004-01-01-biodesktop/index.html",
+      "/blog/2026-09-09-pca-mds-for-clients/index.html",
+      "/blog/2026-08-28-low_purity_variant/index.html",
+      "/blog/2025-07-01-nextflow-vermont-training/index.html",
+      "/blog/2024-06-28-berglund-derivation/index.html",
+      "/blog/2023-10-20-mageck-mle/index.html",
+      "/blog/2022-10-28-kullback-leibler/index.html",
+      "/publication/2026-06-02-rab11b-influenza/index.html",
+      "/publication/2026-04-06-antibody-cocktail-tnbc/index.html",
+      "/publication/2025-01-22-ebv-tumor-methylome/index.html",
+      "/publication/2022-03-01-t-cell-lupus/index.html",
+      "/publication/2011-10-06-amino-acid-frequency/index.html",
+      "/publication/2010-01-01-book-chapter-genome-instability/index.html",
+      "/publication/2009-05-01-plant-fungal-fpg/index.html",
+      "/publication/2008-07-15-clostridium-ogg/index.html",
+      "/publication/2008-07-01-ddc8-tissue-inhibitor/index.html",
+      "/publication/2007-08-01-methylation-j-protein/index.html",
+      "/publication/2007-08-20-aggregatibacter-emaa/index.html",
+      "/publication/2004-12-01-cdkn2a-database/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/2026-09-09-pca-mds-for-clients/index.html",
+      "/blog/2026-08-28-low_purity_variant/index.html",
+      "/blog/2025-07-01-nextflow-vermont-training/index.html",
+      "/blog/2024-06-28-berglund-derivation/index.html",
+      "/blog/2023-10-20-mageck-mle/index.html",
+      "/blog/2022-10-28-kullback-leibler/index.html"
+    ]
+  }
+]

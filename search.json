@@ -1,0 +1,639 @@
+[
+  {
+    "objectID": "posts/miSeq/index.html",
+    "href": "posts/miSeq/index.html",
+    "title": "The MiSeq: A Next Generation Sequencing Instrument",
+    "section": "",
+    "text": "MiSeq Instrument (UMass Amherst)\n\n\nThe MiSeq, shown above, is one of several benchtop sequencers used in the Vermont Integrative Genomics Resource lab. The MiSeq uses next generation sequencing (NGS), which is a technology used to determine the sequence of DNA or RNA. As opposed to traditional Sanger sequencing using capillary electrophoresis, NGS can sequence many strands of DNA simultaneously, which means it can process and analyze data at a much faster rate. By sequencing multiple strands, NGS can more effectively compare data and identify genetic variants (Scientific 2023). The figure below shows a visual depiction of the NGS process, from DNA fragments to amplification and clustering to sequencing and analysis. With a runtime between 4 and 55 hours, the MiSeq outputs up to 15 Gb of data per run. The MiSeq performs up to 25 million reads per run, and its maximum read length is 2 x 300 base pairs (Illumina 2023b). Common MiSeq applications include small genome sequencing, targeted gene sequencing, and 16S metagenomic sequencing.\n\nScientific, ThermoFisher. 2023. “What Is Next-Generation Sequencing?” https://www.thermofisher.com/us/en/home/life-science/sequencing/sequencing-learning-center/next-generation-sequencing-information/ngs-basics/what-is-next-generation-sequencing.html.\n\n\n\nNext-Generation Sequencing (PraxiLabs)\n\n\nSmall genome sequencing involves analyzing the entire genome of small organisms such as microbes or viruses. A small genome contains less than or equal to 5 Mb of data. This information is especially useful for public health, epidemiology, or disease studies. The MiSeq can sequence up to 384 small genomes per run (Illumina 2023b).\nTargeted gene sequencing analyzes a specific subset of genes or area of the genome, which is far more cost and time efficient than sequencing the entire genome. Sequencing is performed on amplicons, which are duplicated segments of DNA or RNA produced by polymerase chain reactions (PCRs). Hundreds to thousands of amplicons are sequenced per run, allowing the MiSeq to accurately identify genetic variation, including somatic mutations, insertions, deletions, single-nucleotide polymorphisms, and many more variants. The MiSeq can sequence up to 96 samples per run (Illumina 2023b).\n16S metagenomic sequencing involves sequencing the 16S rRNA gene, which encodes for the 16S ribosomal RNA subunit of a prokaryotic ribosome. The figure below depicts the structure of this ancient gene, which is present in all bacteria and archea. It can be used to determine the phylogeny and taxonomy of bacteria and fungi in complex microbiomes and environments (Illumina 2023a). Most commonly, the 16S gene is used to identify the species/genuses of bacteria present in a sample. The MiSeq can sequence up to 96 samples per run (Illumina 2023b).\n\nIllumina. 2023a. “16S and ITS rRNA Sequencing.” https://www.illumina.com/areas-of-interest/microbiology/microbial-sequencing-methods/16s-rrna-sequencing.html.\n\nIllumina. 2023b. “MiSeq System.” https://www.illumina.com/systems/sequencing-platforms/miseq.html.\n\n\n\n\n\n\n\n16S rRNA Gene Structure (Karel Sedlar)"
+  },
+  {
+    "objectID": "posts/miSeq/index.html#the-miseq-a-next-generation-sequencing-instrument",
+    "href": "posts/miSeq/index.html#the-miseq-a-next-generation-sequencing-instrument",
+    "title": "The MiSeq: A Next Generation Sequencing Instrument",
+    "section": "",
+    "text": "MiSeq Instrument (UMass Amherst)\n\n\nThe MiSeq, shown above, is one of several benchtop sequencers used in the Vermont Integrative Genomics Resource lab. The MiSeq uses next generation sequencing (NGS), which is a technology used to determine the sequence of DNA or RNA. As opposed to traditional Sanger sequencing using capillary electrophoresis, NGS can sequence many strands of DNA simultaneously, which means it can process and analyze data at a much faster rate. By sequencing multiple strands, NGS can more effectively compare data and identify genetic variants (Scientific 2023). The figure below shows a visual depiction of the NGS process, from DNA fragments to amplification and clustering to sequencing and analysis. With a runtime between 4 and 55 hours, the MiSeq outputs up to 15 Gb of data per run. The MiSeq performs up to 25 million reads per run, and its maximum read length is 2 x 300 base pairs (Illumina 2023b). Common MiSeq applications include small genome sequencing, targeted gene sequencing, and 16S metagenomic sequencing.\n\nScientific, ThermoFisher. 2023. “What Is Next-Generation Sequencing?” https://www.thermofisher.com/us/en/home/life-science/sequencing/sequencing-learning-center/next-generation-sequencing-information/ngs-basics/what-is-next-generation-sequencing.html.\n\n\n\nNext-Generation Sequencing (PraxiLabs)\n\n\nSmall genome sequencing involves analyzing the entire genome of small organisms such as microbes or viruses. A small genome contains less than or equal to 5 Mb of data. This information is especially useful for public health, epidemiology, or disease studies. The MiSeq can sequence up to 384 small genomes per run (Illumina 2023b).\nTargeted gene sequencing analyzes a specific subset of genes or area of the genome, which is far more cost and time efficient than sequencing the entire genome. Sequencing is performed on amplicons, which are duplicated segments of DNA or RNA produced by polymerase chain reactions (PCRs). Hundreds to thousands of amplicons are sequenced per run, allowing the MiSeq to accurately identify genetic variation, including somatic mutations, insertions, deletions, single-nucleotide polymorphisms, and many more variants. The MiSeq can sequence up to 96 samples per run (Illumina 2023b).\n16S metagenomic sequencing involves sequencing the 16S rRNA gene, which encodes for the 16S ribosomal RNA subunit of a prokaryotic ribosome. The figure below depicts the structure of this ancient gene, which is present in all bacteria and archea. It can be used to determine the phylogeny and taxonomy of bacteria and fungi in complex microbiomes and environments (Illumina 2023a). Most commonly, the 16S gene is used to identify the species/genuses of bacteria present in a sample. The MiSeq can sequence up to 96 samples per run (Illumina 2023b).\n\nIllumina. 2023a. “16S and ITS rRNA Sequencing.” https://www.illumina.com/areas-of-interest/microbiology/microbial-sequencing-methods/16s-rrna-sequencing.html.\n\nIllumina. 2023b. “MiSeq System.” https://www.illumina.com/systems/sequencing-platforms/miseq.html.\n\n\n\n\n\n\n\n16S rRNA Gene Structure (Karel Sedlar)"
+  },
+  {
+    "objectID": "posts/kullbackLeibler/index.html",
+    "href": "posts/kullbackLeibler/index.html",
+    "title": "The Kullback-Leibler Divergence and Variational Bayes",
+    "section": "",
+    "text": "The Kullback-Leibler divergence is used to measure the difference between two probability distributions. We came across its use when using software based on the Variational Bayes approximation algorithm (more on that later). It was developed by two cryptologists/mathematicians, Solomon Kullback and Richard Leibler (McIntire 2021).\n\nMcIntire, Brenda. 2021. “The Secret Career of Solomon Kullback.” In CHANCE. American Statistical Association. https://chance.amstat.org/2021/04/kullback/.\nIf you have two probability distributions P(x) and Q(x) then the Kullback-Leibler divergence, also called relative entropy, is defined as\n\\[D_{KL}(P|Q)= \\sum_x{P(X)log\\frac{P(X)}{Q(X)}}\\]\nThis comes from the background of information theory (MacKay 2003), and it is a weighted average across \\(P(X)\\) of the log difference between \\(P(X)\\) and \\(Q(X)\\) (remember that \\(log \\frac{P(X)}{Q(X)}=log(P(X))-log(Q(X))\\)). One way of interpreting is how far Q(X) is from P(X).\n\nMacKay, David J. C. 2003. Information Theory, Inference, and Learning Algorithms. Cambridge University Press. https://www.worldcat.org/title/information-theory-inference-and-learning-algorithms/oclc/856654329?referer=br&ht=edition.\n\n\nVariational Bayes is a technique for approximating the posterior. The Kullback-Leibler divergence is used in the derivation as follows (Rogers and Girolami 2016). Given data Y and parameters \\(\\theta\\) the marginal likelihood, the average over all possible values of the parameter space would be defined as follows:\n\nRogers, Simon, and Mark Girolami. 2016. A First Course in Machine Learning, Second Edition. 2nd ed. Chapman & Hall/CRC.\n\\[\nP(Y)=\\int P(Y,\\theta)d\\theta\n\\]\nThe log marginal likelihood would be then given by:\n\\[\n\\log P(Y)=\\log \\int P(Y,\\theta)d\\theta\n\\]\nWe will now use an arbitrary distribution which we will take advantage of shortly:\n\\[\n\\log P(Y)=\\log \\int Q(Y) \\frac{P(Y,\\theta)}{Q(Y)}d\\theta \\leq \\int Q(Y) \\log  \\frac{P(Y,\\theta)}{Q(Y)}d\\theta\n\\]\nThe last term, a lower bound, is a result of Jensen’s inequality, where the log of an expectation is less than the expectation of the log. Let’s study the difference between the lower bound and the log marginal likelihood, the idea would then to find a function Q(Y) that minimizes this difference:\n\\[\n\\begin{aligned}\n\\log P(Y)-\\int Q(\\theta) \\log \\frac{P(Y,\\theta)}{Q(\\theta)}d\\theta &= \\log P(Y)-\\int Q(\\theta) \\log \\frac{P(\\theta|Y)P(Y)}{Q(\\theta)}d\\theta\\\\\n&= \\log P(Y)-\\int Q(\\theta) \\left( \\log \\frac{P(\\theta|Y)}{Q(\\theta)} + \\log P(Y) \\right) d\\theta\\\\\n&= \\log P(Y)- \\int Q(\\theta) \\log \\frac{P(\\theta|Y)}{Q(\\theta)}d\\theta -\\int Q(\\theta) \\log P(Y)d\\theta \\\\\n&= \\log P(Y)- \\int Q(\\theta) \\log \\frac{P(\\theta|Y)}{Q(\\theta)}d\\theta - \\log P(Y) \\int Q(\\theta) d\\theta  \\\\\n&= \\log P(Y)- \\int Q(\\theta) \\log \\frac{P(\\theta|Y)}{Q(\\theta)}d\\theta - \\log P(Y) \\\\\n&= - \\int Q(\\theta) \\log \\frac{P(\\theta|Y)}{Q(\\theta)}d\\theta  \\\\\n&= \\int Q(\\theta) \\log \\frac{Q(\\theta)}{P(\\theta|Y)}d\\theta \\\\\n&= D_{KL}(Q(\\theta)|P(\\theta|Y))\n\\end{aligned}\n\\]\nWhere the last term is the Kullback-Leibler divergence shown earlier. Therefore, by choosing \\(Q\\) appropriately, one can approximate the posterior. \\(Q\\) is usually determined by an iterative procedure."
+  },
+  {
+    "objectID": "posts/kullbackLeibler/index.html#the-kullback-leibler-divergence-and-variational-bayes",
+    "href": "posts/kullbackLeibler/index.html#the-kullback-leibler-divergence-and-variational-bayes",
+    "title": "The Kullback-Leibler Divergence and Variational Bayes",
+    "section": "",
+    "text": "The Kullback-Leibler divergence is used to measure the difference between two probability distributions. We came across its use when using software based on the Variational Bayes approximation algorithm (more on that later). It was developed by two cryptologists/mathematicians, Solomon Kullback and Richard Leibler (McIntire 2021).\n\nMcIntire, Brenda. 2021. “The Secret Career of Solomon Kullback.” In CHANCE. American Statistical Association. https://chance.amstat.org/2021/04/kullback/.\nIf you have two probability distributions P(x) and Q(x) then the Kullback-Leibler divergence, also called relative entropy, is defined as\n\\[D_{KL}(P|Q)= \\sum_x{P(X)log\\frac{P(X)}{Q(X)}}\\]\nThis comes from the background of information theory (MacKay 2003), and it is a weighted average across \\(P(X)\\) of the log difference between \\(P(X)\\) and \\(Q(X)\\) (remember that \\(log \\frac{P(X)}{Q(X)}=log(P(X))-log(Q(X))\\)). One way of interpreting is how far Q(X) is from P(X).\n\nMacKay, David J. C. 2003. Information Theory, Inference, and Learning Algorithms. Cambridge University Press. https://www.worldcat.org/title/information-theory-inference-and-learning-algorithms/oclc/856654329?referer=br&ht=edition.\n\n\nVariational Bayes is a technique for approximating the posterior. The Kullback-Leibler divergence is used in the derivation as follows (Rogers and Girolami 2016). Given data Y and parameters \\(\\theta\\) the marginal likelihood, the average over all possible values of the parameter space would be defined as follows:\n\nRogers, Simon, and Mark Girolami. 2016. A First Course in Machine Learning, Second Edition. 2nd ed. Chapman & Hall/CRC.\n\\[\nP(Y)=\\int P(Y,\\theta)d\\theta\n\\]\nThe log marginal likelihood would be then given by:\n\\[\n\\log P(Y)=\\log \\int P(Y,\\theta)d\\theta\n\\]\nWe will now use an arbitrary distribution which we will take advantage of shortly:\n\\[\n\\log P(Y)=\\log \\int Q(Y) \\frac{P(Y,\\theta)}{Q(Y)}d\\theta \\leq \\int Q(Y) \\log  \\frac{P(Y,\\theta)}{Q(Y)}d\\theta\n\\]\nThe last term, a lower bound, is a result of Jensen’s inequality, where the log of an expectation is less than the expectation of the log. Let’s study the difference between the lower bound and the log marginal likelihood, the idea would then to find a function Q(Y) that minimizes this difference:\n\\[\n\\begin{aligned}\n\\log P(Y)-\\int Q(\\theta) \\log \\frac{P(Y,\\theta)}{Q(\\theta)}d\\theta &= \\log P(Y)-\\int Q(\\theta) \\log \\frac{P(\\theta|Y)P(Y)}{Q(\\theta)}d\\theta\\\\\n&= \\log P(Y)-\\int Q(\\theta) \\left( \\log \\frac{P(\\theta|Y)}{Q(\\theta)} + \\log P(Y) \\right) d\\theta\\\\\n&= \\log P(Y)- \\int Q(\\theta) \\log \\frac{P(\\theta|Y)}{Q(\\theta)}d\\theta -\\int Q(\\theta) \\log P(Y)d\\theta \\\\\n&= \\log P(Y)- \\int Q(\\theta) \\log \\frac{P(\\theta|Y)}{Q(\\theta)}d\\theta - \\log P(Y) \\int Q(\\theta) d\\theta  \\\\\n&= \\log P(Y)- \\int Q(\\theta) \\log \\frac{P(\\theta|Y)}{Q(\\theta)}d\\theta - \\log P(Y) \\\\\n&= - \\int Q(\\theta) \\log \\frac{P(\\theta|Y)}{Q(\\theta)}d\\theta  \\\\\n&= \\int Q(\\theta) \\log \\frac{Q(\\theta)}{P(\\theta|Y)}d\\theta \\\\\n&= D_{KL}(Q(\\theta)|P(\\theta|Y))\n\\end{aligned}\n\\]\nWhere the last term is the Kullback-Leibler divergence shown earlier. Therefore, by choosing \\(Q\\) appropriately, one can approximate the posterior. \\(Q\\) is usually determined by an iterative procedure."
+  },
+  {
+    "objectID": "publication/2025-01-22-ebv-tumor-methylome/index.html",
+    "href": "publication/2025-01-22-ebv-tumor-methylome/index.html",
+    "title": "The EBV-Positive Tumor Methylome Is Distinct from EBV-Negative in Diffuse Large B-Cell Lymphoma",
+    "section": "",
+    "text": "Volaric, A.K.; Barrantes-Reynolds, R.; Sahakyan, K.; Fedoriw, Y.; Frietze, S. (2025). The EBV-Positive Tumor Methylome Is Distinct from EBV-Negative in Diffuse Large B-Cell Lymphoma. Cancers, 14(2), 299."
+  },
+  {
+    "objectID": "publication/2025-01-22-ebv-tumor-methylome/index.html#citation",
+    "href": "publication/2025-01-22-ebv-tumor-methylome/index.html#citation",
+    "title": "The EBV-Positive Tumor Methylome Is Distinct from EBV-Negative in Diffuse Large B-Cell Lymphoma",
+    "section": "",
+    "text": "Volaric, A.K.; Barrantes-Reynolds, R.; Sahakyan, K.; Fedoriw, Y.; Frietze, S. (2025). The EBV-Positive Tumor Methylome Is Distinct from EBV-Negative in Diffuse Large B-Cell Lymphoma. Cancers, 14(2), 299."
+  },
+  {
+    "objectID": "publication/2025-01-22-ebv-tumor-methylome/index.html#summary",
+    "href": "publication/2025-01-22-ebv-tumor-methylome/index.html#summary",
+    "title": "The EBV-Positive Tumor Methylome Is Distinct from EBV-Negative in Diffuse Large B-Cell Lymphoma",
+    "section": "Summary",
+    "text": "Summary\nThis was my first published paper after returning to work full time to the University of Vermont as part of the Translational Global Infectious Disease Research (TGIR).This study investigates the epigenetic landscape of EBV-positive diffuse large B-cell lymphoma (DLBCL), comparing methylation patterns between EBV-positive and EBV-negative cases. Here I had the pleasure of working closely with Doctor Ashley Volaric, we had a set of tumor samples and controls - unfortunately, due to the type of cancer - it is not feasible to obtain tumor/normal pairs from the same patient. I performed an extensive epigenetic analysis from on illumina Epic V2 data and indeed, we identified a distinct and extensive hypermethylation signature in EBV-positive tumors."
+  },
+  {
+    "objectID": "publication/2026-06-02-rab11b-influenza/index.html",
+    "href": "publication/2026-06-02-rab11b-influenza/index.html",
+    "title": "Rab11B is required for binding and entry of recent H3N2, but not H1N1, influenza A isolates",
+    "section": "",
+    "text": "Turner, A.H., Jaffrani, S.A., Kubinski, H.C., Ajayi, D.P., Owens, M.B., Fanuele, C.D., McTigue, M.P., Appenzeller, C.L., Bowling, A., Despres, H.W., Schmidt, M.M., Shirley, D.J., Crothers, J.W., Barrantes-Reynolds, R., & Bruce, E.A. (2026). Rab11B is required for binding and entry of recent H3N2, but not H1N1, influenza A isolates. Journal of Virology, e0211125. https://doi.org/10.1128/jvi.02111-25"
+  },
+  {
+    "objectID": "publication/2026-06-02-rab11b-influenza/index.html#citation",
+    "href": "publication/2026-06-02-rab11b-influenza/index.html#citation",
+    "title": "Rab11B is required for binding and entry of recent H3N2, but not H1N1, influenza A isolates",
+    "section": "",
+    "text": "Turner, A.H., Jaffrani, S.A., Kubinski, H.C., Ajayi, D.P., Owens, M.B., Fanuele, C.D., McTigue, M.P., Appenzeller, C.L., Bowling, A., Despres, H.W., Schmidt, M.M., Shirley, D.J., Crothers, J.W., Barrantes-Reynolds, R., & Bruce, E.A. (2026). Rab11B is required for binding and entry of recent H3N2, but not H1N1, influenza A isolates. Journal of Virology, e0211125. https://doi.org/10.1128/jvi.02111-25"
+  },
+  {
+    "objectID": "publication/2026-06-02-rab11b-influenza/index.html#summary",
+    "href": "publication/2026-06-02-rab11b-influenza/index.html#summary",
+    "title": "Rab11B is required for binding and entry of recent H3N2, but not H1N1, influenza A isolates",
+    "section": "Summary",
+    "text": "Summary\nInfluenza A virus (IAV) is a major human pathogen that relies on host cellular machinery for successful infection and replication. This study revealed a subtype-specific difference for Rab11B: recent H3N2 isolates require Rab11B for efficient binding and entry into human lung cells, whereas H1N1 isolates do not depend on Rab11B at this stage of infection. all of this suggests that H1N1 and H3N2 enter human lung cells via different routes.\nHere I had to do some research and found the Walkercreek pipeline which was a nextflow pipeline developed by a Samuel Shepard and others at the CDC and is used for typing influenza viruses. To this I added an alignment and tree generation component using nextflow which was used by the investigators to type the viruses, as well as an RShiny app that was used for visualizing and comparing the results."
+  },
+  {
+    "objectID": "publication/2011-10-06-amino-acid-frequency/index.html",
+    "href": "publication/2011-10-06-amino-acid-frequency/index.html",
+    "title": "Using Shifts in Amino Acid Frequency and Substitution Rate to Identify Latent Structural Characters in Base-Excision Repair Enzymes",
+    "section": "",
+    "text": "Barrantes-Reynolds, R., Bond, J.P., & Wallace, S.S. (2011). Using Shifts in Amino Acid Frequency and Substitution Rate to Identify Latent Structural Characters in Base-Excision Repair Enzymes. PLOS ONE, 6(10), e25246."
+  },
+  {
+    "objectID": "publication/2011-10-06-amino-acid-frequency/index.html#citation",
+    "href": "publication/2011-10-06-amino-acid-frequency/index.html#citation",
+    "title": "Using Shifts in Amino Acid Frequency and Substitution Rate to Identify Latent Structural Characters in Base-Excision Repair Enzymes",
+    "section": "",
+    "text": "Barrantes-Reynolds, R., Bond, J.P., & Wallace, S.S. (2011). Using Shifts in Amino Acid Frequency and Substitution Rate to Identify Latent Structural Characters in Base-Excision Repair Enzymes. PLOS ONE, 6(10), e25246."
+  },
+  {
+    "objectID": "publication/2011-10-06-amino-acid-frequency/index.html#summary",
+    "href": "publication/2011-10-06-amino-acid-frequency/index.html#summary",
+    "title": "Using Shifts in Amino Acid Frequency and Substitution Rate to Identify Latent Structural Characters in Base-Excision Repair Enzymes",
+    "section": "Summary",
+    "text": "Summary\nFirst author paper! In bioinformatics analysis one commonly uses the amino acid as the unit of analysis (for phylogenetics, alignment, etc), as it is easier statistically. We used amino acids that were grouped together in the structure as the unit, with mutation rate as the character to do analysis on. Thanks to this we identified an important ancestral edge in the phylogeny, and this worked also served as the basis for my thesis, in which we did Bayesian statistics on alignments, trees and protein structures using these ideas."
+  },
+  {
+    "objectID": "publication/2010-01-01-book-chapter-genome-instability/index.html",
+    "href": "publication/2010-01-01-book-chapter-genome-instability/index.html",
+    "title": "DNA Repair Mechanisms and Genomic Instability",
+    "section": "",
+    "text": "Pumo, D.E., Barrantes-Reynolds, R., Kathe, S.D., Wallace, S.S., & Bond, J.P. (2010). DNA Repair Mechanisms and Genomic Instability. In Genome Instability and Transgenerational Effects (pp. 71-88. Kovalchuk, I. & Kovalchuk, O. (Eds.), Nova Science Publishers, Inc., New York."
+  },
+  {
+    "objectID": "publication/2010-01-01-book-chapter-genome-instability/index.html#citation",
+    "href": "publication/2010-01-01-book-chapter-genome-instability/index.html#citation",
+    "title": "DNA Repair Mechanisms and Genomic Instability",
+    "section": "",
+    "text": "Pumo, D.E., Barrantes-Reynolds, R., Kathe, S.D., Wallace, S.S., & Bond, J.P. (2010). DNA Repair Mechanisms and Genomic Instability. In Genome Instability and Transgenerational Effects (pp. 71-88. Kovalchuk, I. & Kovalchuk, O. (Eds.), Nova Science Publishers, Inc., New York."
+  },
+  {
+    "objectID": "publication/2010-01-01-book-chapter-genome-instability/index.html#summary",
+    "href": "publication/2010-01-01-book-chapter-genome-instability/index.html#summary",
+    "title": "DNA Repair Mechanisms and Genomic Instability",
+    "section": "Summary",
+    "text": "Summary\nThis book chapter provides a review of DNA repair mechanisms and their role in maintaining genome stability. It summarized the evolutionary knowledge at the time and I worked with Dorothy Pumo and we proposed a hypothesis for how these enzymes evolved."
+  },
+  {
+    "objectID": "publication/2007-08-20-aggregatibacter-emaa/index.html",
+    "href": "publication/2007-08-20-aggregatibacter-emaa/index.html",
+    "title": "Molecular Heterogeneity of EmaA, an Oligomeric Autotransporter Adhesin of Aggregatibacter Actinomycetemcomitans",
+    "section": "",
+    "text": "Tang, G., Ruiz, T., Barrantes-Reynolds, R., & Mintz, K.P. (2007). Molecular Heterogeneity of EmaA, an Oligomeric Autotransporter Adhesin of Aggregatibacter Actinomycetemcomitans. Microbiology, 153(Pt 8), 2447-2457."
+  },
+  {
+    "objectID": "publication/2007-08-20-aggregatibacter-emaa/index.html#citation",
+    "href": "publication/2007-08-20-aggregatibacter-emaa/index.html#citation",
+    "title": "Molecular Heterogeneity of EmaA, an Oligomeric Autotransporter Adhesin of Aggregatibacter Actinomycetemcomitans",
+    "section": "",
+    "text": "Tang, G., Ruiz, T., Barrantes-Reynolds, R., & Mintz, K.P. (2007). Molecular Heterogeneity of EmaA, an Oligomeric Autotransporter Adhesin of Aggregatibacter Actinomycetemcomitans. Microbiology, 153(Pt 8), 2447-2457."
+  },
+  {
+    "objectID": "publication/2007-08-20-aggregatibacter-emaa/index.html#summary",
+    "href": "publication/2007-08-20-aggregatibacter-emaa/index.html#summary",
+    "title": "Molecular Heterogeneity of EmaA, an Oligomeric Autotransporter Adhesin of Aggregatibacter Actinomycetemcomitans",
+    "section": "Summary",
+    "text": "Summary\nThis paper was about EmaA in a gram-negative bacteria strongly liked to disease in the mouth. We worked with 27 strains encompassing the six serotypes and identified three emaA, which were characterized. I did the phylogenetics which lead to further characterize the population structure.\n\n\n\nPhylogeny of emaA"
+  },
+  {
+    "objectID": "publication/2009-05-01-plant-fungal-fpg/index.html",
+    "href": "publication/2009-05-01-plant-fungal-fpg/index.html",
+    "title": "Plant and Fungal Fpg Homologs are Formamidopyrimidine DNA Glycosylases but not 8-Oxoguanine DNA Glycosylases",
+    "section": "",
+    "text": "Kathe, S.D., Barrantes-Reynolds, R., Jaruga, P., Newton, M.R., Burrows, C.J., Bandaru, V., Dizdaroglu, M., Bond, J.P., & Wallace, S.S. (2009). Plant and Fungal Fpg Homologs are Formamidopyrimidine DNA Glycosylases but not 8-Oxoguanine DNA Glycosylases. DNA Repair, 8(5), 643-653."
+  },
+  {
+    "objectID": "publication/2009-05-01-plant-fungal-fpg/index.html#citation",
+    "href": "publication/2009-05-01-plant-fungal-fpg/index.html#citation",
+    "title": "Plant and Fungal Fpg Homologs are Formamidopyrimidine DNA Glycosylases but not 8-Oxoguanine DNA Glycosylases",
+    "section": "",
+    "text": "Kathe, S.D., Barrantes-Reynolds, R., Jaruga, P., Newton, M.R., Burrows, C.J., Bandaru, V., Dizdaroglu, M., Bond, J.P., & Wallace, S.S. (2009). Plant and Fungal Fpg Homologs are Formamidopyrimidine DNA Glycosylases but not 8-Oxoguanine DNA Glycosylases. DNA Repair, 8(5), 643-653."
+  },
+  {
+    "objectID": "publication/2009-05-01-plant-fungal-fpg/index.html#summary",
+    "href": "publication/2009-05-01-plant-fungal-fpg/index.html#summary",
+    "title": "Plant and Fungal Fpg Homologs are Formamidopyrimidine DNA Glycosylases but not 8-Oxoguanine DNA Glycosylases",
+    "section": "Summary",
+    "text": "Summary\nAnother DNA glycosylase work where the investigator characterized the substrate specificity (i.e. what type of damage they repair) of plants and yeast Fpg and found that it was more similar to the bacterial FPG, even though they are eukaryotes. The evolutionary analysis showed that such group of plants and bacteria is more similar to the bacteria! Here I continued and got deeper into DNA glycosylases (DNA repair enzymes) and the large group that worked on this at that time, as well as on the bioinformatics."
+  },
+  {
+    "objectID": "publication/index.html",
+    "href": "publication/index.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nRab11B is required for binding and entry of recent H3N2, but not H1N1, influenza A isolates\n\n\n\nnextflow\n\nnfcore\n\nvirology\n\ninfluenza\n\nhost-pathogen interaction\n\n\n\n\n\n\nJun 2, 2026\n\n\nTurner et al…Ramiro Barrantes-Reynolds…Emily Bruce\n\n\n\n\n\n\n\n\n\n\n\n\nNovel antibody cocktail therapy targeting extracellular tumor-specific mutations to treat EMT6 cell line-derived triple-negative breast cancer\n\n\n\nimmunotherapy\n\ncancer\n\npersonalized medicine\n\nbioinformatics\n\n\n\n\n\n\nApr 6, 2026\n\n\nRamiro Barrantes-Reynolds\n\n\n\n\n\n\n\n\n\n\n\n\nThe EBV-Positive Tumor Methylome Is Distinct from EBV-Negative in Diffuse Large B-Cell Lymphoma\n\n\n\nepigenomics\n\ncancer\n\nmethylome\n\n\n\n\n\n\nJan 22, 2025\n\n\nRamiro Barrantes-Reynolds\n\n\n\n\n\n\n\n\n\n\n\n\nT Cell Homeostatic Proliferation Promotes a Redox State That Drives Metabolic and Epigenetic Upregulation of Inflammatory Pathways in Lupus\n\n\n\nimmunology\n\nmetabolism\n\nepigenetics\n\nlupus\n\nRNAseq\n\n\n\n\n\n\nMar 1, 2022\n\n\nRalph C. Budd, Christopher D. Scharer, Ramiro Barrantes-Reynolds, Scott Legunn, Karen A. Fortner\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Shifts in Amino Acid Frequency and Substitution Rate to Identify Latent Structural Characters in Base-Excision Repair Enzymes\n\n\n\nbioinformatics\n\nstructural biology\n\nevolution\n\nDNA repair\n\n\n\n\n\n\nOct 6, 2011\n\n\nRamiro Barrantes-Reynolds, Susan S. Wallace, Jeffrey P. Bond\n\n\n\n\n\n\n\n\n\n\n\n\nDNA Repair Mechanisms and Genomic Instability\n\n\n\nDNA repair\n\ngenomic instability\n\nbook chapter\n\nbioinformatics\n\nphylogenetics\n\n\n\n\n\n\nJan 1, 2010\n\n\nPumo, D.E., Barrantes-Reynolds, R., Kathe, S.D., Wallace, S.S., & Bond, J.P.\n\n\n\n\n\n\n\n\n\n\n\n\nPlant and Fungal Fpg Homologs are Formamidopyrimidine DNA Glycosylases but not 8-Oxoguanine DNA Glycosylases\n\n\n\nDNA repair\n\nglycosylases\n\nevolution\n\nphylogenetics\n\nbioinformatics\n\n\n\n\n\n\nMay 1, 2009\n\n\nKathe, S.D., Barrantes-Reynolds, R., Jaruga, P., Newton, M.R., Burrows, C.J., Bandaru, V., Dizdaroglu, M., Bond, J.P., & Wallace, S.S.\n\n\n\n\n\n\n\n\n\n\n\n\nClostridium Acetobutylicum 8-Oxoguanine DNA Glycosylase (Ogg) Differs from Eukaryotic Oggs with Respect to Opposite Base Discrimination\n\n\n\nDNA repair\n\nglycosylases\n\nevolution\n\nphylogenetics\n\nbioinformatics\n\n\n\n\n\n\nJul 15, 2008\n\n\nRobey-Bond, S.M., Barrantes-Reynolds, R., Bond, J.P., Wallace, S.S., & Bandaru, V.\n\n\n\n\n\n\n\n\n\n\n\n\nPotential Regulatory Relationship Between the Nested Gene DDC8 and Its Host Gene Tissue Inhibitor of Metalloproteinase-2\n\n\n\ngenomics\n\ngene regulation\n\nphylogenetics\n\n\n\n\n\n\nJul 1, 2008\n\n\nJaworski, D.M., Beem-Miller, M., Lluri, G., & Barrantes-Reynolds, R.\n\n\n\n\n\n\n\n\n\n\n\n\nMethylation-Controlled J Protein Promotes c-Jun Degradation to Prevent ABCB1 Transporter Expression\n\n\n\nmolecular biology\n\nphylogenetics\n\nbioinformatics\n\n\n\n\n\n\nAug 1, 2007\n\n\nHatle, K.M., Neveu, W., Dienz, O., Rymarchyk, S., Barrantes, R., Hale, S., Farley, N., Lounsbury, K.M., Bond, J.P., Taatjes, D.J., & Rincon, M.\n\n\n\n\n\n\n\n\n\n\n\n\nMolecular Heterogeneity of EmaA, an Oligomeric Autotransporter Adhesin of Aggregatibacter Actinomycetemcomitans\n\n\n\nmicrobiology\n\nadhesins\n\nprotein structure\n\npathogenesis\n\nphylogenetics\n\n\n\n\n\n\nAug 1, 2007\n\n\nTang, G., Ruiz, T., Barrantes-Reynolds, R., & Mintz, K.P.\n\n\n\n\n\n\n\n\n\n\n\n\nThe CDKN2A Database: Integrating Allelic Variants with Evolution, Structure, Function, and Disease Association\n\n\n\nbioinformatics\n\ngenomics\n\ndatabase\n\ncancer genetics\n\n\n\n\n\n\nDec 1, 2004\n\n\nMurphy, J.A., Barrantes-Reynolds, R., Kocherlakota, R., Bond, J.P., & Greenblatt, M.S.\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "license.html",
+    "href": "license.html",
+    "title": "License",
+    "section": "",
+    "text": "My blog posts are released under a Creative Commons Attribution-ShareAlike 4.0 International License.\n\n  \n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "blog/2026-08-28-low_purity_variant/index.html",
+    "href": "blog/2026-08-28-low_purity_variant/index.html",
+    "title": "When Is a Variant Real? The Challenge of Low Tumor Purity",
+    "section": "",
+    "text": "A tumor biopsy is never pure tumor, it contains normal cells. Therefore when we sequence a tumor/normal pair to find somatic variants each DNA fragment from the tumor will come from the tumor cell or from a normal cell mixed in with it.\nTumor purity is the fraction of cells in a sample that are actually tumor cells. A purity of 1.0 would mean every sequenced cell is tumor. For somatic variant calling it is important as it sets the ceiling on how much of the DNA we sequence carries the mutation: the lower the purity, the smaller that signal — and, the harder it becomes to tell a real variant from a sequencing error.\nSay tumor purity is 5%. If we have a variant for which we have 100 reads (100X coverage), then about 5 come from tumor cells. If the mutation is heterozygous — present on only one of the two copies at that position — only half of the tumor-derived fragments carry it, so roughly 2 to 3 out of the 5. On average then, about 2.5 carry the mutation. This 2.5% fraction is called the variant allele frequency, or VAF."
+  },
+  {
+    "objectID": "blog/2026-08-28-low_purity_variant/index.html#introduction",
+    "href": "blog/2026-08-28-low_purity_variant/index.html#introduction",
+    "title": "When Is a Variant Real? The Challenge of Low Tumor Purity",
+    "section": "",
+    "text": "A tumor biopsy is never pure tumor, it contains normal cells. Therefore when we sequence a tumor/normal pair to find somatic variants each DNA fragment from the tumor will come from the tumor cell or from a normal cell mixed in with it.\nTumor purity is the fraction of cells in a sample that are actually tumor cells. A purity of 1.0 would mean every sequenced cell is tumor. For somatic variant calling it is important as it sets the ceiling on how much of the DNA we sequence carries the mutation: the lower the purity, the smaller that signal — and, the harder it becomes to tell a real variant from a sequencing error.\nSay tumor purity is 5%. If we have a variant for which we have 100 reads (100X coverage), then about 5 come from tumor cells. If the mutation is heterozygous — present on only one of the two copies at that position — only half of the tumor-derived fragments carry it, so roughly 2 to 3 out of the 5. On average then, about 2.5 carry the mutation. This 2.5% fraction is called the variant allele frequency, or VAF."
+  },
+  {
+    "objectID": "blog/2026-08-28-low_purity_variant/index.html#sequencing-error",
+    "href": "blog/2026-08-28-low_purity_variant/index.html#sequencing-error",
+    "title": "When Is a Variant Real? The Challenge of Low Tumor Purity",
+    "section": "Sequencing error",
+    "text": "Sequencing error\nSequencing has its own error rate, independent of the tumor. At Q30 base quality, the standard threshold, roughly 1 in 1000 bases (0.1%) is misread by chance.\nAt the same 30x depth, the expected number of error reads at any given position is:\n\\[E(\\text{error reads}) = \\text{depth} \\times \\text{error rate} = 30 \\times 0.001 = 0.03 \\text{ reads}\\] That’s the sequencing error rate — what to expect even where nothing real is happening. Therefore, at 30X and 5% tumor purity, a real mutation is expected to produce ~0.75 reads, and pure noise is expected to produce ~0.03 reads. Both are small, and telling them apart is very hard.\nThis 0.1% figure assumes errors are random and uniform, which real Illumina data isn’t. Most false positives instead cluster at systematic artifacts: homopolymer/repeat slippage, strand bias and PCR duplicates, oxidative damage (8-oxoguanine causing C→A), and misalignment around indels. The binomial model above is a noise floor, not a full error model — real callers add artifact filters on top of it. In addition, these expectations assume a diploid locus and a clonal heterozygous mutation; copy-number alterations or subclonality can substantially shift the expected VAF.\nTo put this in perspective, for any observed number of ALT reads, we can ask how likely that count is under pure sequencing error:\n\n\n\nTable 1: Probability that sequencing error alone produces at least k ALT reads at a given position, at 30x, 60x, and 100x depth (per-read error rate 0.001). Notice that even at 100x depth, observing 3 ALT reads from sequencing error alone remains extremely unlikely, which explains why read-count thresholds are effective against random error.\n\n\n\n\n\n\n\nHow Often Sequencing Error Alone Fakes k Reads\n\n\n≥ k reads\n30x\n60x\n100x\n\n\n\n\n1\n0.0296\n0.0583\n0.0952\n\n\n2\n0.0004\n0.0017\n0.0046\n\n\n3\n&lt;1e-04\n&lt;1e-04\n0.0002\n\n\n4\n&lt;1e-04\n&lt;1e-04\n&lt;1e-04"
+  },
+  {
+    "objectID": "blog/2026-08-28-low_purity_variant/index.html#impact-of-depth",
+    "href": "blog/2026-08-28-low_purity_variant/index.html#impact-of-depth",
+    "title": "When Is a Variant Real? The Challenge of Low Tumor Purity",
+    "section": "Impact of Depth",
+    "text": "Impact of Depth\nFollowing up on this, we can ask how many reads a real variant, at the same 5% purity, actually produces:\n\n\n\n\n\n\n\nFigure 1: Simulated ALT read counts for a real somatic variant at 5% purity (VAF = 0.025), at 30x, 60x, and 100x depth. 10,000 simulated positions per depth; the dashed line marks a 3-read calling threshold.\n\n\n\n\nCompare that against the noise table above. Requiring 3 or more reads (the dashed line) keeps error-driven false positives negligible at every depth tested."
+  },
+  {
+    "objectID": "blog/2026-08-28-low_purity_variant/index.html#real-cases",
+    "href": "blog/2026-08-28-low_purity_variant/index.html#real-cases",
+    "title": "When Is a Variant Real? The Challenge of Low Tumor Purity",
+    "section": "Real Cases",
+    "text": "Real Cases\nReal case 1: 257 candidate somatic SNVs from a WGS tumor/normal pair, with an estimated tumor purity of 5.8%. Tumor depth ranges from 6x to 72x (median 29x) — at this depth and purity, a real variant is expected to produce under one supporting read.\n\n\n\n\n\n\n\nFigure 2: ALT read count vs. tumor depth, low-purity WGS (5.8% purity). Points jittered vertically to reduce overplotting; x-axis log-scaled.\n\n\n\n\nReal case 2, for contrast: a WES tumor/normal pair with a much higher ichorCNA-estimated purity of 28.6% and far greater depth — 416 candidates, tumor depth from 13x to 3819x (3819 is probably an outlier). Minimum ALT count across all 416 candidates is 5, and 91% have a clean normal.\n\n\n\n\n\n\n\nFigure 3: ALT read count vs. tumor depth, WES (28.6% purity). Points jittered vertically; x-axis log-scaled. Dashed line: naive expected ALT reads (depth × 0.143). One extreme outlier (2813 ALT reads, 74% VAF) is off this plot’s y-range.\n\n\n\n\nReal case 3, at the opposite extreme: a tumor/normal pair with an estimated purity of 93% — 3599 candidates, tumor depth from 2x to 346x (median 47x). Minimum ALT count is 2, and 89% have a clean normal.\n\n\n\n\n\n\n\nFigure 4: ALT read count vs. tumor depth, high-purity sample (93% purity). Points jittered vertically; x-axis log-scaled. Dashed line: naive expected ALT reads (depth × 0.465)."
+  },
+  {
+    "objectID": "blog/2026-08-28-low_purity_variant/index.html#conclusion",
+    "href": "blog/2026-08-28-low_purity_variant/index.html#conclusion",
+    "title": "When Is a Variant Real? The Challenge of Low Tumor Purity",
+    "section": "Conclusion",
+    "text": "Conclusion\nSo at 5% purity, if we are not able to increase the tumor fraction by sample preparation or enrichment of some type, the most direct fix is really deeper sequencing. At shallow depth the expected signal falls in the same regions as artifacts, but it does gain in reads with more coverage. A minimum read count is still worth imposing, but it only clears the very bottom of the noise. And the usual models that we use might not capture other the systematic artifacts — oxidative damage, deamination, mapping errors in repeats — that dominate low-read-count calls."
+  },
+  {
+    "objectID": "blog/2024-06-28-berglund-derivation/index.html",
+    "href": "blog/2024-06-28-berglund-derivation/index.html",
+    "title": "The Derivation of the Berglund Estimator for the Diffusion Constant",
+    "section": "",
+    "text": "I spent a lot of time working on modeling the movement of repair enzymes in DNA. For various reasons, publication of the results was delayed, but I wanted to share this derivation of the Berglund estimator of the diffusion constant (Berglund 2010) and (Michalet and Berglund 2012) as it took me so long to work out!.\n\nBerglund, A. J. 2010. “Statistics of Camera-Based Single-Particle Tracking.” Journal Article. Phys Rev E Stat Nonlin Soft Matter Phys 82 (1 Pt 1): 011917. https://doi.org/10.1103/PhysRevE.82.011917.\n\nMichalet, Xavier, and Andrew J. Berglund. 2012. “Optimal Diffusion Coefficient Estimation in Single-Particle Tracking.” Phys. Rev. E 85 (June): 061916. https://doi.org/10.1103/PhysRevE.85.061916.\nPDF with the derivation"
+  },
+  {
+    "objectID": "blog/2024-06-28-berglund-derivation/index.html#introduction",
+    "href": "blog/2024-06-28-berglund-derivation/index.html#introduction",
+    "title": "The Derivation of the Berglund Estimator for the Diffusion Constant",
+    "section": "",
+    "text": "I spent a lot of time working on modeling the movement of repair enzymes in DNA. For various reasons, publication of the results was delayed, but I wanted to share this derivation of the Berglund estimator of the diffusion constant (Berglund 2010) and (Michalet and Berglund 2012) as it took me so long to work out!.\n\nBerglund, A. J. 2010. “Statistics of Camera-Based Single-Particle Tracking.” Journal Article. Phys Rev E Stat Nonlin Soft Matter Phys 82 (1 Pt 1): 011917. https://doi.org/10.1103/PhysRevE.82.011917.\n\nMichalet, Xavier, and Andrew J. Berglund. 2012. “Optimal Diffusion Coefficient Estimation in Single-Particle Tracking.” Phys. Rev. E 85 (June): 061916. https://doi.org/10.1103/PhysRevE.85.061916.\nPDF with the derivation"
+  },
+  {
+    "objectID": "blog/2026-09-09-pca-mds-for-clients/index.html",
+    "href": "blog/2026-09-09-pca-mds-for-clients/index.html",
+    "title": "PCA and MDS",
+    "section": "",
+    "text": "Here we explain two multivariate methods: PCA (Principal Component Analysis) or MDS (Multidimensional Scaling). They are multivariate as we commonly have real data dozens, hundreds, or thousands of numbers attached to it — gene activity levels, epigenetic measurements, etc.\nWhat we do is to reduce all those numbers down to a simple map — usually just two or three dimensions while trying to preserve which samples are similar to each other, and which are different."
+  },
+  {
+    "objectID": "blog/2026-09-09-pca-mds-for-clients/index.html#introduction",
+    "href": "blog/2026-09-09-pca-mds-for-clients/index.html#introduction",
+    "title": "PCA and MDS",
+    "section": "",
+    "text": "Here we explain two multivariate methods: PCA (Principal Component Analysis) or MDS (Multidimensional Scaling). They are multivariate as we commonly have real data dozens, hundreds, or thousands of numbers attached to it — gene activity levels, epigenetic measurements, etc.\nWhat we do is to reduce all those numbers down to a simple map — usually just two or three dimensions while trying to preserve which samples are similar to each other, and which are different."
+  },
+  {
+    "objectID": "blog/2026-09-09-pca-mds-for-clients/index.html#pca-finding-the-most-informative-angle",
+    "href": "blog/2026-09-09-pca-mds-for-clients/index.html#pca-finding-the-most-informative-angle",
+    "title": "PCA and MDS",
+    "section": "PCA: Finding the Most Informative Angle",
+    "text": "PCA: Finding the Most Informative Angle\nImagine holding an oddly shaped object — a stretched, lumpy potato — and shining a flashlight on it to cast a shadow on the wall. From some angles, the shadow is a shapeless blob that tells you almost nothing about the object. From other angles, the shadow captures the object’s real shape and spread remarkably well.\nPCA is a systematic search for the best angle. It looks at all your original measurements and finds the “view” that preserves the most spread — the most real difference between samples — in as few dimensions as possible. That best angle becomes the first axis of the plot; the next-best (and unrelated) angle becomes the second axis. Those chosen angles are called principal components.\nThe plots below make this concrete with just two measurements. First, just the raw data: each dot is a sample with two correlated measurements — knowing one tells you a lot about the other, which is why the cloud runs diagonally instead of in a circle. Then, the two principal directions overlaid on that same cloud. Finally, PCA has simply rotated the cloud so its long direction lines up with the horizontal axis:\n\n\n\n\n\n\n\n\n\n(a) Original Measurements\n\n\n\n\n\n\n\n\n\n(b) Original Measurements, with PC Directions\n\n\n\n\n\n\n\n\n\n(c) Rotated to the Best Angle\n\n\n\n\n\n\nFigure 1: 60 samples from two groups, before and after PCA. The red line marks the direction of most spread (PC 1); the green line, its perpendicular runner-up (PC 2). Left: the raw data alone, no lines. Middle: the same data, with those directions cut diagonally across it, right along the seam between the two groups. Right: the identical cloud, colors, and two lines, rotated so the red line becomes the x-axis and the green line becomes the y-axis.\n\n\nNothing about the samples changed between those two plots — they, and the two colored lines, were only rotated. The red line (PC 1) is the same “most spread” direction in both panels; it just happens to line up with the page’s horizontal axis once PCA is done rotating.\nNotice thought that, on the left we have that “Measurement 1” and “Measurement 2” meant something specific and nameable. On the right, PC 1 is some blend of both original measurements — a direction, not a thing you measured. The principal components are no longer interpretable in the same way.\nBelow is another example in 3-D.\n\n\n\n\n\n\n\n\n\n(a) Original Measurements (3D)\n\n\n\n\n\n\n\n\n\n(b) Rotated to the Best Angle (3D)\n\n\n\n\n\n\n\n\n\n(c) PC 3 Dropped, Back to Flat 2D\n\n\n\n\n\n\nFigure 2: Two groups with three measurements each. Left: the raw 3D cloud, with its three principal directions drawn as dotted lines (red = PC 1, green = PC 2, purple = PC 3). Middle: the identical cloud and the identical three lines, rotated so they align exactly with the box’s edges. Right: PC 3 dropped completely — just PC 1 vs. PC 2, flat on the page — and the groups are still cleanly separated."
+  },
+  {
+    "objectID": "blog/2026-09-09-pca-mds-for-clients/index.html#mds-building-a-map-from-distances-alone",
+    "href": "blog/2026-09-09-pca-mds-for-clients/index.html#mds-building-a-map-from-distances-alone",
+    "title": "PCA and MDS",
+    "section": "MDS: Building a Map from Distances Alone",
+    "text": "MDS: Building a Map from Distances Alone\nMDS starts from a table of how different every pair of samples is from every other pair, and then searches for an arrangement of dots on a page where the distances between dots match those real differences as closely as possible. It never needs to see the original measurements — only how different each pair of samples is.\nHere’s that same process end to end, with a small, realistic example. The 10 genes below are commonly checked for promoter methylation in cancer — when a tumor suppressor like TP53 or PTEN gets silenced this way, the cell loses one of its safeguards against uncontrolled growth. We have percent methylation at each gene, in 3 samples.\n\n\n\nTable 1: Percent DNA methylation at 10 genes, in 3 samples. This is the kind of raw table a report usually starts from.\n\n\n\n\n\n\n\nPercent DNA Methylation at 10 Genes\n\n\nGene\nSample A\nSample B\nSample C\n\n\n\n\nBRCA1\n39.8\n37.0\n75.4\n\n\nTP53\n28.0\n30.2\n62.9\n\n\nMLH1\n22.3\n21.9\n60.6\n\n\nMGMT\n21.4\n21.9\n60.6\n\n\nCDKN2A\n24.9\n31.5\n66.4\n\n\nRASSF1\n35.8\n36.9\n80.4\n\n\nAPC\n26.8\n35.0\n69.9\n\n\nVHL\n39.4\n46.2\n78.7\n\n\nPTEN\n23.3\n24.3\n80.2\n\n\nRB1\n29.2\n34.9\n68.7\n\n\n\n\n\n\n\n\n\nThe first step MDS takes is to boil that whole table down to a single number per pair of samples — how different is Sample A from Sample B, overall, across all 10 genes at once?\n\n\n\nTable 2: How different each pair of samples is, considering all 10 genes together. Lower means more alike.\n\n\n\n\n\n\n\nOverall Difference Between Samples\n\n\nSample\nSample A\nSample B\nSample C\n\n\n\n\nSample A\n0.0\n14.3\n131.9\n\n\nSample B\n14.3\n0.0\n123.3\n\n\nSample C\n131.9\n123.3\n0.0\n\n\n\n\n\n\n\n\n\nThat table alone is all MDS needs. It has no idea these numbers came from 10 genes, or even that “genes” were involved at all — it only sees three numbers describing how far apart each pair is. From just that, it draws the map:\n\n\n\n\n\n\n\nFigure 3: MDS map built entirely from the distance table above. Samples A and B, the two closest pairs in the table, land near each other; Sample C, far from both, lands on its own.\n\n\n\n\nSamples A and B — the pair with the smallest number in the distance table — land close together on the map. Sample C, far from both in the table, lands off on its own. Nothing here required looking at which specific genes drove that difference; the map is built purely from the one column of numbers in between the raw data and the picture."
+  },
+  {
+    "objectID": "blog/2026-09-09-pca-mds-for-clients/index.html#so-whats-the-actual-difference",
+    "href": "blog/2026-09-09-pca-mds-for-clients/index.html#so-whats-the-actual-difference",
+    "title": "PCA and MDS",
+    "section": "So What’s the Actual Difference?",
+    "text": "So What’s the Actual Difference?\n\n\nPCA starts from the original measurements and looks for the directions that show the most variation between samples.\n\nMDS starts from a table of pairwise differences and tries to reproduce those differences as distances on a flat page.\n\nIn many everyday cases, these two approaches end up producing very similar-looking plots — “the view that shows the most variation” and “the layout that best preserves how different everything is” often point to the same picture.\nHere’s that similarity in practice. The toy data below isn’t two-dimensional to begin with — each of the 30 samples has 8 separate measurements, impossible to plot directly. The same 8-measurement data was handed to both PCA and MDS independently, with no coordination between them:\n\n\n\n\n\n\n\n\n\n(a) PCA\n\n\n\n\n\n\n\n\n\n(b) MDS\n\n\n\n\n\n\nFigure 4: The same 30 samples, each with 8 underlying measurements, flattened to 2D by PCA (left) and MDS (right). Both methods were given the exact same data and arrived at essentially the same picture: three clusters and one outlier."
+  },
+  {
+    "objectID": "blog/2026-09-09-pca-mds-for-clients/index.html#what-to-look-fot",
+    "href": "blog/2026-09-09-pca-mds-for-clients/index.html#what-to-look-fot",
+    "title": "PCA and MDS",
+    "section": "What to Look Fot",
+    "text": "What to Look Fot\n\n\nClusters — groups of dots sitting close together are samples that look broadly alike across everything measured.\n\nA dot sitting off on its own — an outlier, worth a second look. It might be a data quality issue, or it might be genuinely unusual.\n\nTwo groups separating cleanly along one direction — a real, dominant difference between them, worth asking what drove it.\n\nEverything blending into one shapeless cloud — no strong pattern in what was measured, at least not one big enough to show up this way."
+  },
+  {
+    "objectID": "blog/2025-07-01-nextflow-vermont-training/index.html",
+    "href": "blog/2025-07-01-nextflow-vermont-training/index.html",
+    "title": "Teaching, Training, and Transforming: Building Capacity with Nextflow in Vermont",
+    "section": "",
+    "text": "I’m excited to share a feature that I wrote on Seqera’s blog about our Nextflow training and capacity-building initiatives here at the UVM’s Vermont Integrative Genomics Resource.\nRead the full article here: Teaching, Training, and Transforming: Building Capacity with Nextflow in Vermont\n\n\n\n Back to topReuseCC BY-SA 4.0CitationFor attribution, please cite this work as:\nBarrantes-Reynolds, Ramiro. 2025. “Teaching, Training, and\nTransforming: Building Capacity with Nextflow in Vermont.” July\n1. https://ramirobarrantes.com/blog/2025-07-01-nextflow-vermont-training/."
+  },
+  {
+    "objectID": "project/2010-01-01-xymp/index.html",
+    "href": "project/2010-01-01-xymp/index.html",
+    "title": "Xymp™ Bioassay System",
+    "section": "",
+    "text": "Xymp™ was a software platform developed while I was working at Precision Bioassay with David Lansky. Biological therapeutics require rigorous potency assays to ensure product safety, efficacy, and regulatory acceptance.\nAt the same time, bioassay development is fraught with subtle statistical challenges, among those: pseudoreplication—when sample generation or experimental design introduces replicate measurements that are not truly independent; Plate-level effects: The 96-well plate itself introduces systematic sources of variance that must be treated as a statistical block or a more sophisticated design; Poor randomization: Ad-hoc sample placement misses opportunities to use structured designs that reduce confounding; Naive outlier detection: Removing outliers before re-scaling data is ineffective and masks the true sources of variance\nWe created software that addressed all of that in one package. We used it in-house for many projects, and also created a web-interface that could be used with clients.\nThe software was developed in R, and the web interface in PHP with a MYSQL backend."
+  },
+  {
+    "objectID": "project/2010-01-01-xymp/index.html#overview",
+    "href": "project/2010-01-01-xymp/index.html#overview",
+    "title": "Xymp™ Bioassay System",
+    "section": "",
+    "text": "Xymp™ was a software platform developed while I was working at Precision Bioassay with David Lansky. Biological therapeutics require rigorous potency assays to ensure product safety, efficacy, and regulatory acceptance.\nAt the same time, bioassay development is fraught with subtle statistical challenges, among those: pseudoreplication—when sample generation or experimental design introduces replicate measurements that are not truly independent; Plate-level effects: The 96-well plate itself introduces systematic sources of variance that must be treated as a statistical block or a more sophisticated design; Poor randomization: Ad-hoc sample placement misses opportunities to use structured designs that reduce confounding; Naive outlier detection: Removing outliers before re-scaling data is ineffective and masks the true sources of variance\nWe created software that addressed all of that in one package. We used it in-house for many projects, and also created a web-interface that could be used with clients.\nThe software was developed in R, and the web interface in PHP with a MYSQL backend."
+  },
+  {
+    "objectID": "project/2004-01-01-biodesktop/index.html",
+    "href": "project/2004-01-01-biodesktop/index.html",
+    "title": "UVM BioDesktop",
+    "section": "",
+    "text": "Built back in the early 2000s, right after I started working at UVM, a fellow programmer/mathematician came into the team called Rama Kocherlakota. After some time, we started to work on the UVM BioDesktop. The was designed as was web-based data management and bioinformatics system designed to empower researchers to manage, analyze, and share biological data. The idea was to combine a user-friendly web interface with a powerful object-relational database layer and a flexible Perl-based coding engine, which one could build solutions on top of. Here I worked with various scientists and core facility directors to design applications.\nOne of the most successful BioDesktop applications was DNA Depot, a web-based order and data delivery system for the UVM DNA Facility. I gathered requirements from facility staff, designed the user interface, and implemented the system as a family of BioDesktop modules. DNA Depot replaced a paper-based order entry system, dramatically improving staff productivity and enabling automated utilization tracking. For several years, DNA Depot processed more than 18,000 orders and delivered over 130,000 data files to users.\nBioDesktop’s modular architecture supported the development of other domain-specific applications:\n\nMicroarray Depot — Microarray experiment tracking and data access\nMicroscopy & Imaging Center Depot — Image acquisition and analysis workflow\nAnimal Care Depot — Research animal management and protocols\nX-Ray Depot — Radiography and imaging data management\nProteomics Depot — Mass spectrometry data and analysis results\nCDKN2a Mutation Database — Specialized variant and mutation tracking\n\nEach depot was tailored to its research community’s unique requirements while leveraging shared BioDesktop infrastructure."
+  },
+  {
+    "objectID": "project/2004-01-01-biodesktop/index.html#overview",
+    "href": "project/2004-01-01-biodesktop/index.html#overview",
+    "title": "UVM BioDesktop",
+    "section": "",
+    "text": "Built back in the early 2000s, right after I started working at UVM, a fellow programmer/mathematician came into the team called Rama Kocherlakota. After some time, we started to work on the UVM BioDesktop. The was designed as was web-based data management and bioinformatics system designed to empower researchers to manage, analyze, and share biological data. The idea was to combine a user-friendly web interface with a powerful object-relational database layer and a flexible Perl-based coding engine, which one could build solutions on top of. Here I worked with various scientists and core facility directors to design applications.\nOne of the most successful BioDesktop applications was DNA Depot, a web-based order and data delivery system for the UVM DNA Facility. I gathered requirements from facility staff, designed the user interface, and implemented the system as a family of BioDesktop modules. DNA Depot replaced a paper-based order entry system, dramatically improving staff productivity and enabling automated utilization tracking. For several years, DNA Depot processed more than 18,000 orders and delivered over 130,000 data files to users.\nBioDesktop’s modular architecture supported the development of other domain-specific applications:\n\nMicroarray Depot — Microarray experiment tracking and data access\nMicroscopy & Imaging Center Depot — Image acquisition and analysis workflow\nAnimal Care Depot — Research animal management and protocols\nX-Ray Depot — Radiography and imaging data management\nProteomics Depot — Mass spectrometry data and analysis results\nCDKN2a Mutation Database — Specialized variant and mutation tracking\n\nEach depot was tailored to its research community’s unique requirements while leveraging shared BioDesktop infrastructure."
+  },
+  {
+    "objectID": "project/2004-01-01-biodesktop/index.html#technology-stack",
+    "href": "project/2004-01-01-biodesktop/index.html#technology-stack",
+    "title": "UVM BioDesktop",
+    "section": "Technology Stack",
+    "text": "Technology Stack\n\nDatabase: MySQL with object-relational design patterns\nWeb Server: Apache\nApplication Layer: Perl modules and objects\nExternal Integrations: NCBI C++ Toolkit for sequence database access and sequence analysis\nUser Interface: HTML-based forms and web interface"
+  },
+  {
+    "objectID": "accessibility.html",
+    "href": "accessibility.html",
+    "title": "Accessibility statement",
+    "section": "",
+    "text": "← Back to home"
+  },
+  {
+    "objectID": "accessibility.html#my-commitment-to-accessibility",
+    "href": "accessibility.html#my-commitment-to-accessibility",
+    "title": "Accessibility statement",
+    "section": "My commitment to accessibility",
+    "text": "My commitment to accessibility\nI believe that the web should be accessible to everyone, regardless of their abilities or the technology they use. This site has been built with accessibility as a core principle, and I’m committed to maintaining and improving its accessibility over time.\nIf you encounter any accessibility barriers while using this site or accessing my content, please contact me and let me know. I’ll do my best to address the issue promptly."
+  },
+  {
+    "objectID": "accessibility.html#accessibility-features",
+    "href": "accessibility.html#accessibility-features",
+    "title": "Accessibility statement",
+    "section": "Accessibility features",
+    "text": "Accessibility features\nThis site implements the following accessibility practices:\n\nVisual design\n\nWCAG 2.1 Level AA compliant color contrast — All text meets minimum contrast ratios (at least 4.5:1 for normal text, 3:1 for large text)\nDark and light mode support — Choose your preferred color scheme based on your needs and preferences\nReadable typography — The site uses Commissioner (body text) and Fraunces (headings), both designed for clarity and readability across all users, including those with dyslexia or low vision\nSufficient spacing and sizing — Text, buttons, and interactive elements are sized and spaced for easy interaction and reading\n\n\n\nNavigation and interaction\n\nKeyboard navigation — All interactive elements are fully navigable using only the keyboard (Tab, Enter, Escape keys)\nVisible focus indicators — When using keyboard navigation, focused elements are clearly indicated with visible borders or outlines\nSemantic HTML — The site uses proper heading hierarchy and semantic elements for better screen reader navigation\nDescriptive link text — Links use clear, descriptive text that makes sense out of context\nForm accessibility — Contact forms include associated labels and clear instructions\n\n\n\nContent and media\n\nAlternative text for images — All informative images include descriptive alt text for screen reader users\nVideo captions — External video content includes captions where available\nTable of contents — Blog posts include a navigable table of contents for easier browsing\n\n\n\nTechnical standards\n\nMobile responsive — The site works well on all screen sizes from phones to large displays\nScreen reader compatible — Built with semantic HTML and ARIA labels where needed for assistive technology users\nPerformance — Fast loading times benefit all users, especially those on slower connections or mobile networks"
+  },
+  {
+    "objectID": "accessibility.html#known-limitations-and-ongoing-improvements",
+    "href": "accessibility.html#known-limitations-and-ongoing-improvements",
+    "title": "Accessibility statement",
+    "section": "Known limitations and ongoing improvements",
+    "text": "Known limitations and ongoing improvements\nAccessibility is an ongoing practice, not a destination. While I’ve built this site with accessibility in mind, there may be areas for improvement. I regularly audit the site using:\n\nWAVE Web Accessibility Evaluation Tool by WebAIM\nBrowser developer tools and accessibility inspectors\nManual testing with keyboard navigation and screen readers\nCommunity feedback from users\n\nIssues and improvements are tracked in the GitHub repository for transparency and accountability."
+  },
+  {
+    "objectID": "accessibility.html#resources",
+    "href": "accessibility.html#resources",
+    "title": "Accessibility statement",
+    "section": "Resources",
+    "text": "Resources\nIf you’d like to learn more about web accessibility, I recommend:\n\nWeb Content Accessibility Guidelines (WCAG) 2.1 — The official standard\nWebAIM — Practical accessibility guidance\nThe A11Y Project — Community-driven accessibility education\nInclusive Components — Design patterns that work for everyone"
+  },
+  {
+    "objectID": "accessibility.html#contact",
+    "href": "accessibility.html#contact",
+    "title": "Accessibility statement",
+    "section": "Contact",
+    "text": "Contact\nQuestions about accessibility? I’d love to hear from you. Please use my contact form or reach out via email."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ramiro Barrantes-Reynolds, PhD",
+    "section": "",
+    "text": "Bioinformatician & Data Scientist with 25+ years working at the intersection of machine learning, genomics, and collaborative science. Current work applies Bayesian models, bioinformatics methods, machine learning methods, using workflow management systems and AI tools to problems in epigenomics, variant pathogenicity and infectious disease — always in partnership with biologists, clinicians, and data scientists. Learn more about me →\n\n    \n    \n  \n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "Ramiro Barrantes-Reynolds",
+    "section": "",
+    "text": "Welcome\n\nI am glad you are here!\nI am a Bioinformatician & Data Scientist at the University of Vermont, Department of Microbiology and Molecular Genetics. My research focuses on collaborative bioinformatics and computational biology, spanning variant analysis, epigenomics, virus typing, transcriptomics, and structural biology. I work extensively with workflow management systems, containerized environments, and high-performance computing to enforce reproducibility and scalability.\nI have been integrating quantitative sciences and computational methods with biomedical research since 2001, with a focus on Bayesian statistical methods, machine learning, data science and now, increasingly, AI methods. Learn more about my work in projects and publications.\nGet in touch by sending me a note! \nA bit longer…\n\n\nI grew up in Costa Rica in a family of life scientists, and by the way, when I was a teenager I swore never to have anything to do with biology or get a Ph.D – my aspirations leaned more towards becoming a ninja…but alas…decades later with a PhD in bioinformatics!\n\n\n\n\n\n\nIllustration of a ninja in a martial arts pose\n\n\n\n\n\n\n\n\n\n\n\nCantor’s diagonal argument mathematical diagram\n\n\n\n\n\nDuring my first semester of Computer Science at the University of Costa Rica I had a classmate/friend that was studying pure mathematics. Something about the way he thought and his approach to solving problems really intrigued me. I took a class and the fascinating world of math proved to be a welcome challenge so I decided to also study math (my family was also much more supportive of that than of me becoming a ninja!). I had no idea that studying math would later open a world of possibilities.\n\n\n\n\nAfter graduating I took a break from school and came to Vermont to live at a Zen Buddhist Center, where I also had my very first and very cold Vermont winter! Eventually I met Dr. Jeff Bond, a University of Vermont researcher and professor, whom I worked with for 5 years as a bioinformatics programmer and afterwards he was my advisor for the Ph.D. program in Cell and Molecular Biology doing Computational Biology/Bioinformatics.\n\n\n\n\n\n\nGroup photo of Bond Lab members in 2011\n\n\n\nBond Lab 2011\n\n\n\n\n\n\n\n\n\n\nBen and Jerry’s ice cream factory storefront in Vermont\n\n\n\n\n\nDuring my second year of the Ph.D program, something unexpected happen: another graduate student and myself took a visiting professor (Terry Speed, a world-renowned bioinformatics statistician) to Vermont’s famous ice cream factory: Ben and Jerry’s. During the trip, something about the conversation, and also listening to his talks, really aroused my interest in statistics, subsequently I took a Bayesian statistics course and I was hooked! Been a statistician/bioinformatician/data scientist ever since working for both academia and industry.\n\n\nI also have a life outside of work, mainly about finding the meaning of life and becoming a better person, and also as a hobby singing and playing percussion in a band, but that’s a story for another time!!"
+  },
+  {
+    "objectID": "about/index.html#about-me",
+    "href": "about/index.html#about-me",
+    "title": "Ramiro Barrantes-Reynolds",
+    "section": "About me",
+    "text": "About me\n\n\n\n\nPh.D. in Cell and Molecular Biology (Bioinformatics/Statistics) ∙ University of Vermont ∙ 2011\n\n\nB.S. in Pure Mathematics ∙ University of Costa Rica ∙ 1999\n\n\nB.S. in Computer Science ∙ University of Costa Rica ∙ 1999\n\n\n\n\n\n\nBioinformatics Data Scientist ∙ Vermont Integrative Genomics Resource ∙ UVM ∙ 2022-present\n\n\nBioinformatics Data Scientist ∙ Translational Global Infectious Disease Research ∙ UVM ∙ 2022-present\n\n\nStatistician ∙ Precision Bioassay ∙ 2011-2021\n\n\nBioinformatics Programmer ∙ University of Vermont ∙ 2001-2006"
+  },
+  {
+    "objectID": "about/index.html#lately",
+    "href": "about/index.html#lately",
+    "title": "Ramiro Barrantes-Reynolds",
+    "section": "Lately …",
+    "text": "Lately …\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\nnf-core Modules for Copy Number Trajectory Analysis (coptr)\n\n\nFive Nextflow modules for analyzing copy number variation trajectories from sequencing data\n\n\n\n\n\nNo matching items\n\nSee all →\n\n\nBlog\n\n\n\n\n\n\n\n\nPCA and MDS\n\n\nA plain-language guide to two of the most common plots in a data report\n\n\n\n\n\nNo matching items\n\nSee all →\n\n\nPublications\n\n\n\n\n\n\n\n\n\n\nRab11B is required for binding and entry of recent H3N2, but not H1N1, influenza A isolates\n\n\n\n\n\nNo matching items\n\nSee all →"
+  },
+  {
+    "objectID": "project/index.html",
+    "href": "project/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Most of my projects are internal and reflect collaborations that have lead or are going to lead to publications.\n\n\n    \n    \n\n\n\n  Less\n  \n    \n    \n    \n    \n    \n  \n  More"
+  },
+  {
+    "objectID": "project/index.html#gitlab-contribution-activity",
+    "href": "project/index.html#gitlab-contribution-activity",
+    "title": "Projects",
+    "section": "",
+    "text": "Most of my projects are internal and reflect collaborations that have lead or are going to lead to publications.\n\n\n    \n    \n\n\n\n  Less\n  \n    \n    \n    \n    \n    \n  \n  More"
+  },
+  {
+    "objectID": "project/index.html#projects",
+    "href": "project/index.html#projects",
+    "title": "Projects",
+    "section": "Projects",
+    "text": "Projects\n\n\nnf-core Modules for Copy Number Trajectory Analysis (coptr) — Five Nextflow modules for analyzing copy number variation trajectories from sequencing data\nBioconda coptr recipe\nNCBI FPG/NEI Conserved Domain Profile"
+  },
+  {
+    "objectID": "project/index.html#retired-projects",
+    "href": "project/index.html#retired-projects",
+    "title": "Projects",
+    "section": "Retired Projects",
+    "text": "Retired Projects\n\n\nDance Your PhD (2011) — Choreographed interpretation of my PhD thesis, submitted to a Science Magazine’s international competition\n\nXymp™ Bioassay System (2011-2021) — Statistical software for designing, analyzing, and validating potency assays\n\nUVM BioDesktop (approx 2002-2013) — Open-source web-based data management system built on MySQL and Apache"
+  },
+  {
+    "objectID": "project/2024-12-15-nf-core-coptr-modules/index.html",
+    "href": "project/2024-12-15-nf-core-coptr-modules/index.html",
+    "title": "nf-core Modules for Copy Number Trajectory Analysis (coptr)",
+    "section": "",
+    "text": "I have contributed five Nextflow modules to the nf-core community collection for analyzing copy number trajectories from genomic sequencing data. These modules implement the core steps of the coptr workflow:\n\n\nPrepares reference genome index files for coptr analysis.\n\n\n\nMaps sequencing reads to the reference genome and generates BAM files for downstream analysis.\n\n\n\nExtracts copy number information from BAM files and prepares data for trajectory analysis.\n\n\n\nEstimates copy number trajectories using statistical methods to infer temporal dynamics.\n\n\n\nMerges and consolidates results from multiple samples for comparative analysis."
+  },
+  {
+    "objectID": "project/2024-12-15-nf-core-coptr-modules/index.html#overview",
+    "href": "project/2024-12-15-nf-core-coptr-modules/index.html#overview",
+    "title": "nf-core Modules for Copy Number Trajectory Analysis (coptr)",
+    "section": "",
+    "text": "I have contributed five Nextflow modules to the nf-core community collection for analyzing copy number trajectories from genomic sequencing data. These modules implement the core steps of the coptr workflow:\n\n\nPrepares reference genome index files for coptr analysis.\n\n\n\nMaps sequencing reads to the reference genome and generates BAM files for downstream analysis.\n\n\n\nExtracts copy number information from BAM files and prepares data for trajectory analysis.\n\n\n\nEstimates copy number trajectories using statistical methods to infer temporal dynamics.\n\n\n\nMerges and consolidates results from multiple samples for comparative analysis."
+  },
+  {
+    "objectID": "project/2011-01-01-dance-your-phd/index.html",
+    "href": "project/2011-01-01-dance-your-phd/index.html",
+    "title": "Dance Your PhD",
+    "section": "",
+    "text": "This was a very fun project! “Dance Your PhD” is an international competition hosted by Science Magazine that challenges researchers to convey the essence of their doctoral research through choreographed dance and movement. In 2011, as I was close to finishing my PhD I created and performed a dance interpretation of my research: doing Bayesian statistics on alignment, structures and trees to determine structural characters that were important for function of DNA repair enzymes.\nI had a great dance crew: two fellow PhD students (Minmin Liu and Shruthi Krishnamurti) as DNA, and the daughters of two UVM faculty (Gabby Boyson and Elaine Dragon), using music (with permission) Eres Eso by Jimmy Martínez, from Cuban group El Équipo. You can see the dance here:\nWatch the dance here\nFollowing the competition, we also did a competition where people did the opposite, based on a choreography, try to guess the PhD topic that it was representing"
+  },
+  {
+    "objectID": "project/2011-01-01-dance-your-phd/index.html#overview",
+    "href": "project/2011-01-01-dance-your-phd/index.html#overview",
+    "title": "Dance Your PhD",
+    "section": "",
+    "text": "This was a very fun project! “Dance Your PhD” is an international competition hosted by Science Magazine that challenges researchers to convey the essence of their doctoral research through choreographed dance and movement. In 2011, as I was close to finishing my PhD I created and performed a dance interpretation of my research: doing Bayesian statistics on alignment, structures and trees to determine structural characters that were important for function of DNA repair enzymes.\nI had a great dance crew: two fellow PhD students (Minmin Liu and Shruthi Krishnamurti) as DNA, and the daughters of two UVM faculty (Gabby Boyson and Elaine Dragon), using music (with permission) Eres Eso by Jimmy Martínez, from Cuban group El Équipo. You can see the dance here:\nWatch the dance here\nFollowing the competition, we also did a competition where people did the opposite, based on a choreography, try to guess the PhD topic that it was representing"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nPCA and MDS\n\n\n\nstatistics\n\ndata visualization\n\nscience-communication\n\n\n\n\n\n\nSep 9, 2026\n\n\nRamiro Barrantes-Reynolds\n\n12 min\n\n\n\n\n\n\nWhen Is a Variant Real? The Challenge of Low Tumor Purity\n\n\n\nbioinformatics\n\ncancer genomics\n\nstatistics\n\nvariant calling\n\n\n\n\n\n\nAug 28, 2026\n\n\nRamiro Barrantes-Reynolds\n\n8 min\n\n\n\n\n\n\nTeaching, Training, and Transforming: Building Capacity with Nextflow in Vermont\n\n\n\nnextflow\n\nbioinformatics\n\ntraining\n\n\n\n\n\n\nJul 1, 2025\n\n\nRamiro Barrantes-Reynolds\n\n1 min\n\n\n\n\n\n\nThe Derivation of the Berglund Estimator for the Diffusion Constant\n\n\n\nstatistics\n\nmodeling\n\n\n\n\n\n\nJun 28, 2024\n\n\nRamiro\n\n1 min\n\n\n\n\n\n\nMAGeCK-MLE: Essential Gene Detection\n\n\n\nCRISPR\n\nbioinformatics\n\n\n\n\n\n\nOct 20, 2023\n\n\nRamiro Barrantes\n\n5 min\n\n\n\n\n\n\nThe Kullback-Leibler Divergence and Variational Bayes\n\n\n\nstatistics\n\nmachine learning\n\n\n\n\n\n\nOct 28, 2022\n\n\nRamiro\n\n2 min\n\n\n\n\nNo matching items\n Back to topReuseCC BY-SA 4.0CitationFor attribution, please cite this work as:\nBarrantes-Reynolds, Ramiro. n.d. “Blog.” https://ramirobarrantes.com/blog/."
+  },
+  {
+    "objectID": "blog/2023-10-20-mageck-mle/index.html",
+    "href": "blog/2023-10-20-mageck-mle/index.html",
+    "title": "MAGeCK-MLE: Essential Gene Detection",
+    "section": "",
+    "text": "For some background, CRISPR https://www.broadinstitute.org/what-broad/areas-focus/project-spotlight/questions-and-answers-about-crispr is a technology for gene editing (i.e. modifying selected parts of DNA). It consists of guiding RNA (gRNA), which both recognizes the target DNA sequence, and is also itself a target for the CRISPR-associated (cas) nuclease, which forms a ribonucleoprotein with the gRNA and performs a double-strand break on the DNA. This can result in a knockout or a knock-in of a gene.\nPart of the use of CRISPR technologies is in the detection of essential genes within specific conditions.\nOne algorithm for doing this is the MAGeCK-MLE algorithm. This algorithm, using count data for all samples and genes, as well as a design matrix that establishes the various conditions of the gene, determines the a “gene selection score” for each that reflect how much each condition is selected for each gene.Let’s look at a toy example.\n\nSay your data consists of 4 samples, 3 genes and 2 conditions (A and B). After read mapping you will have a count table,\n\n\n\nTable 1: Count table. For each sample, each gene and each condition (first three columns) we have the number of reads for each gene g1, g2 and g3.\n\n\n\n\nsample\ncondition\ng1\ng2\ng3\n\n\n\na1\nA\n13\n951\n1014\n\n\na2\nA\n10\n1027\n1070\n\n\nb1\nB\n313\n286\n311\n\n\nb2\nB\n283\n302\n300\n\n\n\n\n\n\n\n\nAnd we also have a design matrix that specifies how each sample and each condition are related:\n\n\n\nTable 2: Design Matrix. For each sample (first column), we have beta0 for baseline abundance, beta1 for condition1, and beta2 for condition2.\n\n\n\n\nsample\nd0\nd1\nd2\n\n\n\na1\n1\n1\n0\n\n\na2\n1\n1\n0\n\n\nb1\n1\n0\n1\n\n\nb2\n1\n0\n1\n\n\n\n\n\n\n\n\nEach count \\(x\\) we will model using a negative binomial distribution consisting of:\n\\[\n  x \\sim NB(u,\\alpha)\n\\] where \\(u=sq\\) with \\(s=\\frac{x}{\\hat{x}}\\) a size factor (\\(\\hat{x}\\) is the geometric mean for the sample), and \\(q\\) reflects the design as follows:\n\n\n\nTable 3: Intermediate Results Table. For each sample (first column), and each condition we have the gene counts, the geometric means for we have beta0 for baseline abundance, beta1 for condition1, and beta2 for condition2.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsample\ncondition\ng1\ng2\ng3\ng1_s\ng2_s\ng3_s\ng1_sq\ng2_sq\ng3_sq\n\n\n\na1\nA\n13\n951\n1014\n0.22\n1.76\n1.80\n\\[0.22e^{\\beta_{1,0}+\\beta _{1,1}}\\]\n\\[1.76e^{\\beta_{2,0}+\\beta _{2,1}}\\]\n\\[1.8e^{\\beta_{3,0}+\\beta _{3,1}}\\]\n\n\na2\nA\n10\n1027\n1070\n0.17\n1.91\n1.90\n\\[0.17e^{\\beta_{1,0}+\\beta_{1,0}}\\]\n\\[1.91e^{\\beta_{2,0}+\\beta_{2,1}}\\]\n\\[1.9e^{\\beta_{3,0}+\\beta_{3,1}}\\]\n\n\nb1\nB\n313\n286\n311\n5.37\n0.53\n0.55\n\\[5.37e^{\\beta_{1,0}+\\beta_{1,2}}\\]\n\\[0.53e^{\\beta_{2,0}+\\beta_{2,2}}\\]\n\\[0.55e^{\\beta_{3,0}+\\beta_{3,2}}\\]\n\n\nb2\nB\n283\n302\n300\n4.86\n0.56\n0.53\n\\[4.86e^{\\beta_{1,0}+\\beta_{1,2}}\\]\n\\[0.56e^{\\beta_{2,0}+\\beta_{2,2}}\\]\n\\[0.53e^{\\beta_{3,0}+\\beta_{3,2}}\\]\n\n\n\n\n\n\n\n\nFinally, for counts table \\(X\\) and design matrix \\(D\\) we can calculate the likelihood as follows:\n\\[\n\\begin{aligned}\nP(X,D|\\beta_0,\\beta_1,\\beta_2) &= \\sum NB(x|u,\\alpha) \\\\\n&= \\sum NB(9|0.18e^{\\beta0+\\beta1},\\alpha) + \\ldots + \\sum NB(278|0.51e^{\\beta0+\\beta2},\\alpha)\n\\end{aligned}\n\\] where \\(\\alpha\\) is as defined in the paper and this can be estimated using maximum likelihood. Figure 1 shows a scatter plot of the likelihood estimates for gene 1 as a function of various values of \\(\\beta_0\\) and \\(\\beta_1\\) for gene1.\n\n\n\n\n\n\n\nFigure 1: 3D Scatter Plot showing likelihood estimates for various values of beta1 and beta2 for gene 1. Actually the highest value (the MLE) is -23.44, which corresponds to beta1 4.3 and beta2 -3.1\n\n\n\n\n\nFollowing the notation and description from (Li et al. 2015):\n\nLi, Wei, Johannes Köster, Han Xu, et al. 2015. “Quality Control, Modeling, and Visualization of CRISPR Screens with MAGeCK-VISPR.” Journal Article. Genome Biology 16 (1): 281. https://doi.org/10.1186/s13059-015-0843-6.\nThe read count, \\(x_{i,j}\\) of a sgRNA \\(i\\) targeting gene \\(g\\) in sample \\(j\\) is modeled with the Negative Binomial distribution,\n\\[\n  x_{i,j} \\sim NegBin(\\mu_{i,j},\\alpha_i)\n\\]\nNote that this distribution is commonly used for gene counts as it allows a different mean and a different variance. The mean itself is modeled as:\n\\[\n\\mu_{i,j}=s_j q_{i,j}\n\\] Where \\(s_j\\) is a size factor accounting for the sequencing depth of the sample and is calculated as the number of counts divided by the geometric mean of the samples,\n\\[\ns_j = \\left( \\frac{x_{i,j}}{\\prod_{k=1}^{J}{x_{i,k}}} \\right)^{(1/J)}\n\\] On the other hand, \\(q_{i,j}\\) corresponds to a linear combination of effects coming from the various conditions (drug types, cell types, etc) and they are specified as :\n\\[\n\\begin{equation}\n\\begin{cases}\n  log(q_{i,j}) = \\beta_0 + \\sum_r d_{j,r} \\beta_{g,r} & \\text{if } \\pi_i=1 \\\\\n  log(q_{i,j}) = \\beta_0  & \\text{if } \\pi_i=0\n\\end{cases}\n\\end{equation}\n\\]\nwhere \\(d_{j,r}\\) are elements of the design matrix. See example below. For \\(\\beta&gt;0\\) \\(g_{i,r}\\) is positively selected and \\(\\beta&lt;0\\) is negatively selected in condition \\(g\\) for gene \\(i\\). \\(\\beta_0\\) is the initial sgRNA abundance measured in plasmid.\nUltimately, we want to maximize the likelihood, for a given set of counts \\(X=x_1 \\ldots x_N\\), genes \\(G=g_1 \\dots g_G\\), samples \\(S=s_1 \\ldots s_S\\) and design matrix \\(D\\) we want to find the values of the parameters \\(\\beta=\\beta_0 \\dots \\beta_r\\):\n\\[\nP(x_{i,j}=x|\\beta_0,\\{\\beta\\},\\pi_1,\\pi_0) = \\prod_{j=1}^J \\left( P(x_{i,j}|\\pi_i=0)P(\\pi_i=0)+P(x_{i,j}|\\pi_i=1)P(\\pi_i=1) \\right)\n\\] ### Example\nSo let’s use the example of @RN81, all all the figures below are from that paper. In this case the design matrix would be something like this:\n Therefore, for each gene \\(g\\) we would have the “gene essentiality scores” \\(\\beta_{g,0}\\), \\(\\beta_{g,1}\\), \\(\\beta_{g,2}\\), \\(\\beta_{g,3}\\), \\(\\beta_{g,4}\\) which would tell us how strongly this condition is present on the gene.\nAnd we can see the results in the following figure:\n On Fig4.a we see each of the conditions on the x-axis and the genes on the y-axis, clustered into four groups."
+  },
+  {
+    "objectID": "blog/2023-10-20-mageck-mle/index.html#mageck-mle-essential-gene-detection",
+    "href": "blog/2023-10-20-mageck-mle/index.html#mageck-mle-essential-gene-detection",
+    "title": "MAGeCK-MLE: Essential Gene Detection",
+    "section": "",
+    "text": "For some background, CRISPR https://www.broadinstitute.org/what-broad/areas-focus/project-spotlight/questions-and-answers-about-crispr is a technology for gene editing (i.e. modifying selected parts of DNA). It consists of guiding RNA (gRNA), which both recognizes the target DNA sequence, and is also itself a target for the CRISPR-associated (cas) nuclease, which forms a ribonucleoprotein with the gRNA and performs a double-strand break on the DNA. This can result in a knockout or a knock-in of a gene.\nPart of the use of CRISPR technologies is in the detection of essential genes within specific conditions.\nOne algorithm for doing this is the MAGeCK-MLE algorithm. This algorithm, using count data for all samples and genes, as well as a design matrix that establishes the various conditions of the gene, determines the a “gene selection score” for each that reflect how much each condition is selected for each gene.Let’s look at a toy example.\n\nSay your data consists of 4 samples, 3 genes and 2 conditions (A and B). After read mapping you will have a count table,\n\n\n\nTable 1: Count table. For each sample, each gene and each condition (first three columns) we have the number of reads for each gene g1, g2 and g3.\n\n\n\n\nsample\ncondition\ng1\ng2\ng3\n\n\n\na1\nA\n13\n951\n1014\n\n\na2\nA\n10\n1027\n1070\n\n\nb1\nB\n313\n286\n311\n\n\nb2\nB\n283\n302\n300\n\n\n\n\n\n\n\n\nAnd we also have a design matrix that specifies how each sample and each condition are related:\n\n\n\nTable 2: Design Matrix. For each sample (first column), we have beta0 for baseline abundance, beta1 for condition1, and beta2 for condition2.\n\n\n\n\nsample\nd0\nd1\nd2\n\n\n\na1\n1\n1\n0\n\n\na2\n1\n1\n0\n\n\nb1\n1\n0\n1\n\n\nb2\n1\n0\n1\n\n\n\n\n\n\n\n\nEach count \\(x\\) we will model using a negative binomial distribution consisting of:\n\\[\n  x \\sim NB(u,\\alpha)\n\\] where \\(u=sq\\) with \\(s=\\frac{x}{\\hat{x}}\\) a size factor (\\(\\hat{x}\\) is the geometric mean for the sample), and \\(q\\) reflects the design as follows:\n\n\n\nTable 3: Intermediate Results Table. For each sample (first column), and each condition we have the gene counts, the geometric means for we have beta0 for baseline abundance, beta1 for condition1, and beta2 for condition2.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsample\ncondition\ng1\ng2\ng3\ng1_s\ng2_s\ng3_s\ng1_sq\ng2_sq\ng3_sq\n\n\n\na1\nA\n13\n951\n1014\n0.22\n1.76\n1.80\n\\[0.22e^{\\beta_{1,0}+\\beta _{1,1}}\\]\n\\[1.76e^{\\beta_{2,0}+\\beta _{2,1}}\\]\n\\[1.8e^{\\beta_{3,0}+\\beta _{3,1}}\\]\n\n\na2\nA\n10\n1027\n1070\n0.17\n1.91\n1.90\n\\[0.17e^{\\beta_{1,0}+\\beta_{1,0}}\\]\n\\[1.91e^{\\beta_{2,0}+\\beta_{2,1}}\\]\n\\[1.9e^{\\beta_{3,0}+\\beta_{3,1}}\\]\n\n\nb1\nB\n313\n286\n311\n5.37\n0.53\n0.55\n\\[5.37e^{\\beta_{1,0}+\\beta_{1,2}}\\]\n\\[0.53e^{\\beta_{2,0}+\\beta_{2,2}}\\]\n\\[0.55e^{\\beta_{3,0}+\\beta_{3,2}}\\]\n\n\nb2\nB\n283\n302\n300\n4.86\n0.56\n0.53\n\\[4.86e^{\\beta_{1,0}+\\beta_{1,2}}\\]\n\\[0.56e^{\\beta_{2,0}+\\beta_{2,2}}\\]\n\\[0.53e^{\\beta_{3,0}+\\beta_{3,2}}\\]\n\n\n\n\n\n\n\n\nFinally, for counts table \\(X\\) and design matrix \\(D\\) we can calculate the likelihood as follows:\n\\[\n\\begin{aligned}\nP(X,D|\\beta_0,\\beta_1,\\beta_2) &= \\sum NB(x|u,\\alpha) \\\\\n&= \\sum NB(9|0.18e^{\\beta0+\\beta1},\\alpha) + \\ldots + \\sum NB(278|0.51e^{\\beta0+\\beta2},\\alpha)\n\\end{aligned}\n\\] where \\(\\alpha\\) is as defined in the paper and this can be estimated using maximum likelihood. Figure 1 shows a scatter plot of the likelihood estimates for gene 1 as a function of various values of \\(\\beta_0\\) and \\(\\beta_1\\) for gene1.\n\n\n\n\n\n\n\nFigure 1: 3D Scatter Plot showing likelihood estimates for various values of beta1 and beta2 for gene 1. Actually the highest value (the MLE) is -23.44, which corresponds to beta1 4.3 and beta2 -3.1\n\n\n\n\n\nFollowing the notation and description from (Li et al. 2015):\n\nLi, Wei, Johannes Köster, Han Xu, et al. 2015. “Quality Control, Modeling, and Visualization of CRISPR Screens with MAGeCK-VISPR.” Journal Article. Genome Biology 16 (1): 281. https://doi.org/10.1186/s13059-015-0843-6.\nThe read count, \\(x_{i,j}\\) of a sgRNA \\(i\\) targeting gene \\(g\\) in sample \\(j\\) is modeled with the Negative Binomial distribution,\n\\[\n  x_{i,j} \\sim NegBin(\\mu_{i,j},\\alpha_i)\n\\]\nNote that this distribution is commonly used for gene counts as it allows a different mean and a different variance. The mean itself is modeled as:\n\\[\n\\mu_{i,j}=s_j q_{i,j}\n\\] Where \\(s_j\\) is a size factor accounting for the sequencing depth of the sample and is calculated as the number of counts divided by the geometric mean of the samples,\n\\[\ns_j = \\left( \\frac{x_{i,j}}{\\prod_{k=1}^{J}{x_{i,k}}} \\right)^{(1/J)}\n\\] On the other hand, \\(q_{i,j}\\) corresponds to a linear combination of effects coming from the various conditions (drug types, cell types, etc) and they are specified as :\n\\[\n\\begin{equation}\n\\begin{cases}\n  log(q_{i,j}) = \\beta_0 + \\sum_r d_{j,r} \\beta_{g,r} & \\text{if } \\pi_i=1 \\\\\n  log(q_{i,j}) = \\beta_0  & \\text{if } \\pi_i=0\n\\end{cases}\n\\end{equation}\n\\]\nwhere \\(d_{j,r}\\) are elements of the design matrix. See example below. For \\(\\beta&gt;0\\) \\(g_{i,r}\\) is positively selected and \\(\\beta&lt;0\\) is negatively selected in condition \\(g\\) for gene \\(i\\). \\(\\beta_0\\) is the initial sgRNA abundance measured in plasmid.\nUltimately, we want to maximize the likelihood, for a given set of counts \\(X=x_1 \\ldots x_N\\), genes \\(G=g_1 \\dots g_G\\), samples \\(S=s_1 \\ldots s_S\\) and design matrix \\(D\\) we want to find the values of the parameters \\(\\beta=\\beta_0 \\dots \\beta_r\\):\n\\[\nP(x_{i,j}=x|\\beta_0,\\{\\beta\\},\\pi_1,\\pi_0) = \\prod_{j=1}^J \\left( P(x_{i,j}|\\pi_i=0)P(\\pi_i=0)+P(x_{i,j}|\\pi_i=1)P(\\pi_i=1) \\right)\n\\] ### Example\nSo let’s use the example of @RN81, all all the figures below are from that paper. In this case the design matrix would be something like this:\n Therefore, for each gene \\(g\\) we would have the “gene essentiality scores” \\(\\beta_{g,0}\\), \\(\\beta_{g,1}\\), \\(\\beta_{g,2}\\), \\(\\beta_{g,3}\\), \\(\\beta_{g,4}\\) which would tell us how strongly this condition is present on the gene.\nAnd we can see the results in the following figure:\n On Fig4.a we see each of the conditions on the x-axis and the genes on the y-axis, clustered into four groups."
+  },
+  {
+    "objectID": "blog/2022-10-28-kullback-leibler/index.html",
+    "href": "blog/2022-10-28-kullback-leibler/index.html",
+    "title": "The Kullback-Leibler Divergence and Variational Bayes",
+    "section": "",
+    "text": "The Kullback-Leibler divergence is used to measure the difference between two probability distributions. We came across its use when using software based on the Variational Bayes approximation algorithm (more on that later). It was developed by two cryptologists/mathematicians, Solomon Kullback and Richard Leibler (McIntire 2021).\n\nMcIntire, Brenda. 2021. “The Secret Career of Solomon Kullback.” In CHANCE. American Statistical Association. https://chance.amstat.org/2021/04/kullback/.\nIf you have two probability distributions P(x) and Q(x) then the Kullback-Leibler divergence, also called relative entropy, is defined as\n\\[D_{KL}(P|Q)= \\sum_x{P(X)log\\frac{P(X)}{Q(X)}}\\]\nThis comes from the background of information theory (MacKay 2003), and it is a weighted average across \\(P(X)\\) of the log difference between \\(P(X)\\) and \\(Q(X)\\) (remember that \\(log \\frac{P(X)}{Q(X)}=log(P(X))-log(Q(X))\\)). One way of interpreting is how far Q(X) is from P(X).\n\nMacKay, David J. C. 2003. Information Theory, Inference, and Learning Algorithms. Cambridge University Press. https://www.worldcat.org/title/information-theory-inference-and-learning-algorithms/oclc/856654329?referer=br&ht=edition.\n\n\nVariational Bayes is a technique for approximating the posterior. The Kullback-Leibler divergence is used in the derivation as follows (Rogers and Girolami 2016). Given data Y and parameters \\(\\theta\\) the marginal likelihood, the average over all possible values of the parameter space would be defined as follows:\n\nRogers, Simon, and Mark Girolami. 2016. A First Course in Machine Learning, Second Edition. 2nd ed. Chapman & Hall/CRC.\n\\[\nP(Y)=\\int P(Y,\\theta)d\\theta\n\\]\nThe log marginal likelihood would be then given by:\n\\[\n\\log P(Y)=\\log \\int P(Y,\\theta)d\\theta\n\\]\nWe will now use an arbitrary distribution which we will take advantage of shortly:\n\\[\n\\log P(Y)=\\log \\int Q(Y) \\frac{P(Y,\\theta)}{Q(Y)}d\\theta \\leq \\int Q(Y) \\log  \\frac{P(Y,\\theta)}{Q(Y)}d\\theta\n\\]\nThe last term, a lower bound, is a result of Jensen’s inequality, where the log of an expectation is less than the expectation of the log. Let’s study the difference between the lower bound and the log marginal likelihood, the idea would then to find a function Q(Y) that minimizes this difference:\n\\[\n\\begin{aligned}\n\\log P(Y)-\\int Q(\\theta) \\log \\frac{P(Y,\\theta)}{Q(\\theta)}d\\theta &= \\log P(Y)-\\int Q(\\theta) \\log \\frac{P(\\theta|Y)P(Y)}{Q(\\theta)}d\\theta\\\\\n&= \\log P(Y)-\\int Q(\\theta) \\left( \\log \\frac{P(\\theta|Y)}{Q(\\theta)} + \\log P(Y) \\right) d\\theta\\\\\n&= \\log P(Y)- \\int Q(\\theta) \\log \\frac{P(\\theta|Y)}{Q(\\theta)}d\\theta -\\int Q(\\theta) \\log P(Y)d\\theta \\\\\n&= \\log P(Y)- \\int Q(\\theta) \\log \\frac{P(\\theta|Y)}{Q(\\theta)}d\\theta - \\log P(Y) \\int Q(\\theta) d\\theta  \\\\\n&= \\log P(Y)- \\int Q(\\theta) \\log \\frac{P(\\theta|Y)}{Q(\\theta)}d\\theta - \\log P(Y) \\\\\n&= - \\int Q(\\theta) \\log \\frac{P(\\theta|Y)}{Q(\\theta)}d\\theta  \\\\\n&= \\int Q(\\theta) \\log \\frac{Q(\\theta)}{P(\\theta|Y)}d\\theta \\\\\n&= D_{KL}(Q(\\theta)|P(\\theta|Y))\n\\end{aligned}\n\\]\nWhere the last term is the Kullback-Leibler divergence shown earlier. Therefore, by choosing \\(Q\\) appropriately, one can approximate the posterior. \\(Q\\) is usually determined by an iterative procedure."
+  },
+  {
+    "objectID": "blog/2022-10-28-kullback-leibler/index.html#the-kullback-leibler-divergence-and-variational-bayes",
+    "href": "blog/2022-10-28-kullback-leibler/index.html#the-kullback-leibler-divergence-and-variational-bayes",
+    "title": "The Kullback-Leibler Divergence and Variational Bayes",
+    "section": "",
+    "text": "The Kullback-Leibler divergence is used to measure the difference between two probability distributions. We came across its use when using software based on the Variational Bayes approximation algorithm (more on that later). It was developed by two cryptologists/mathematicians, Solomon Kullback and Richard Leibler (McIntire 2021).\n\nMcIntire, Brenda. 2021. “The Secret Career of Solomon Kullback.” In CHANCE. American Statistical Association. https://chance.amstat.org/2021/04/kullback/.\nIf you have two probability distributions P(x) and Q(x) then the Kullback-Leibler divergence, also called relative entropy, is defined as\n\\[D_{KL}(P|Q)= \\sum_x{P(X)log\\frac{P(X)}{Q(X)}}\\]\nThis comes from the background of information theory (MacKay 2003), and it is a weighted average across \\(P(X)\\) of the log difference between \\(P(X)\\) and \\(Q(X)\\) (remember that \\(log \\frac{P(X)}{Q(X)}=log(P(X))-log(Q(X))\\)). One way of interpreting is how far Q(X) is from P(X).\n\nMacKay, David J. C. 2003. Information Theory, Inference, and Learning Algorithms. Cambridge University Press. https://www.worldcat.org/title/information-theory-inference-and-learning-algorithms/oclc/856654329?referer=br&ht=edition.\n\n\nVariational Bayes is a technique for approximating the posterior. The Kullback-Leibler divergence is used in the derivation as follows (Rogers and Girolami 2016). Given data Y and parameters \\(\\theta\\) the marginal likelihood, the average over all possible values of the parameter space would be defined as follows:\n\nRogers, Simon, and Mark Girolami. 2016. A First Course in Machine Learning, Second Edition. 2nd ed. Chapman & Hall/CRC.\n\\[\nP(Y)=\\int P(Y,\\theta)d\\theta\n\\]\nThe log marginal likelihood would be then given by:\n\\[\n\\log P(Y)=\\log \\int P(Y,\\theta)d\\theta\n\\]\nWe will now use an arbitrary distribution which we will take advantage of shortly:\n\\[\n\\log P(Y)=\\log \\int Q(Y) \\frac{P(Y,\\theta)}{Q(Y)}d\\theta \\leq \\int Q(Y) \\log  \\frac{P(Y,\\theta)}{Q(Y)}d\\theta\n\\]\nThe last term, a lower bound, is a result of Jensen’s inequality, where the log of an expectation is less than the expectation of the log. Let’s study the difference between the lower bound and the log marginal likelihood, the idea would then to find a function Q(Y) that minimizes this difference:\n\\[\n\\begin{aligned}\n\\log P(Y)-\\int Q(\\theta) \\log \\frac{P(Y,\\theta)}{Q(\\theta)}d\\theta &= \\log P(Y)-\\int Q(\\theta) \\log \\frac{P(\\theta|Y)P(Y)}{Q(\\theta)}d\\theta\\\\\n&= \\log P(Y)-\\int Q(\\theta) \\left( \\log \\frac{P(\\theta|Y)}{Q(\\theta)} + \\log P(Y) \\right) d\\theta\\\\\n&= \\log P(Y)- \\int Q(\\theta) \\log \\frac{P(\\theta|Y)}{Q(\\theta)}d\\theta -\\int Q(\\theta) \\log P(Y)d\\theta \\\\\n&= \\log P(Y)- \\int Q(\\theta) \\log \\frac{P(\\theta|Y)}{Q(\\theta)}d\\theta - \\log P(Y) \\int Q(\\theta) d\\theta  \\\\\n&= \\log P(Y)- \\int Q(\\theta) \\log \\frac{P(\\theta|Y)}{Q(\\theta)}d\\theta - \\log P(Y) \\\\\n&= - \\int Q(\\theta) \\log \\frac{P(\\theta|Y)}{Q(\\theta)}d\\theta  \\\\\n&= \\int Q(\\theta) \\log \\frac{Q(\\theta)}{P(\\theta|Y)}d\\theta \\\\\n&= D_{KL}(Q(\\theta)|P(\\theta|Y))\n\\end{aligned}\n\\]\nWhere the last term is the Kullback-Leibler divergence shown earlier. Therefore, by choosing \\(Q\\) appropriately, one can approximate the posterior. \\(Q\\) is usually determined by an iterative procedure."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Get in touch ",
+    "section": "",
+    "text": "You can use this form to contact me about research collaborations, speaking engagements, bioinformatics questions, or simply to say hello.\nI’m always interested in connecting with researchers, students, and colleagues interested in bioinformatics and computational biology.\n    \n\n\n\n\n\n\n\n\nFull Name \nEmail Address \nMessage\n\n\nSend message\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "publication/2008-07-01-ddc8-tissue-inhibitor/index.html",
+    "href": "publication/2008-07-01-ddc8-tissue-inhibitor/index.html",
+    "title": "Potential Regulatory Relationship Between the Nested Gene DDC8 and Its Host Gene Tissue Inhibitor of Metalloproteinase-2",
+    "section": "",
+    "text": "Jaworski, D.M., Beem-Miller, M., Lluri, G., & Barrantes-Reynolds, R. (2007). Potential Regulatory Relationship Between the Nested Gene DDC8 and Its Host Gene Tissue Inhibitor of Metalloproteinase-2"
+  },
+  {
+    "objectID": "publication/2008-07-01-ddc8-tissue-inhibitor/index.html#citation",
+    "href": "publication/2008-07-01-ddc8-tissue-inhibitor/index.html#citation",
+    "title": "Potential Regulatory Relationship Between the Nested Gene DDC8 and Its Host Gene Tissue Inhibitor of Metalloproteinase-2",
+    "section": "",
+    "text": "Jaworski, D.M., Beem-Miller, M., Lluri, G., & Barrantes-Reynolds, R. (2007). Potential Regulatory Relationship Between the Nested Gene DDC8 and Its Host Gene Tissue Inhibitor of Metalloproteinase-2"
+  },
+  {
+    "objectID": "publication/2008-07-01-ddc8-tissue-inhibitor/index.html#summary",
+    "href": "publication/2008-07-01-ddc8-tissue-inhibitor/index.html#summary",
+    "title": "Potential Regulatory Relationship Between the Nested Gene DDC8 and Its Host Gene Tissue Inhibitor of Metalloproteinase-2",
+    "section": "Summary",
+    "text": "Summary\nHere I worked with investigator Diane Jaworski and did basic bioinformatics: sequence alignment, phylogenetic analysis and discovered a gene duplication event. On the experimental side we discovered that the DDC8 and the TIMP-2 seem to be related in their regulation and perhaps even are a product of alternative splicing."
+  },
+  {
+    "objectID": "publication/2007-08-01-methylation-j-protein/index.html",
+    "href": "publication/2007-08-01-methylation-j-protein/index.html",
+    "title": "Methylation-Controlled J Protein Promotes c-Jun Degradation to Prevent ABCB1 Transporter Expression",
+    "section": "",
+    "text": "Hatle, K.M., Neveu, W., Dienz, O., Rymarchyk, S., Barrantes, R., Hale, S., Farley, N., Lounsbury, K.M., Bond, J.P., Taatjes, D.J., & Rincon, M. (2007). Methylation-Controlled J Protein Promotes c-Jun Degradation to Prevent ABCB1 Transporter Expression. Molecular and Cellular Biology, 27(8), 2952-2966."
+  },
+  {
+    "objectID": "publication/2007-08-01-methylation-j-protein/index.html#citation",
+    "href": "publication/2007-08-01-methylation-j-protein/index.html#citation",
+    "title": "Methylation-Controlled J Protein Promotes c-Jun Degradation to Prevent ABCB1 Transporter Expression",
+    "section": "",
+    "text": "Hatle, K.M., Neveu, W., Dienz, O., Rymarchyk, S., Barrantes, R., Hale, S., Farley, N., Lounsbury, K.M., Bond, J.P., Taatjes, D.J., & Rincon, M. (2007). Methylation-Controlled J Protein Promotes c-Jun Degradation to Prevent ABCB1 Transporter Expression. Molecular and Cellular Biology, 27(8), 2952-2966."
+  },
+  {
+    "objectID": "publication/2007-08-01-methylation-j-protein/index.html#summary",
+    "href": "publication/2007-08-01-methylation-j-protein/index.html#summary",
+    "title": "Methylation-Controlled J Protein Promotes c-Jun Degradation to Prevent ABCB1 Transporter Expression",
+    "section": "Summary",
+    "text": "Summary\nThis work with MCJ has a very interesting story behind it, but I need to ask for Dr. Mercedes for permission to share it here. But in this work, experimentally Ketki showed that 1) MCJ is required in order to prevent c-Jun mediated ABCB1 expression: if MCJ is absent, c-Jun increases and ABCB1 gets expressed more and 2) inhibition of MCJ expression increases resistance to certain drugs. Finally, we also showed that MCJ only exists in vertebrates and found that gene duplication was part of its history."
+  },
+  {
+    "objectID": "publication/2007-08-01-methylation-j-protein/index.html#my-role",
+    "href": "publication/2007-08-01-methylation-j-protein/index.html#my-role",
+    "title": "Methylation-Controlled J Protein Promotes c-Jun Degradation to Prevent ABCB1 Transporter Expression",
+    "section": "My Role",
+    "text": "My Role\nFor this work I collaborated with Ketki Hatle in the lab of Dr. Mercedes Rincón, and I did phylogenetic analysis of MCJ, we used a classical approach of sequence similarity search, alignment and a phylogeny, as well as establishing confidence using bootstrapping and also posterior probability.\n\n\n\n\n\n\n\nFigure 1: Phylogenetic analysis and sequence alignment of MCJ."
+  },
+  {
+    "objectID": "publication/2026-04-06-antibody-cocktail-tnbc/index.html",
+    "href": "publication/2026-04-06-antibody-cocktail-tnbc/index.html",
+    "title": "Novel antibody cocktail therapy targeting extracellular tumor-specific mutations to treat EMT6 cell line-derived triple-negative breast cancer",
+    "section": "",
+    "text": "Pero, S.C., Shukla, G.S., Sun, Y., Barrantes-Reynolds, R., Hartman, C.J., Ackerman, M.E., Mei, L., Zhang, F., Fournier, M.R., & Krag, D.N. (2026). Novel antibody cocktail therapy targeting extracellular tumor-specific mutations to treat EMT6 cell line-derived triple-negative breast cancer. Scientific Reports, 16, 16397."
+  },
+  {
+    "objectID": "publication/2026-04-06-antibody-cocktail-tnbc/index.html#citation",
+    "href": "publication/2026-04-06-antibody-cocktail-tnbc/index.html#citation",
+    "title": "Novel antibody cocktail therapy targeting extracellular tumor-specific mutations to treat EMT6 cell line-derived triple-negative breast cancer",
+    "section": "",
+    "text": "Pero, S.C., Shukla, G.S., Sun, Y., Barrantes-Reynolds, R., Hartman, C.J., Ackerman, M.E., Mei, L., Zhang, F., Fournier, M.R., & Krag, D.N. (2026). Novel antibody cocktail therapy targeting extracellular tumor-specific mutations to treat EMT6 cell line-derived triple-negative breast cancer. Scientific Reports, 16, 16397."
+  },
+  {
+    "objectID": "publication/2026-04-06-antibody-cocktail-tnbc/index.html#summary",
+    "href": "publication/2026-04-06-antibody-cocktail-tnbc/index.html#summary",
+    "title": "Novel antibody cocktail therapy targeting extracellular tumor-specific mutations to treat EMT6 cell line-derived triple-negative breast cancer",
+    "section": "Summary",
+    "text": "Summary\nThis is the result of a long-standing collaboration with an excellent cancer research group. This study demonstrates a proof-of-concept towards personalized immunotherapy approach using customized antibody cocktails that target patient-specific tumor mutations. This study focused on mice, and developed a triple negative breast cancer mouse model and showed that a particular antibody cocktail targeting membrane surface proteins (MSPs) delayed tumor growth and improved survival. My role was to examine TCGA cancer tumor/normal pairs, and determine if there were enough tumor-specific mutations to serve as candidates for a potential personalized antibody therapy.\nThis work involved downloading large amounts of variant information for tumor/normal pairs, while writing programs in R that would interface TCGA and Uniprot data. This work, started several years ago, laid the foundation for the more streamlined multiomics variant filtering, annotation pipelines I’ve developed since."
+  },
+  {
+    "objectID": "publication/2022-03-01-t-cell-lupus/index.html",
+    "href": "publication/2022-03-01-t-cell-lupus/index.html",
+    "title": "T Cell Homeostatic Proliferation Promotes a Redox State That Drives Metabolic and Epigenetic Upregulation of Inflammatory Pathways in Lupus",
+    "section": "",
+    "text": "Budd, R.C., Scharer, C.D., Barrantes-Reynolds, R., Legunn, S., & Fortner, K.A. (2022). T Cell Homeostatic Proliferation Promotes a Redox State That Drives Metabolic and Epigenetic Upregulation of Inflammatory Pathways in Lupus. Antioxidants & Redox Signaling, 36(7-9), 410-422."
+  },
+  {
+    "objectID": "publication/2022-03-01-t-cell-lupus/index.html#citation",
+    "href": "publication/2022-03-01-t-cell-lupus/index.html#citation",
+    "title": "T Cell Homeostatic Proliferation Promotes a Redox State That Drives Metabolic and Epigenetic Upregulation of Inflammatory Pathways in Lupus",
+    "section": "",
+    "text": "Budd, R.C., Scharer, C.D., Barrantes-Reynolds, R., Legunn, S., & Fortner, K.A. (2022). T Cell Homeostatic Proliferation Promotes a Redox State That Drives Metabolic and Epigenetic Upregulation of Inflammatory Pathways in Lupus. Antioxidants & Redox Signaling, 36(7-9), 410-422."
+  },
+  {
+    "objectID": "publication/2022-03-01-t-cell-lupus/index.html#summary",
+    "href": "publication/2022-03-01-t-cell-lupus/index.html#summary",
+    "title": "T Cell Homeostatic Proliferation Promotes a Redox State That Drives Metabolic and Epigenetic Upregulation of Inflammatory Pathways in Lupus",
+    "section": "Summary",
+    "text": "Summary\nIn this work Ralph, an M.D. proposes a hypothesis of the many abnormalities that we see in lupus patients: homeostatic proliferation of T-cells. In our genome we actually have ancient remnants of viruses, which are called endogenous retroviruses (ERVs). Part of my contribution was analyzing RNA expression at genomic sites that were both demethylated and located within ERVs, specifically in CD4⁻CD8⁻TCRαβ⁺ T cells. The figure below shows that these sites are more highly expressed in CD4⁻CD8⁻TCRαβ⁺ T cells compared to conventional T cells — consistent with the hypothesis that homeostatic proliferation drives ERV reactivation through demethylation."
+  },
+  {
+    "objectID": "publication/2004-12-01-cdkn2a-database/index.html",
+    "href": "publication/2004-12-01-cdkn2a-database/index.html",
+    "title": "The CDKN2A Database: Integrating Allelic Variants with Evolution, Structure, Function, and Disease Association",
+    "section": "",
+    "text": "Murphy, J.A., Barrantes-Reynolds, R., Kocherlakota, R., Bond, J.P., & Greenblatt, M.S. (2004). The CDKN2A Database: Integrating Allelic Variants with Evolution, Structure, Function, and Disease Association. Human Mutation, 24(4), 296-304."
+  },
+  {
+    "objectID": "publication/2004-12-01-cdkn2a-database/index.html#citation",
+    "href": "publication/2004-12-01-cdkn2a-database/index.html#citation",
+    "title": "The CDKN2A Database: Integrating Allelic Variants with Evolution, Structure, Function, and Disease Association",
+    "section": "",
+    "text": "Murphy, J.A., Barrantes-Reynolds, R., Kocherlakota, R., Bond, J.P., & Greenblatt, M.S. (2004). The CDKN2A Database: Integrating Allelic Variants with Evolution, Structure, Function, and Disease Association. Human Mutation, 24(4), 296-304."
+  },
+  {
+    "objectID": "publication/2004-12-01-cdkn2a-database/index.html#summary",
+    "href": "publication/2004-12-01-cdkn2a-database/index.html#summary",
+    "title": "The CDKN2A Database: Integrating Allelic Variants with Evolution, Structure, Function, and Disease Association",
+    "section": "Summary",
+    "text": "Summary\nThis was one of my very first papers. Working alongside Joan Murphy (now an MD) and Dr. Marc Greenblatt, we built a database integrating genetic variants with evolutionary, structural, functional, and clinical data for CDKN2A (p16) — a key tumor suppressor gene. The actual online database is no longer available unfortunately.\nIn this work I contributed with all the programming (at that time it was in Perl, Php and maybe some C++), database development, and bioinformatic analysis, and also continually collaborated with Joan and Marc, it was a pleasure to work with them and a great introduction to multidisciplinary scientific collaboration."
+  },
+  {
+    "objectID": "publication/2008-07-15-clostridium-ogg/index.html",
+    "href": "publication/2008-07-15-clostridium-ogg/index.html",
+    "title": "Clostridium Acetobutylicum 8-Oxoguanine DNA Glycosylase (Ogg) Differs from Eukaryotic Oggs with Respect to Opposite Base Discrimination",
+    "section": "",
+    "text": "Robey-Bond, S.M., Barrantes-Reynolds, R., Bond, J.P., Wallace, S.S., & Bandaru, V. (2008). Clostridium Acetobutylicum 8-Oxoguanine DNA Glycosylase (Ogg) Differs from Eukaryotic Oggs with Respect to Opposite Base Discrimination. Biochemistry, 47(29), 7626-7636."
+  },
+  {
+    "objectID": "publication/2008-07-15-clostridium-ogg/index.html#citation",
+    "href": "publication/2008-07-15-clostridium-ogg/index.html#citation",
+    "title": "Clostridium Acetobutylicum 8-Oxoguanine DNA Glycosylase (Ogg) Differs from Eukaryotic Oggs with Respect to Opposite Base Discrimination",
+    "section": "",
+    "text": "Robey-Bond, S.M., Barrantes-Reynolds, R., Bond, J.P., Wallace, S.S., & Bandaru, V. (2008). Clostridium Acetobutylicum 8-Oxoguanine DNA Glycosylase (Ogg) Differs from Eukaryotic Oggs with Respect to Opposite Base Discrimination. Biochemistry, 47(29), 7626-7636."
+  },
+  {
+    "objectID": "publication/2008-07-15-clostridium-ogg/index.html#summary",
+    "href": "publication/2008-07-15-clostridium-ogg/index.html#summary",
+    "title": "Clostridium Acetobutylicum 8-Oxoguanine DNA Glycosylase (Ogg) Differs from Eukaryotic Oggs with Respect to Opposite Base Discrimination",
+    "section": "Summary",
+    "text": "Summary\nThis was my entry into the fascinating world of DNA repair, an ancient system seemingly as old as life which keeps our DNA whole. Over time enzymes have specialized, and the Ogg enzymes repair the 8-Oxoguanine damage, a common DNA lesion caused by oxidative damage. This study characterizes the bacterial Ogg from Clostridium acetobutylicum. For this analysis I identified homologues using conserved domain profiles, performed sequence alignment, and phylogenetic trees."
+  },
+  {
+    "objectID": "posts/MAGeCK-MLE/index.html",
+    "href": "posts/MAGeCK-MLE/index.html",
+    "title": "MAGeCK-MLE: Essential Gene Detection",
+    "section": "",
+    "text": "For some background, CRISPR https://www.broadinstitute.org/what-broad/areas-focus/project-spotlight/questions-and-answers-about-crispr is a technology for gene editing (i.e. modifying selected parts of DNA). It consists of guiding RNA (gRNA), which both recognizes the target DNA sequence, and is also itself a target for the CRISPR-associated (cas) nuclease, which forms a ribonucleoprotein with the gRNA and performs a double-strand break on the DNA. This can result in a knockout or a knock-in of a gene.\nPart of the use of CRISPR technologies is in the detection of essential genes within specific conditions.\nOne algorithm for doing this is the MAGeCK-MLE algorithm. This algorithm, using count data for all samples and genes, as well as a design matrix that establishes the various conditions of the gene, determines the a “gene selection score” for each that reflect how much each condition is selected for each gene.Let’s look at a toy example.\n\nSay your data consists of 4 samples, 3 genes and 2 conditions (A and B). After read mapping you will have a count table,\n\n\n\nTable 1: Count table. For each sample, each gene and each condition (first three columns) we have the number of reads for each gene g1, g2 and g3.\n\n\n\n\nsample\ncondition\ng1\ng2\ng3\n\n\n\na1\nA\n13\n1004\n955\n\n\na2\nA\n14\n1025\n907\n\n\nb1\nB\n283\n303\n330\n\n\nb2\nB\n311\n313\n307\n\n\n\n\n\n\n\n\nAnd we also have a design matrix that specifies how each sample and each condition are related:\n\n\n\nTable 2: Design Matrix. For each sample (first column), we have beta0 for baseline abundance, beta1 for condition1, and beta2 for condition2.\n\n\n\n\nsample\nd0\nd1\nd2\n\n\n\na1\n1\n1\n0\n\n\na2\n1\n1\n0\n\n\nb1\n1\n0\n1\n\n\nb2\n1\n0\n1\n\n\n\n\n\n\n\n\nEach count \\(x\\) we will model using a negative binomial distribution consisting of:\n\\[\n  x \\sim NB(u,\\alpha)\n\\] where \\(u=sq\\) with \\(s=\\frac{x}{\\hat{x}}\\) a size factor (\\(\\hat{x}\\) is the geometric mean for the sample), and \\(q\\) reflects the design as follows:\n\n\n\nTable 3: Intermediate Results Table. For each sample (first column), and each condition we have the gene counts, the geometric means for we have beta0 for baseline abundance, beta1 for condition1, and beta2 for condition2.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsample\ncondition\ng1\ng2\ng3\ng1_s\ng2_s\ng3_s\ng1_sq\ng2_sq\ng3_sq\n\n\n\na1\nA\n13\n1004\n955\n0.21\n1.80\n1.75\n\\[0.21e^{\\beta_{1,0}+\\beta _{1,1}}\\]\n\\[1.8e^{\\beta_{2,0}+\\beta _{2,1}}\\]\n\\[1.75e^{\\beta_{3,0}+\\beta _{3,1}}\\]\n\n\na2\nA\n14\n1025\n907\n0.22\n1.83\n1.67\n\\[0.22e^{\\beta_{1,0}+\\beta_{1,0}}\\]\n\\[1.83e^{\\beta_{2,0}+\\beta_{2,1}}\\]\n\\[1.67e^{\\beta_{3,0}+\\beta_{3,1}}\\]\n\n\nb1\nB\n283\n303\n330\n4.47\n0.54\n0.61\n\\[4.47e^{\\beta_{1,0}+\\beta_{1,2}}\\]\n\\[0.54e^{\\beta_{2,0}+\\beta_{2,2}}\\]\n\\[0.61e^{\\beta_{3,0}+\\beta_{3,2}}\\]\n\n\nb2\nB\n311\n313\n307\n4.92\n0.56\n0.56\n\\[4.92e^{\\beta_{1,0}+\\beta_{1,2}}\\]\n\\[0.56e^{\\beta_{2,0}+\\beta_{2,2}}\\]\n\\[0.56e^{\\beta_{3,0}+\\beta_{3,2}}\\]\n\n\n\n\n\n\n\n\nFinally, for counts table \\(X\\) and design matrix \\(D\\) we can calculate the likelihood as follows:\n\\[\n\\begin{aligned}\nP(X,D|\\beta_0,\\beta_1,\\beta_2) &= \\sum NB(x|u,\\alpha) \\\\\n&= \\sum NB(9|0.18e^{\\beta0+\\beta1},\\alpha) + \\ldots + \\sum NB(278|0.51e^{\\beta0+\\beta2},\\alpha)\n\\end{aligned}\n\\] where \\(\\alpha\\) is as defined in the paper and this can be estimated using maximum likelihood. Figure 1 shows a scatter plot of the likelihood estimates for gene 1 as a function of various values of \\(\\beta_0\\) and \\(\\beta_1\\) for gene1.\n\n\n\n\n\n\n\nFigure 1: 3D Scatter Plot showing likelihood estimates for various values of beta1 and beta2 for gene 1. Actually the highest value (the MLE) is -23.44, which corresponds to beta1 4.3 and beta2 -3.1\n\n\n\n\n\nFollowing the notation and description from (Li et al. 2015):\n\nLi, Wei, Johannes Köster, Han Xu, et al. 2015. “Quality Control, Modeling, and Visualization of CRISPR Screens with MAGeCK-VISPR.” Journal Article. Genome Biology 16 (1): 281. https://doi.org/10.1186/s13059-015-0843-6.\nThe read count, \\(x_{i,j}\\) of a sgRNA \\(i\\) targeting gene \\(g\\) in sample \\(j\\) is modeled with the Negative Binomial distribution,\n\\[\n  x_{i,j} \\sim NegBin(\\mu_{i,j},\\alpha_i)\n\\]\nNote that this distribution is commonly used for gene counts as it allows a different mean and a different variance. The mean itself is modeled as:\n\\[\n\\mu_{i,j}=s_j q_{i,j}\n\\] Where \\(s_j\\) is a size factor accounting for the sequencing depth of the sample and is calculated as the number of counts divided by the geometric mean of the samples,\n\\[\ns_j = \\left( \\frac{x_{i,j}}{\\prod_{k=1}^{J}{x_{i,k}}} \\right)^{(1/J)}\n\\] On the other hand, \\(q_{i,j}\\) corresponds to a linear combination of effects coming from the various conditions (drug types, cell types, etc) and they are specified as :\n\\[\n\\begin{equation}\n\\begin{cases}\n  log(q_{i,j}) = \\beta_0 + \\sum_r d_{j,r} \\beta_{g,r} & \\text{if } \\pi_i=1 \\\\\n  log(q_{i,j}) = \\beta_0  & \\text{if } \\pi_i=0\n\\end{cases}\n\\end{equation}\n\\]\nwhere \\(d_{j,r}\\) are elements of the design matrix. See example below. For \\(\\beta&gt;0\\) \\(g_{i,r}\\) is positively selected and \\(\\beta&lt;0\\) is negatively selected in condition \\(g\\) for gene \\(i\\). \\(\\beta_0\\) is the initial sgRNA abundance measured in plasmid.\nUltimately, we want to maximize the likelihood, for a given set of counts \\(X=x_1 \\ldots x_N\\), genes \\(G=g_1 \\dots g_G\\), samples \\(S=s_1 \\ldots s_S\\) and design matrix \\(D\\) we want to find the values of the parameters \\(\\beta=\\beta_0 \\dots \\beta_r\\):\n\\[\nP(x_{i,j}=x|\\beta_0,\\{\\beta\\},\\pi_1,\\pi_0) = \\prod_{j=1}^J \\left( P(x_{i,j}|\\pi_i=0)P(\\pi_i=0)+P(x_{i,j}|\\pi_i=1)P(\\pi_i=1) \\right)\n\\] ### Example\nSo let’s use the example of @RN81, all all the figures below are from that paper. In this case the design matrix would be something like this:\n Therefore, for each gene \\(g\\) we would have the “gene essentiality scores” \\(\\beta_{g,0}\\), \\(\\beta_{g,1}\\), \\(\\beta_{g,2}\\), \\(\\beta_{g,3}\\), \\(\\beta_{g,4}\\) which would tell us how strongly this condition is present on the gene.\nAnd we can see the results in the following figure:\n On Fig4.a we see each of the conditions on the x-axis and the genes on the y-axis, clustered into four groups."
+  },
+  {
+    "objectID": "posts/MAGeCK-MLE/index.html#mageck-mle-essential-gene-detection",
+    "href": "posts/MAGeCK-MLE/index.html#mageck-mle-essential-gene-detection",
+    "title": "MAGeCK-MLE: Essential Gene Detection",
+    "section": "",
+    "text": "For some background, CRISPR https://www.broadinstitute.org/what-broad/areas-focus/project-spotlight/questions-and-answers-about-crispr is a technology for gene editing (i.e. modifying selected parts of DNA). It consists of guiding RNA (gRNA), which both recognizes the target DNA sequence, and is also itself a target for the CRISPR-associated (cas) nuclease, which forms a ribonucleoprotein with the gRNA and performs a double-strand break on the DNA. This can result in a knockout or a knock-in of a gene.\nPart of the use of CRISPR technologies is in the detection of essential genes within specific conditions.\nOne algorithm for doing this is the MAGeCK-MLE algorithm. This algorithm, using count data for all samples and genes, as well as a design matrix that establishes the various conditions of the gene, determines the a “gene selection score” for each that reflect how much each condition is selected for each gene.Let’s look at a toy example.\n\nSay your data consists of 4 samples, 3 genes and 2 conditions (A and B). After read mapping you will have a count table,\n\n\n\nTable 1: Count table. For each sample, each gene and each condition (first three columns) we have the number of reads for each gene g1, g2 and g3.\n\n\n\n\nsample\ncondition\ng1\ng2\ng3\n\n\n\na1\nA\n13\n1004\n955\n\n\na2\nA\n14\n1025\n907\n\n\nb1\nB\n283\n303\n330\n\n\nb2\nB\n311\n313\n307\n\n\n\n\n\n\n\n\nAnd we also have a design matrix that specifies how each sample and each condition are related:\n\n\n\nTable 2: Design Matrix. For each sample (first column), we have beta0 for baseline abundance, beta1 for condition1, and beta2 for condition2.\n\n\n\n\nsample\nd0\nd1\nd2\n\n\n\na1\n1\n1\n0\n\n\na2\n1\n1\n0\n\n\nb1\n1\n0\n1\n\n\nb2\n1\n0\n1\n\n\n\n\n\n\n\n\nEach count \\(x\\) we will model using a negative binomial distribution consisting of:\n\\[\n  x \\sim NB(u,\\alpha)\n\\] where \\(u=sq\\) with \\(s=\\frac{x}{\\hat{x}}\\) a size factor (\\(\\hat{x}\\) is the geometric mean for the sample), and \\(q\\) reflects the design as follows:\n\n\n\nTable 3: Intermediate Results Table. For each sample (first column), and each condition we have the gene counts, the geometric means for we have beta0 for baseline abundance, beta1 for condition1, and beta2 for condition2.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsample\ncondition\ng1\ng2\ng3\ng1_s\ng2_s\ng3_s\ng1_sq\ng2_sq\ng3_sq\n\n\n\na1\nA\n13\n1004\n955\n0.21\n1.80\n1.75\n\\[0.21e^{\\beta_{1,0}+\\beta _{1,1}}\\]\n\\[1.8e^{\\beta_{2,0}+\\beta _{2,1}}\\]\n\\[1.75e^{\\beta_{3,0}+\\beta _{3,1}}\\]\n\n\na2\nA\n14\n1025\n907\n0.22\n1.83\n1.67\n\\[0.22e^{\\beta_{1,0}+\\beta_{1,0}}\\]\n\\[1.83e^{\\beta_{2,0}+\\beta_{2,1}}\\]\n\\[1.67e^{\\beta_{3,0}+\\beta_{3,1}}\\]\n\n\nb1\nB\n283\n303\n330\n4.47\n0.54\n0.61\n\\[4.47e^{\\beta_{1,0}+\\beta_{1,2}}\\]\n\\[0.54e^{\\beta_{2,0}+\\beta_{2,2}}\\]\n\\[0.61e^{\\beta_{3,0}+\\beta_{3,2}}\\]\n\n\nb2\nB\n311\n313\n307\n4.92\n0.56\n0.56\n\\[4.92e^{\\beta_{1,0}+\\beta_{1,2}}\\]\n\\[0.56e^{\\beta_{2,0}+\\beta_{2,2}}\\]\n\\[0.56e^{\\beta_{3,0}+\\beta_{3,2}}\\]\n\n\n\n\n\n\n\n\nFinally, for counts table \\(X\\) and design matrix \\(D\\) we can calculate the likelihood as follows:\n\\[\n\\begin{aligned}\nP(X,D|\\beta_0,\\beta_1,\\beta_2) &= \\sum NB(x|u,\\alpha) \\\\\n&= \\sum NB(9|0.18e^{\\beta0+\\beta1},\\alpha) + \\ldots + \\sum NB(278|0.51e^{\\beta0+\\beta2},\\alpha)\n\\end{aligned}\n\\] where \\(\\alpha\\) is as defined in the paper and this can be estimated using maximum likelihood. Figure 1 shows a scatter plot of the likelihood estimates for gene 1 as a function of various values of \\(\\beta_0\\) and \\(\\beta_1\\) for gene1.\n\n\n\n\n\n\n\nFigure 1: 3D Scatter Plot showing likelihood estimates for various values of beta1 and beta2 for gene 1. Actually the highest value (the MLE) is -23.44, which corresponds to beta1 4.3 and beta2 -3.1\n\n\n\n\n\nFollowing the notation and description from (Li et al. 2015):\n\nLi, Wei, Johannes Köster, Han Xu, et al. 2015. “Quality Control, Modeling, and Visualization of CRISPR Screens with MAGeCK-VISPR.” Journal Article. Genome Biology 16 (1): 281. https://doi.org/10.1186/s13059-015-0843-6.\nThe read count, \\(x_{i,j}\\) of a sgRNA \\(i\\) targeting gene \\(g\\) in sample \\(j\\) is modeled with the Negative Binomial distribution,\n\\[\n  x_{i,j} \\sim NegBin(\\mu_{i,j},\\alpha_i)\n\\]\nNote that this distribution is commonly used for gene counts as it allows a different mean and a different variance. The mean itself is modeled as:\n\\[\n\\mu_{i,j}=s_j q_{i,j}\n\\] Where \\(s_j\\) is a size factor accounting for the sequencing depth of the sample and is calculated as the number of counts divided by the geometric mean of the samples,\n\\[\ns_j = \\left( \\frac{x_{i,j}}{\\prod_{k=1}^{J}{x_{i,k}}} \\right)^{(1/J)}\n\\] On the other hand, \\(q_{i,j}\\) corresponds to a linear combination of effects coming from the various conditions (drug types, cell types, etc) and they are specified as :\n\\[\n\\begin{equation}\n\\begin{cases}\n  log(q_{i,j}) = \\beta_0 + \\sum_r d_{j,r} \\beta_{g,r} & \\text{if } \\pi_i=1 \\\\\n  log(q_{i,j}) = \\beta_0  & \\text{if } \\pi_i=0\n\\end{cases}\n\\end{equation}\n\\]\nwhere \\(d_{j,r}\\) are elements of the design matrix. See example below. For \\(\\beta&gt;0\\) \\(g_{i,r}\\) is positively selected and \\(\\beta&lt;0\\) is negatively selected in condition \\(g\\) for gene \\(i\\). \\(\\beta_0\\) is the initial sgRNA abundance measured in plasmid.\nUltimately, we want to maximize the likelihood, for a given set of counts \\(X=x_1 \\ldots x_N\\), genes \\(G=g_1 \\dots g_G\\), samples \\(S=s_1 \\ldots s_S\\) and design matrix \\(D\\) we want to find the values of the parameters \\(\\beta=\\beta_0 \\dots \\beta_r\\):\n\\[\nP(x_{i,j}=x|\\beta_0,\\{\\beta\\},\\pi_1,\\pi_0) = \\prod_{j=1}^J \\left( P(x_{i,j}|\\pi_i=0)P(\\pi_i=0)+P(x_{i,j}|\\pi_i=1)P(\\pi_i=1) \\right)\n\\] ### Example\nSo let’s use the example of @RN81, all all the figures below are from that paper. In this case the design matrix would be something like this:\n Therefore, for each gene \\(g\\) we would have the “gene essentiality scores” \\(\\beta_{g,0}\\), \\(\\beta_{g,1}\\), \\(\\beta_{g,2}\\), \\(\\beta_{g,3}\\), \\(\\beta_{g,4}\\) which would tell us how strongly this condition is present on the gene.\nAnd we can see the results in the following figure:\n On Fig4.a we see each of the conditions on the x-axis and the genes on the y-axis, clustered into four groups."
+  },
+  {
+    "objectID": "posts/berglundDerivation/index.html",
+    "href": "posts/berglundDerivation/index.html",
+    "title": "The Derivation of the Berglund Estimator for the Diffusion Constant",
+    "section": "",
+    "text": "I spent a lot of time working on modeling the movement of repair enzymes in DNA. For various reasons, publication of the results was delayed, but I wanted to share this derivation of the Berglund estimator of the diffusion constant (Berglund 2010) and (Michalet and Berglund 2012) as it took me so long to work out!.\n\nBerglund, A. J. 2010. “Statistics of Camera-Based Single-Particle Tracking.” Journal Article. Phys Rev E Stat Nonlin Soft Matter Phys 82 (1 Pt 1): 011917. https://doi.org/10.1103/PhysRevE.82.011917.\n\nMichalet, Xavier, and Andrew J. Berglund. 2012. “Optimal Diffusion Coefficient Estimation in Single-Particle Tracking.” Phys. Rev. E 85 (June): 061916. https://doi.org/10.1103/PhysRevE.85.061916.\nPDF with the derivation"
+  },
+  {
+    "objectID": "posts/berglundDerivation/index.html#introduction",
+    "href": "posts/berglundDerivation/index.html#introduction",
+    "title": "The Derivation of the Berglund Estimator for the Diffusion Constant",
+    "section": "",
+    "text": "I spent a lot of time working on modeling the movement of repair enzymes in DNA. For various reasons, publication of the results was delayed, but I wanted to share this derivation of the Berglund estimator of the diffusion constant (Berglund 2010) and (Michalet and Berglund 2012) as it took me so long to work out!.\n\nBerglund, A. J. 2010. “Statistics of Camera-Based Single-Particle Tracking.” Journal Article. Phys Rev E Stat Nonlin Soft Matter Phys 82 (1 Pt 1): 011917. https://doi.org/10.1103/PhysRevE.82.011917.\n\nMichalet, Xavier, and Andrew J. Berglund. 2012. “Optimal Diffusion Coefficient Estimation in Single-Particle Tracking.” Phys. Rev. E 85 (June): 061916. https://doi.org/10.1103/PhysRevE.85.061916.\nPDF with the derivation"
+  }
+]
