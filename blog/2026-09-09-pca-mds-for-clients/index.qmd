@@ -1,0 +1,312 @@
+---
+title: "PCA and MDS"
+author: "Ramiro Barrantes-Reynolds"
+date: "2026-09-09"
+categories: [statistics, data visualization, science-communication]
+subtitle: "A plain-language guide to two of the most common plots in a data report"
+execute:
+  echo: false
+  message: false
+---
+
+## Introduction
+
+Here we explain two multivariate methods: **PCA** (Principal Component Analysis) or **MDS** (Multidimensional Scaling). They are multivariate as we commonly have real data dozens, hundreds, or thousands of numbers attached to it — gene activity levels, epigenetic measurements, etc. 
+
+What we do is to reduce all those numbers down to a simple map — usually just two or three dimensions while trying to preserve **which samples are similar to each other, and which are different.**
+
+## PCA: Finding the Most Informative Angle
+
+Imagine holding an oddly shaped object — a stretched, lumpy potato — and shining a flashlight on it to cast a shadow on the wall. From some angles, the shadow is a shapeless blob that tells you almost nothing about the object. From other angles, the shadow captures the object's real shape and spread remarkably well.
+
+PCA is a systematic search for the best angle. It looks at all your original measurements and finds the "view" that preserves the most spread — the most real difference between samples — in as few dimensions as possible. That best angle becomes the first axis of the plot; the next-best (and unrelated) angle becomes the second axis. Those chosen angles are called **principal components**.
+
+The plot below makes this concrete with just two measurements. On the left, each dot is a sample with two correlated measurements — knowing one tells you a lot about the other, which is why the cloud runs diagonally instead of in a circle. On the right, PCA has simply *rotated* that same cloud so its long direction lines up with the horizontal axis:
+
+```{r}
+#| label: fig-pca-rotation
+#| fig-cap: "60 samples from two groups, before and after PCA. The red line marks the direction of most spread (PC 1); the green line, its perpendicular runner-up (PC 2). Left: those directions cut diagonally across the original measurements, right along the seam between the two groups. Right: the identical cloud, colors, and two lines, rotated so the red line becomes the x-axis and the green line becomes the y-axis."
+#| fig-subcap:
+#|   - "Original Measurements"
+#|   - "Rotated to the Best Angle"
+#| layout-ncol: 2
+
+library(ggplot2)
+
+set.seed(4)
+n_per_group <- 30
+offset <- 3.2
+
+make_group <- function(offset) {
+  x1 <- rnorm(n_per_group, 0, 1.6) + offset
+  x2 <- 0.9 * (x1 - offset) + rnorm(n_per_group, 0, 0.6) + offset
+  data.frame(x1 = x1, x2 = x2)
+}
+
+orig <- rbind(make_group(-offset), make_group(offset))
+orig$group <- rep(c("Group 1", "Group 2"), each = n_per_group)
+
+pca_2d <- prcomp(orig[, c("x1", "x2")], center = TRUE, scale. = FALSE)
+rot <- data.frame(pc1 = pca_2d$x[, 1], pc2 = pca_2d$x[, 2], group = orig$group)
+
+# the two principal directions, drawn as full lines through the original data
+center <- pca_2d$center
+rotation <- pca_2d$rotation
+slope_pc1 <- rotation[2, 1] / rotation[1, 1]
+slope_pc2 <- rotation[2, 2] / rotation[1, 2]
+intercept_pc1 <- center[2] - slope_pc1 * center[1]
+intercept_pc2 <- center[2] - slope_pc2 * center[1]
+
+lim <- max(abs(c(orig$x1, orig$x2, rot$pc1, rot$pc2))) * 1.1
+pal <- c("Group 1" = "#4e79a7", "Group 2" = "#e15759")
+
+ggplot(orig, aes(x1, x2, color = group)) +
+  geom_abline(slope = slope_pc1, intercept = intercept_pc1, color = "firebrick", linewidth = 0.8) +
+  geom_abline(slope = slope_pc2, intercept = intercept_pc2, color = "darkgreen", linewidth = 0.8) +
+  geom_point(size = 2.5, alpha = 0.8) +
+  scale_color_manual(values = pal) +
+  coord_fixed(xlim = c(-lim, lim), ylim = c(-lim, lim)) +
+  labs(x = "Measurement 1", y = "Measurement 2", color = NULL) +
+  theme_minimal()
+
+ggplot(rot, aes(pc1, pc2, color = group)) +
+  geom_hline(yintercept = 0, color = "firebrick", linewidth = 0.8) +
+  geom_vline(xintercept = 0, color = "darkgreen", linewidth = 0.8) +
+  geom_point(size = 2.5, alpha = 0.8) +
+  scale_color_manual(values = pal) +
+  coord_fixed(xlim = c(-lim, lim), ylim = c(-lim, lim)) +
+  labs(x = "PC 1", y = "PC 2", color = NULL) +
+  theme_minimal()
+```
+
+Nothing about the samples changed between those two plots — they, and the two colored lines, were only rotated. The red line (PC 1) is the same "most spread" direction in both panels; it just happens to line up with the page's horizontal axis once PCA is done rotating.
+
+Notice thought that, on the left we have that "Measurement 1" and "Measurement 2" meant something specific and nameable. On the right, PC 1 is some blend of both original measurements — a direction, not a thing you measured. The principal components are no longer interpretable in the same way.
+
+Below is another example in 3-D.
+
+```{r}
+#| label: fig-pca-3d
+#| fig-cap: "Two groups with three measurements each. Left: the raw 3D cloud, with its three principal directions drawn as dotted lines (red = PC 1, green = PC 2, purple = PC 3). Middle: the identical cloud and the identical three lines, rotated so they align exactly with the box's edges. Right: PC 3 dropped completely — just PC 1 vs. PC 2, flat on the page — and the groups are still cleanly separated."
+#| fig-subcap:
+#|   - "Original Measurements (3D)"
+#|   - "Rotated to the Best Angle (3D)"
+#|   - "PC 3 Dropped, Back to Flat 2D"
+#| layout-ncol: 3
+
+library(ggplot2)
+library(lattice)
+
+set.seed(4)
+n_per_group <- 25
+offset <- 3.5
+
+gen3d <- function(offset) {
+  x1 <- rnorm(n_per_group, 0, 1.3) + offset
+  x2 <- 0.8 * (x1 - offset) + rnorm(n_per_group, 0, 0.5) + offset
+  x3 <- 0.7 * (x1 - offset) + rnorm(n_per_group, 0, 0.5) + offset
+  data.frame(x1 = x1, x2 = x2, x3 = x3)
+}
+
+orig3 <- rbind(gen3d(-offset), gen3d(offset))
+group3 <- factor(rep(c("Group 1", "Group 2"), each = n_per_group))
+
+pca3 <- prcomp(orig3, center = TRUE, scale. = FALSE)
+rot3 <- as.data.frame(pca3$x)
+names(rot3) <- c("pc1", "pc2", "pc3")
+rot3$group <- group3
+
+cam <- list(z = 30, x = -70, y = 0)
+
+# a principal direction, traced as a dense line of small points through the cloud's center
+axis_line <- function(center, direction, len = 7, n = 80) {
+  t <- seq(-len, len, length.out = n)
+  data.frame(
+    x1 = center[1] + t * direction[1],
+    x2 = center[2] + t * direction[2],
+    x3 = center[3] + t * direction[3]
+  )
+}
+
+grp_levels <- c("Group 1", "Group 2", "PC1 axis", "PC2 axis", "PC3 axis")
+cols <- c("#4e79a7", "#e15759", "firebrick", "darkgreen", "purple")
+pchs <- c(19, 19, 20, 20, 20)
+cexs <- c(1.1, 1.1, 0.35, 0.35, 0.35)
+pal <- c("Group 1" = "#4e79a7", "Group 2" = "#e15759")
+
+# original space: the three principal directions cut diagonally through the data
+lines_orig <- rbind(
+  cbind(axis_line(pca3$center, pca3$rotation[, 1]), grp = "PC1 axis"),
+  cbind(axis_line(pca3$center, pca3$rotation[, 2]), grp = "PC2 axis"),
+  cbind(axis_line(pca3$center, pca3$rotation[, 3]), grp = "PC3 axis")
+)
+combined_orig <- rbind(cbind(orig3, grp = as.character(group3)), lines_orig)
+combined_orig$grp <- factor(combined_orig$grp, levels = grp_levels)
+
+# PC space: those same three directions are now just the coordinate axes
+lines_rot <- rbind(
+  cbind(axis_line(c(0, 0, 0), c(1, 0, 0)), grp = "PC1 axis"),
+  cbind(axis_line(c(0, 0, 0), c(0, 1, 0)), grp = "PC2 axis"),
+  cbind(axis_line(c(0, 0, 0), c(0, 0, 1)), grp = "PC3 axis")
+)
+names(lines_rot) <- c("pc1", "pc2", "pc3", "grp")
+combined_rot <- rbind(cbind(rot3[, c("pc1","pc2","pc3")], grp = as.character(group3)), lines_rot)
+combined_rot$grp <- factor(combined_rot$grp, levels = grp_levels)
+
+cloud(x3 ~ x1 * x2, data = combined_orig, groups = grp, col = cols, pch = pchs, cex = cexs,
+      xlab = "Measurement 1", ylab = "Measurement 2", zlab = "M 3",
+      screen = cam)
+
+cloud(pc3 ~ pc1 * pc2, data = combined_rot, groups = grp, col = cols, pch = pchs, cex = cexs,
+      xlab = "PC 1", ylab = "PC 2", zlab = "PC 3",
+      screen = cam)
+
+ggplot(rot3, aes(pc1, pc2, color = group)) +
+  geom_point(size = 2.5, alpha = 0.85) +
+  scale_color_manual(values = pal) +
+  labs(x = "PC 1", y = "PC 2", color = NULL) +
+  theme_minimal()
+```
+
+## MDS: Building a Map from Distances Alone
+
+MDS starts from a table of how different every pair of samples is from every other pair, and then searches for an arrangement of dots on a page where the distances between dots match those real differences as closely as possible. It never needs to see the original measurements — only how different each pair of samples is.
+
+Here's that same process end to end, with a small, realistic example. The 10 genes below are commonly checked for promoter methylation in cancer — when a tumor suppressor like *TP53* or *PTEN* gets silenced this way, the cell loses one of its safeguards against uncontrolled growth. We have percent methylation at each gene, in 3 samples.
+
+```{r}
+#| label: tbl-epigenetic-data
+#| tbl-cap: "Percent DNA methylation at 10 genes, in 3 samples. This is the kind of raw table a report usually starts from."
+
+library(gt)
+suppressPackageStartupMessages(library(dplyr))
+
+set.seed(7)
+genes <- c("BRCA1", "TP53", "MLH1", "MGMT", "CDKN2A", "RASSF1", "APC", "VHL", "PTEN", "RB1")
+sample_a <- round(runif(10, 20, 40), 1)
+sample_b <- round(sample_a + rnorm(10, 0, 3), 1)
+sample_c <- round(runif(10, 55, 85), 1)
+
+meth <- data.frame(
+  Gene = genes,
+  `Sample A` = sample_a,
+  `Sample B` = sample_b,
+  `Sample C` = sample_c,
+  check.names = FALSE
+)
+
+meth %>%
+  gt() %>%
+  tab_header(title = "Percent DNA Methylation at 10 Genes") %>%
+  fmt_number(columns = -Gene, decimals = 1) %>%
+  opt_row_striping()
+```
+
+The first step MDS takes is to boil that whole table down to a single number per pair of samples — how different is Sample A from Sample B, overall, across all 10 genes at once?
+
+```{r}
+#| label: tbl-epigenetic-distances
+#| tbl-cap: "How different each pair of samples is, considering all 10 genes together. Lower means more alike."
+
+m <- as.matrix(meth[, -1])
+rownames(m) <- meth$Gene
+d <- dist(t(m))
+dm <- as.data.frame(as.matrix(d))
+dm <- cbind(Sample = rownames(dm), dm)
+
+dm %>%
+  gt() %>%
+  tab_header(title = "Overall Difference Between Samples") %>%
+  fmt_number(columns = -Sample, decimals = 1) %>%
+  opt_row_striping()
+```
+
+That table alone is all MDS needs. It has no idea these numbers came from 10 genes, or even that "genes" were involved at all — it only sees three numbers describing how far apart each pair is. From just that, it draws the map:
+
+```{r}
+#| label: fig-epigenetic-mds
+#| fig-cap: "MDS map built entirely from the distance table above. Samples A and B, the two closest pairs in the table, land near each other; Sample C, far from both, lands on its own."
+
+library(ggplot2)
+
+mds_toy <- as.data.frame(cmdscale(d, k = 2))
+names(mds_toy) <- c("dim1", "dim2")
+mds_toy$sample <- colnames(m)
+
+ggplot(mds_toy, aes(dim1, dim2, label = sample)) +
+  geom_point(size = 3.5, color = "#4e79a7") +
+  geom_text(vjust = -1.3, size = 4.5) +
+  scale_x_continuous(expand = expansion(mult = 0.35)) +
+  scale_y_continuous(expand = expansion(mult = 0.35)) +
+  labs(x = "MDS Dimension 1", y = "MDS Dimension 2") +
+  theme_minimal()
+```
+
+Samples A and B — the pair with the smallest number in the distance table — land close together on the map. Sample C, far from both in the table, lands off on its own. Nothing here required looking at which specific genes drove that difference; the map is built purely from the one column of numbers in between the raw data and the picture.
+
+## So What's the Actual Difference?
+
+- **PCA** starts from the original measurements and looks for the directions that show the most variation between samples.
+- **MDS** starts from a table of pairwise differences and tries to reproduce those differences as distances on a flat page.
+
+In many everyday cases, these two approaches end up producing very similar-looking plots — "the view that shows the most variation" and "the layout that best preserves how different everything is" often point to the same picture. 
+
+Here's that similarity in practice. The toy data below isn't two-dimensional to begin with — each of the 30 samples has **8 separate measurements**, impossible to plot directly. The same 8-measurement data was handed to both PCA and MDS independently, with no coordination between them:
+
+```{r}
+#| label: fig-pca-mds-compare
+#| fig-cap: "The same 30 samples, each with 8 underlying measurements, flattened to 2D by PCA (left) and MDS (right). Both methods were given the exact same data and arrived at essentially the same picture: three clusters and one outlier."
+#| fig-subcap:
+#|   - "PCA"
+#|   - "MDS"
+#| layout-ncol: 2
+
+library(ggplot2)
+
+set.seed(11)
+n_per_group <- 10
+n_vars <- 8
+
+# each group's signal lives in its own non-overlapping set of the 8 measurements,
+# so the three groups are equally, cleanly separated
+center_A <- c(6, 6, 6, 0, 0, 0, 0, 0)
+center_B <- c(0, 0, 0, 6, 6, 6, 0, 0)
+center_C <- c(0, 0, 0, 0, 0, 0, 6, 6)
+
+make_group <- function(center) {
+  sweep(matrix(rnorm(n_per_group * n_vars), nrow = n_per_group), 2, center, "+")
+}
+
+raw <- rbind(make_group(center_A), make_group(center_B), make_group(center_C))
+group <- rep(c("Group A", "Group B", "Group C"), each = n_per_group)
+
+# one sample, off across every measurement -- a true outlier, not just a 2D one
+raw[1, ] <- raw[1, ] + 10
+
+pal <- c("Group A" = "#e15759", "Group B" = "#59a14f", "Group C" = "#4e79a7")
+
+pca <- prcomp(raw, scale. = TRUE)
+pca_df <- data.frame(dim1 = pca$x[, 1], dim2 = pca$x[, 2], group = group)
+
+mds <- cmdscale(dist(raw), k = 2)
+mds_df <- data.frame(dim1 = mds[, 1], dim2 = mds[, 2], group = group)
+
+ggplot(pca_df, aes(dim1, dim2, color = group)) +
+  geom_point(size = 3, alpha = 0.85) +
+  scale_color_manual(values = pal) +
+  labs(x = "PC 1", y = "PC 2", color = NULL) +
+  theme_minimal()
+
+ggplot(mds_df, aes(dim1, dim2, color = group)) +
+  geom_point(size = 3, alpha = 0.85) +
+  scale_color_manual(values = pal) +
+  labs(x = "MDS Dimension 1", y = "MDS Dimension 2", color = NULL) +
+  theme_minimal()
+```
+
+## What to Look Fot
+
+- **Clusters** — groups of dots sitting close together are samples that look broadly alike across everything measured.
+- **A dot sitting off on its own** — an outlier, worth a second look. It might be a data quality issue, or it might be genuinely unusual.
+- **Two groups separating cleanly along one direction** — a real, dominant difference between them, worth asking what drove it.
+- **Everything blending into one shapeless cloud** — no strong pattern in what was measured, at least not one big enough to show up this way.
