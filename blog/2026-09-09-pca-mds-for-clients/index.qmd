@@ -21,15 +21,16 @@ Imagine holding an oddly shaped object — a stretched, lumpy potato — and shi
 
 PCA is a systematic search for the best angle. It looks at all your original measurements and finds the "view" that preserves the most spread — the most real difference between samples — in as few dimensions as possible. That best angle becomes the first axis of the plot; the next-best (and unrelated) angle becomes the second axis. Those chosen angles are called **principal components**.
 
-The plot below makes this concrete with just two measurements. On the left, each dot is a sample with two correlated measurements — knowing one tells you a lot about the other, which is why the cloud runs diagonally instead of in a circle. On the right, PCA has simply *rotated* that same cloud so its long direction lines up with the horizontal axis:
+The plots below make this concrete with just two measurements. First, just the raw data: each dot is a sample with two correlated measurements — knowing one tells you a lot about the other, which is why the cloud runs diagonally instead of in a circle. Then, the two principal directions overlaid on that same cloud. Finally, PCA has simply *rotated* the cloud so its long direction lines up with the horizontal axis:
 
 ```{r}
 #| label: fig-pca-rotation
-#| fig-cap: "60 samples from two groups, before and after PCA. The red line marks the direction of most spread (PC 1); the green line, its perpendicular runner-up (PC 2). Left: those directions cut diagonally across the original measurements, right along the seam between the two groups. Right: the identical cloud, colors, and two lines, rotated so the red line becomes the x-axis and the green line becomes the y-axis."
+#| fig-cap: "60 samples from two groups, before and after PCA. The red line marks the direction of most spread (PC 1); the green line, its perpendicular runner-up (PC 2). Left: the raw data alone, no lines. Middle: the same data, with those directions cut diagonally across it, right along the seam between the two groups. Right: the identical cloud, colors, and two lines, rotated so the red line becomes the x-axis and the green line becomes the y-axis."
 #| fig-subcap:
 #|   - "Original Measurements"
+#|   - "Original Measurements, with PC Directions"
 #|   - "Rotated to the Best Angle"
-#| layout-ncol: 2
+#| layout-ncol: 3
 
 library(ggplot2)
 
@@ -59,6 +60,13 @@ intercept_pc2 <- center[2] - slope_pc2 * center[1]
 
 lim <- max(abs(c(orig$x1, orig$x2, rot$pc1, rot$pc2))) * 1.1
 pal <- c("Group 1" = "#4e79a7", "Group 2" = "#e15759")
+
+ggplot(orig, aes(x1, x2, color = group)) +
+  geom_point(size = 2.5, alpha = 0.8) +
+  scale_color_manual(values = pal) +
+  coord_fixed(xlim = c(-lim, lim), ylim = c(-lim, lim)) +
+  labs(x = "Measurement 1", y = "Measurement 2", color = NULL) +
+  theme_minimal()
 
 ggplot(orig, aes(x1, x2, color = group)) +
   geom_abline(slope = slope_pc1, intercept = intercept_pc1, color = "firebrick", linewidth = 0.8) +
