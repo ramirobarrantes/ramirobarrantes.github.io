@@ -180,7 +180,7 @@ ggplot(rot3, aes(pc1, pc2, color = group)) +
 
 MDS starts from a table of how different every pair of samples is from every other pair, and then searches for an arrangement of dots on a page where the distances between dots match those real differences as closely as possible. It never needs to see the original measurements — only how different each pair of samples is.
 
-Here's that same process end to end, with a small, realistic example. The 10 genes below are commonly checked for promoter methylation in cancer — when a tumor suppressor like *TP53* or *PTEN* gets silenced this way, the cell loses one of its safeguards against uncontrolled growth. We have percent methylation at each gene, in 3 samples.
+Here's that same process end to end, with a small, realistic example. Below is percent methylation for 10 genes in 3 samples.
 
 ```{r}
 #| label: tbl-epigenetic-data
@@ -229,7 +229,27 @@ dm %>%
   opt_row_striping()
 ```
 
-That table alone is all MDS needs. It has no idea these numbers came from 10 genes, or even that "genes" were involved at all — it only sees three numbers describing how far apart each pair is. From just that, it draws the map:
+This table is then transformed into a similarity table, where 0% corresponds to 
+the most different, and 100% to identical:
+
+```{r}
+#| label: tbl-epigenetic-relatedness
+#| tbl-cap: "The same information as the distance table, flipped into a 0-100% relatedness score. 100% would mean identical; 0% is anchored to the single most different pair in this dataset (Sample A vs. Sample C)."
+
+dist_mat <- as.matrix(d)
+max_d <- max(dist_mat)
+rel_mat <- 100 * (1 - dist_mat / max_d)
+rel_df <- as.data.frame(rel_mat)
+rel_df <- cbind(Sample = rownames(rel_df), rel_df)
+
+rel_df %>%
+  gt() %>%
+  tab_header(title = "Relatedness Score (0-100%)") %>%
+  fmt_number(columns = -Sample, decimals = 0) %>%
+  opt_row_striping()
+```
+
+We then apply the same PCA approach to obtain the 2D graph:
 
 ```{r}
 #| label: fig-epigenetic-mds
@@ -250,14 +270,12 @@ ggplot(mds_toy, aes(dim1, dim2, label = sample)) +
   theme_minimal()
 ```
 
-Samples A and B — the pair with the smallest number in the distance table — land close together on the map. Sample C, far from both in the table, lands off on its own. Nothing here required looking at which specific genes drove that difference; the map is built purely from the one column of numbers in between the raw data and the picture.
-
 ## So What's the Actual Difference?
 
 - **PCA** starts from the original measurements and looks for the directions that show the most variation between samples.
-- **MDS** starts from a table of pairwise differences and tries to reproduce those differences as distances on a flat page.
+- **MDS** starts from a table of pairwise differences and tries to reproduce those differences as distances 2D.
 
-In many everyday cases, these two approaches end up producing very similar-looking plots — "the view that shows the most variation" and "the layout that best preserves how different everything is" often point to the same picture. 
+In many cases, these two approaches end up producing very similar-looking plots — "the view that shows the most variation" and "the layout that best preserves how different everything is" often point to the same picture. 
 
 Here's that similarity in practice. The toy data below isn't two-dimensional to begin with — each of the 30 samples has **8 separate measurements**, impossible to plot directly. The same 8-measurement data was handed to both PCA and MDS independently, with no coordination between them:
 
