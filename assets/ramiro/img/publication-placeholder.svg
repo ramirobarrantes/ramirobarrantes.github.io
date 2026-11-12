@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" role="img" aria-label="Publication figure placeholder">
+  <rect width="320" height="320" fill="#f3effc"/>
+  <rect x="40" y="40" width="240" height="240" rx="12" fill="#ffffff" stroke="#ddd0f5" stroke-width="2"/>
+  <!-- axes -->
+  <line x1="78" y1="84" x2="78" y2="236" stroke="#b9a4ea" stroke-width="3" stroke-linecap="round"/>
+  <line x1="78" y1="236" x2="242" y2="236" stroke="#b9a4ea" stroke-width="3" stroke-linecap="round"/>
+  <!-- bars -->
+  <rect x="96"  y="176" width="26" height="60"  rx="3" fill="#7c3aed"/>
+  <rect x="134" y="138" width="26" height="98"  rx="3" fill="#a577f0"/>
+  <rect x="172" y="104" width="26" height="132" rx="3" fill="#f97316"/>
+  <rect x="210" y="156" width="26" height="80"  rx="3" fill="#ec4899"/>
+  <!-- trend line -->
+  <polyline points="96,170 140,150 184,112 226,134" fill="none" stroke="#6d28d9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="96"  cy="170" r="5" fill="#6d28d9"/>
+  <circle cx="140" cy="150" r="5" fill="#6d28d9"/>
+  <circle cx="184" cy="112" r="5" fill="#6d28d9"/>
+  <circle cx="226" cy="134" r="5" fill="#6d28d9"/>
+</svg>
